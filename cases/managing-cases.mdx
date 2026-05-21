@@ -1,0 +1,170 @@
+---
+title: "Managing Cases in BridgePoint CRM"
+sidebarTitle: "Managing Cases"
+description: "Learn how to create cases, update statuses, set renewal and reminder dates, assign staff, and record ACA plan details for a client."
+---
+
+The case workbench is where your day-to-day casework happens. From here you can record every meaningful change to a case — updating the status based on what DCF reports, setting dates to stay ahead of renewals, assigning cases to staff members, and capturing complete plan details for ACA enrollments. Every change you save is logged to the case's status history so you have a full audit trail.
+
+## Creating a new case
+
+Cases are created from the client's profile page, not from the Cases board.
+
+<Steps>
+  <Step title="Open the client profile">
+    Navigate to **Clients** and search for the client. Click their name to open their profile.
+  </Step>
+  <Step title="Add a new case">
+    On the client profile, locate the Cases section and click **Open New Case** (or the equivalent button shown on the profile).
+  </Step>
+  <Step title="Select the program">
+    Choose the program you are opening the case for: Medicaid, Food (SNAP), Cash (TCA), Obamacare / ACA, Pregnancy, Refugee Medical Assistance, or Medicare.
+  </Step>
+  <Step title="Confirm and save">
+    BridgePoint CRM automatically generates the BP case number in the format `BP-[CLIENT ID]-[PROGRAM CODE]-[CYCLE]` (for example, `BP-10001-SNP-0001`) and sets the initial status to **Pending Review**. The new case appears immediately on the Cases board.
+  </Step>
+</Steps>
+
+<Note>
+  A client can have one case per program at any time. If a client renews their benefits, a new enrollment cycle is added to the existing case rather than creating a duplicate. See [Enrollment Cycles](/cases/enrollments) for details.
+</Note>
+
+## Updating case status
+
+The process for updating a case status depends on which program the case belongs to.
+
+<Tabs>
+  <Tab title="Medicaid">
+    Medicaid cases are driven by **DCF Status** — the outcome that the Department of Children and Families reports for the application.
+
+    <Steps>
+      <Step title="Open the case">
+        From the Cases board, click the case row to open the case detail page.
+      </Step>
+      <Step title="Set the DCF Status">
+        In the Case Workbench panel, select the appropriate value from the **DCF Status** dropdown:
+
+        | DCF Status | Resulting case status |
+        |---|---|
+        | Enrolled | Enrolled |
+        | Ineligible | Ineligible |
+        | Medically Needy | In Review |
+        | Denied | In Review |
+        | Closed | In Review |
+        | Pregnancy Open | In Review |
+        | Pregnancy Closed | In Review |
+        | Refugee Medical Assistance | In Review |
+      </Step>
+      <Step title="Review the ACA pipeline prompt">
+        If the DCF status you selected is one that qualifies a client for ACA (Medically Needy, Denied, Closed, Pregnancy Open, Pregnancy Closed, or Refugee Medical Assistance), BridgePoint CRM will display an ACA pipeline confirmation prompt after you save. Confirm to add the client to the ACA pipeline, or dismiss to skip.
+      </Step>
+      <Step title="Save">
+        Click **Save Changes**. The case status and DCF status update simultaneously, and an entry is added to the Status History.
+      </Step>
+    </Steps>
+
+    <Warning>
+      When you set the DCF status to **Enrolled**, the **Renewal Date** field becomes required. Set the renewal date at the same time to ensure the case appears in renewal reminders.
+    </Warning>
+  </Tab>
+  <Tab title="SNAP and TCA">
+    SNAP and TCA cases use a simplified status workflow that you control directly, without DCF status tracking.
+
+    <Steps>
+      <Step title="Open the case">
+        Click the case row on the Cases board.
+      </Step>
+      <Step title="Set the Status">
+        In the Case Workbench, use the **Status** dropdown to select one of the four allowed values: Pending Status, Enrolled, Denied, or Ineligible.
+      </Step>
+      <Step title="Save">
+        Click **Save Changes**. The status update is recorded in the Status History.
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+## Setting renewal and reminder dates
+
+Both dates are available in the Case Workbench on any case detail page.
+
+**Renewal Date** — The date when the client's benefits are scheduled for renewal. Cases with a past or approaching renewal date appear under the **Renewal Due** tab on the Cases board. For Medicaid cases, set this at the same time you record an Enrolled DCF status.
+
+**Reminder Date** — A follow-up date you set for your own team's use. When the reminder date is today or in the past, the date appears in red on the Cases board and the case shows up in the **Reminder Due** tab. Any staff member can set or update the reminder date.
+
+<Steps>
+  <Step title="Open the case detail page">
+    Click the case from the Cases board.
+  </Step>
+  <Step title="Enter the date">
+    Type directly in the **Renewal Date** or **Reminder Date** field, or use the date picker.
+  </Step>
+  <Step title="Save">
+    Click **Save Changes**. You can update the renewal date or reminder date independently without changing the case status.
+  </Step>
+</Steps>
+
+## Assigning a case to a staff member
+
+Case assignment is visible on the Cases board in the **Assigned To** column and can be set from the case detail page.
+
+<Steps>
+  <Step title="Open the case">
+    Navigate to the case detail page from the Cases board or from the client's profile.
+  </Step>
+  <Step title="Select a staff member">
+    Use the **Assigned To** field to pick a staff member from your office.
+  </Step>
+  <Step title="Save">
+    Click **Save Changes**. The assignment is updated immediately.
+  </Step>
+</Steps>
+
+<Tip>
+  Use the **Reminder Due** tab on the Cases board to quickly find all cases where a follow-up is overdue, regardless of which staff member they are assigned to.
+</Tip>
+
+## Case and DCF case numbers
+
+Each case has two distinct identifiers.
+
+- **BP Case Number** — Generated automatically by BridgePoint CRM when the case is created. The format is `BP-[CLIENT ID]-[PROGRAM CODE]-[CYCLE]`, for example `BP-10001-MCD-0001`. This number increments with each renewal cycle.
+- **DCF Case Number** (also called Application / Case Number) — The reference number from the government agency. Enter this in the **Application / Case Number** field in the Case Workbench once you receive it. This field is free text and is not validated.
+
+Both numbers appear in the left panel of the case detail page and are searchable from the Cases board search box.
+
+## Recording ACA plan details
+
+ACA cases carry additional fields for the full plan enrollment. These are available in the Case Workbench when the case program is Obamacare / ACA.
+
+<Accordion title="Health plan fields">
+  | Field | Description |
+  |---|---|
+  | Health Carrier | The name of the insurance company providing the health plan |
+  | Metal Tier | The plan tier: Bronze, Silver, Gold, or Platinum |
+  | Health Member ID | The member ID on the health insurance card |
+  | Health Premium | Monthly premium amount before any tax credit |
+  | Health Effective Date | The date coverage begins |
+  | Health Cancel Date | The date coverage ends, if applicable |
+</Accordion>
+
+<Accordion title="Dental plan fields">
+  | Field | Description |
+  |---|---|
+  | Dental Carrier | The name of the insurance company providing the dental plan |
+  | Dental Member ID | The member ID on the dental insurance card |
+  | Dental Premium | Monthly premium amount for dental coverage |
+  | Dental Effective Date | The date dental coverage begins |
+</Accordion>
+
+<Accordion title="Marketplace and summary fields">
+  | Field | Description |
+  |---|---|
+  | Marketplace ID | The federal marketplace application or enrollment ID |
+  | Total Premium | Combined monthly premium for health and dental |
+  | Lives Covered | Number of household members included in the enrollment |
+</Accordion>
+
+<Note>
+  ACA cases are accessed through the **Pipeline** module, not the main Cases board. The Cases board only shows Medicaid, SNAP, and TCA cases.
+</Note>

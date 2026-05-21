@@ -1,0 +1,156 @@
+---
+title: "Reports: Pre-Built & Custom Report Builder"
+sidebarTitle: "Reports"
+description: "Run pre-built reports across clients, programs, pipeline, operations, and security, or build your own custom report and export results to CSV."
+---
+
+The Reports section gives you two ways to analyze your organization's data: choose from a library of pre-built reports covering every major area of the platform, or use the custom report builder to select your own data source, columns, and filters. All report results can be exported to CSV for further analysis in any spreadsheet tool.
+
+## Navigating to Reports
+
+Select **Reports** from the left sidebar. The page opens with the pre-built reports tab active by default. Use the tab switcher at the top to move between **Pre-Built Reports** and **Custom Report Builder**.
+
+---
+
+## Pre-Built Reports
+
+Pre-built reports are ready to run immediately — no configuration required beyond optional filters.
+
+### Report categories
+
+<CardGroup cols={2}>
+  <Card title="Clients" icon="users">
+    Client intake volume over time and release authorization renewal tracking.
+  </Card>
+  <Card title="Programs" icon="folder-open">
+    Program enrollments by status and status change velocity across workflow stages.
+  </Card>
+  <Card title="Pipeline" icon="chart-line">
+    ACA pipeline leads by status with total and average enrolled monthly premiums.
+  </Card>
+  <Card title="Operations" icon="clock">
+    Queue wait times from check-in to served, broken down by reason and date.
+  </Card>
+  <Card title="Security" icon="shield">
+    Staff activity from the audit log, grouped by staff member and action type. Visible to Owner and Admin only.
+  </Card>
+</CardGroup>
+
+### Available pre-built reports
+
+<Accordion title="Clients">
+  - **Client Intake Volume** — New clients registered over time, grouped by day, week, or month.
+  - **Release Auth Renewals** — Marketplace release authorizations expiring within a selected window (30, 60, 90 days, or all upcoming).
+</Accordion>
+
+<Accordion title="Programs">
+  - **Program Enrollments by Status** — Active cases grouped by program type and current workflow status.
+  - **Status Change Velocity** — How long clients spent in each program status before transitioning, at individual and aggregate level.
+</Accordion>
+
+<Accordion title="Pipeline">
+  - **ACA Pipeline & Revenue** — Pipeline leads by status with total and average enrolled monthly premiums.
+</Accordion>
+
+<Accordion title="Operations">
+  - **Queue Wait Times** — Average check-in to served wait time from queue entries, by reason and date.
+</Accordion>
+
+<Accordion title="Security">
+  - **Staff Activity** — Audit log grouped by staff member and action type.
+</Accordion>
+
+### Running a pre-built report
+
+<Steps>
+  <Step title="Select a category">
+    On the Pre-Built Reports tab, choose a category from the list on the left — Clients, Programs, Pipeline, Operations, or Security.
+  </Step>
+  <Step title="Select a report">
+    Click the report name you want to run. A description and filter panel appear on the right.
+  </Step>
+  <Step title="Apply filters (optional)">
+    Set any date range or other filters shown in the panel. Filters vary by report — for example, the Client Intake Volume report lets you group results by day, week, or month.
+  </Step>
+  <Step title="Run the report">
+    Click **Run Report**. Results appear in a table below the filter panel, along with a chart where applicable.
+  </Step>
+</Steps>
+
+---
+
+## Custom Report Builder
+
+The custom report builder lets you choose a data source, pick exactly which columns to include, and apply your own filters before running.
+
+### Data sources and columns
+
+<Tabs>
+  <Tab title="Clients">
+    Pulls from client profiles, demographics, contact info, and case numbers.
+
+    Available columns: Client ID, Full Name, Date of Birth, Phone, Email, Address, Case Number, Language, Created.
+  </Tab>
+  <Tab title="ACA Pipeline">
+    Pulls from pipeline leads, contact history, enrollment details, and premiums.
+
+    Available columns: Client Name, Status, Trigger Reason, Contact Attempts, Last Contact, Next Follow-Up, Assigned To, Monthly Premium, Enrolled Date.
+  </Tab>
+  <Tab title="Queue">
+    Pulls from walk-in and check-in queue entries with reasons and statuses.
+
+    Available columns: Client Name, Reason, Check-in Time, Status, Notes.
+  </Tab>
+</Tabs>
+
+### Building and running a custom report
+
+<Steps>
+  <Step title="Open the Custom Report Builder tab">
+    Click **Custom Report Builder** in the tab switcher at the top of the Reports page.
+  </Step>
+  <Step title="Choose a data source">
+    Select **Clients**, **ACA Pipeline**, or **Queue** from the data source selector.
+  </Step>
+  <Step title="Select columns">
+    Check the columns you want to include in your report. You can select as many or as few as needed.
+  </Step>
+  <Step title="Apply filters (optional)">
+    Add any filters to narrow results — for example, filter by a date range or a specific status value.
+  </Step>
+  <Step title="Run the report">
+    Click **Run Report**. Results appear in the table below.
+  </Step>
+</Steps>
+
+### Saving a custom report
+
+Once you have configured a report you want to reuse, you can save it for later.
+
+<Steps>
+  <Step title="Click Save Report">
+    After configuring your columns and filters, click **Save Report**.
+  </Step>
+  <Step title="Enter a name and description">
+    Give the report a clear name and an optional description so you and your team can identify it easily.
+  </Step>
+  <Step title="Confirm">
+    Click **Save**. The report appears in your saved reports list and can be opened and re-run at any time.
+  </Step>
+</Steps>
+
+<Tip>
+  Use descriptive names like "Open Pipeline by Staff — Q3" so saved reports are easy to find later.
+</Tip>
+
+---
+
+## Exporting Results to CSV
+
+After running any report — pre-built or custom — you can download the results as a CSV file.
+
+Click the **Export CSV** button above the results table. Your browser downloads a `.csv` file named after the report. Open it in Excel, Google Sheets, or any spreadsheet application.
+
+<Note>
+  The CSV export includes only the rows currently displayed in the results table, applying any filters you have set.
+</Note>

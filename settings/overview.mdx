@@ -1,0 +1,102 @@
+---
+title: "Settings: Profile, MFA, and Admin Controls"
+sidebarTitle: "Settings"
+description: "Manage your profile, configure two-factor authentication, and—if you hold a Manager, Admin, or Owner role—access organization-wide admin controls."
+---
+
+The Settings page is where you manage your personal account and, depending on your role, your organization's staff and offices. It is organized into two tabs: **User Profile**, available to every user, and **Admin**, visible only to Manager, Admin, and Owner roles.
+
+---
+
+## User Profile Tab
+
+The User Profile tab contains your personal information, two-factor authentication settings, and notification preferences.
+
+### Updating your name
+
+<Steps>
+  <Step title="Open Settings">
+    Select **Settings** from the left sidebar.
+  </Step>
+  <Step title="Locate Profile Information">
+    The **Profile Information** card is shown by default on the User Profile tab.
+  </Step>
+  <Step title="Edit your name">
+    Update the **First Name** and **Last Name** fields with the values you want.
+  </Step>
+  <Step title="Save">
+    Click **Save Changes**. Your updated name takes effect immediately.
+  </Step>
+</Steps>
+
+### Viewing your role and office
+
+Your **Role**, **Office**, and **Organization** are displayed as read-only fields in the Profile Information card. These are assigned by your organization's admin and cannot be changed from this page.
+
+---
+
+## Two-Factor Authentication
+
+Two-factor authentication (2FA) is required for all BridgePoint CRM accounts. You can choose between two methods: an **Authenticator App** (TOTP) or **Email Code**.
+
+<Tabs>
+  <Tab title="Authenticator App (TOTP)">
+    Use Google Authenticator, Authy, or any TOTP-compatible app. You will be prompted for a 6-digit code from the app each time you sign in.
+
+    <Steps>
+      <Step title="Install an authenticator app">
+        Download Google Authenticator, Authy, or any TOTP-compatible app on your phone if you do not already have one.
+      </Step>
+      <Step title="Open the MFA section">
+        Go to **Settings → User Profile**. Scroll to the **Two-Factor Authentication** card.
+      </Step>
+      <Step title="Start enrollment">
+        In the **Authenticator App** row, click **Switch to this**. A QR code appears inline.
+      </Step>
+      <Step title="Scan the QR code">
+        Open your authenticator app and scan the QR code. If your app does not support scanning, use the manual entry key shown beneath the QR code.
+      </Step>
+      <Step title="Enter the verification code">
+        Type the 6-digit code currently shown in your authenticator app into the code field.
+      </Step>
+      <Step title="Enable 2FA">
+        Click **Enable 2FA**. Once verified, the Authenticator App method becomes active and you will be prompted for a code at every sign-in.
+      </Step>
+    </Steps>
+
+    <Note>
+      Each QR code can only be enrolled once. If you switch away from TOTP and want to re-enroll, you will receive a new QR code and will need to add it to your app again.
+    </Note>
+  </Tab>
+  <Tab title="Email Code">
+    Receive a one-time code by email each time you sign in. No authenticator app is required.
+
+    <Steps>
+      <Step title="Open the MFA section">
+        Go to **Settings → User Profile**. Scroll to the **Two-Factor Authentication** card.
+      </Step>
+      <Step title="Switch to Email Code">
+        In the **Email Code** row, click **Switch to this**. A confirmation dialog appears.
+      </Step>
+      <Step title="Confirm the switch">
+        Click **Yes, Switch**. Your authenticator app enrollment is removed and email codes become active immediately.
+      </Step>
+    </Steps>
+
+    <Tip>
+      You can switch back to an authenticator app at any time by following the TOTP enrollment steps above.
+    </Tip>
+  </Tab>
+</Tabs>
+
+---
+
+## Admin Tab
+
+The Admin tab is visible only to users with the **Manager**, **Admin**, or **Owner** role. It contains tools for managing staff, offices, and audit logs across your organization.
+
+<Note>
+  If you do not see the Admin tab, your role does not include admin access. Contact your organization's Owner or Admin to request a role change.
+</Note>
+
+For full documentation on staff management, office management, and audit logs, see [Staff Management](/settings/staff-management).

@@ -1,0 +1,120 @@
+---
+title: "Enrollment Cycles: Track Renewals and History"
+sidebarTitle: "Enrollments"
+description: "Learn how enrollment cycles track each application period, how to add a renewal cycle, and how ACA income attestation and pre-qualification work."
+---
+
+Every case in BridgePoint CRM tracks its history through enrollment cycles. An enrollment cycle is a single snapshot of the case status at a point in time — every status change, DCF update, and note you save creates a new entry in the cycle history. When a client's benefits come up for renewal, a new case is opened with a new cycle number rather than overwriting the existing record, giving you a complete history of every application period for that client and program.
+
+## What enrollment cycles are
+
+An enrollment cycle is a record that captures:
+
+- The status at a given point (the DCF status for Medicaid, or the case status for SNAP/TCA)
+- Any notes associated with that status change
+- Who made the change and when
+
+The full cycle history is displayed in the **Status History** panel on the right side of every case detail page, newest entry first. Each entry shows the status label, any note text, and the date and time of the change.
+
+<Note>
+  Enrollment cycles are append-only. You cannot delete or edit an existing cycle entry. Every save creates a new entry, giving you a permanent audit trail.
+</Note>
+
+## Cycle types: New Application vs. Renewal
+
+Every case has a cycle type that tells you whether it represents an initial filing or a subsequent renewal.
+
+| Cycle type | When it applies | Badge shown |
+|---|---|---|
+| **New Application** | The first time a client applies for a given program | Green "New" badge |
+| **Renewal** | Each subsequent benefit period for the same program | Blue "Renewal #N" badge |
+
+The cycle number increments with each renewal. A client's first Medicaid case is cycle 1 (New Application). Their first renewal is cycle 2 (Renewal #2), their second renewal is cycle 3 (Renewal #3), and so on. The BP case number reflects the cycle number — for example, `BP-10001-MCD-0003` is the third Medicaid cycle for client BP-10001.
+
+## Adding a renewal cycle
+
+When a client returns for renewal, open a new case for the same program from the client's profile. BridgePoint CRM automatically detects the existing case history and assigns the next cycle number.
+
+<Steps>
+  <Step title="Open the client profile">
+    Navigate to **Clients**, search for the client, and open their profile.
+  </Step>
+  <Step title="Start a new case for the same program">
+    In the Cases section of the client profile, click **Open New Case** and select the same program (for example, Medicaid).
+  </Step>
+  <Step title="Set the cycle type to Renewal">
+    Select **Renewal** as the cycle type. BridgePoint CRM calculates the next cycle number automatically based on the client's existing case history for that program.
+  </Step>
+  <Step title="Optionally enter the renewal date">
+    If you know the benefit period's end date, enter it in the **Renewal Date** field now. You can also set it later from the case workbench.
+  </Step>
+  <Step title="Save">
+    Click to confirm. The new case is created with the next cycle number and status set to **Pending Review**. An initial enrollment cycle entry is added to the Status History.
+  </Step>
+</Steps>
+
+<Tip>
+  Cases with a past or approaching renewal date appear in the **Renewal Due** tab on the Cases board. Check this tab regularly to stay ahead of expiring benefits.
+</Tip>
+
+## Viewing cycle history
+
+The **Status History** panel on the right side of every case detail page shows every enrollment cycle entry in reverse-chronological order.
+
+Each entry displays:
+- The status or DCF status label at the time of the change
+- Any note recorded with the change
+- The exact date and time of the change
+
+You can add a standalone note to the history at any time without changing the status. Type your note in the **Add Note** field in the Case Workbench and click **Save Changes**.
+
+## ACA income attestation and pre-qualification
+
+ACA cases require two signed forms before enrollment is finalized. Both are tracked directly on the case record.
+
+<Accordion title="Income Attestation">
+  The income attestation confirms the client's reported household income, which determines their eligibility for Advanced Premium Tax Credits (APTC). BridgePoint CRM records whether the form has been signed and the timestamp of the signature.
+
+  Once signed, the case shows the income attestation as complete. This field is set when the client or authorized representative signs the attestation through the client portal or in-office signing workflow.
+</Accordion>
+
+<Accordion title="ACA Pre-Qualification Form">
+  The pre-qualification form confirms the client meets the basic requirements for marketplace enrollment. Like the income attestation, BridgePoint CRM records the signed status and the timestamp.
+
+  Both the income attestation and pre-qualification form must be signed before the enrollment is considered complete.
+</Accordion>
+
+<Note>
+  The income attestation and pre-qualification signing timestamps are read-only on the case detail page. They are recorded by the signing workflow and cannot be manually edited.
+</Note>
+
+## Understanding the ACA Pipeline status
+
+When a Medicaid case reaches certain DCF outcomes, the client may qualify for ACA marketplace coverage. BridgePoint CRM detects these outcomes automatically and offers to add the client to the ACA pipeline.
+
+The DCF status values that trigger an ACA pipeline prompt are:
+
+| DCF Status | Trigger reason shown in pipeline |
+|---|---|
+| Medically Needy | Medicaid — Medically Needy |
+| Denied | Medicaid Application Denied |
+| Closed | Ineligible for Medicaid |
+| Pregnancy Open | Referred to Marketplace |
+| Pregnancy Closed | Current Benefit Ending Soon |
+| Refugee Medical Assistance | Referred to Marketplace |
+
+<Steps>
+  <Step title="Record a qualifying DCF status">
+    On the Medicaid case detail page, set the DCF Status to one of the values above and click **Save Changes**. A confirmation prompt appears after the save completes.
+  </Step>
+  <Step title="Confirm the ACA pipeline referral">
+    Review the trigger reason shown in the prompt. Click **Confirm** to add the client to the ACA pipeline. Click **Dismiss** to skip the referral without removing it from the case.
+  </Step>
+  <Step title="Case status updates to ACA Pipeline">
+    After you confirm, the case status changes to **ACA Pipeline** and a new enrollment cycle entry is added to the Status History. The client also appears in the Pipeline module for follow-up.
+  </Step>
+</Steps>
+
+<Warning>
+  If you dismiss the ACA pipeline prompt, the case status remains **In Review** and the client is not added to the pipeline. You can return to the case and repeat the DCF status save at any time to re-trigger the prompt.
+</Warning>

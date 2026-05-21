@@ -1,0 +1,87 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "almond",
+  "name": "BridgePoint CRM",
+  "colors": {
+    "primary": "#7835ed",
+    "light": "#ede9fe",
+    "dark": "#5448d7"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "User Guide",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "roles-permissions"
+            ]
+          },
+          {
+            "group": "Clients",
+            "pages": [
+              "clients/overview",
+              "clients/adding-clients",
+              "clients/client-profile",
+              "clients/documents"
+            ]
+          },
+          {
+            "group": "Cases & Programs",
+            "pages": [
+              "cases/overview",
+              "cases/managing-cases",
+              "cases/enrollments"
+            ]
+          },
+          {
+            "group": "Queue & Appointments",
+            "pages": [
+              "queue/overview",
+              "queue/check-in",
+              "queue/appointments"
+            ]
+          },
+          {
+            "group": "ACA Pipeline",
+            "pages": [
+              "pipeline/overview",
+              "pipeline/managing-leads"
+            ]
+          },
+          {
+            "group": "Tasks & Invoices",
+            "pages": [
+              "tasks/overview",
+              "invoices/overview"
+            ]
+          },
+          {
+            "group": "Reports & Settings",
+            "pages": [
+              "reports/overview",
+              "settings/overview",
+              "settings/staff-management"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "navbar": {
+    "primary": {
+      "type": "github",
+      "href": "https://github.com/Bp-crm-bink/BridgePointCRM"
+    }
+  },
+  "fonts": {
+    "family": "Roboto"
+  },
+  "appearance": {
+    "default": "system"
+  }
+}

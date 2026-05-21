@@ -1,0 +1,104 @@
+---
+title: "Roles and Permissions in BridgePoint CRM"
+sidebarTitle: "Roles & Permissions"
+description: "BridgePoint uses five roles — Owner, Admin, Manager, Case Manager, and Front Desk — each controlling what staff can see and do across the platform."
+---
+
+Every staff member in BridgePoint is assigned one of five roles. Roles control which pages and actions are available — from viewing client records to managing other staff members and accessing audit logs. Assign each person the role that matches their job function and level of responsibility.
+
+## The five roles
+
+<Accordion title="Owner">
+  The Owner role has unrestricted access to the entire platform. Owners can manage all offices, administer the organization, configure staff roles, view audit logs, and access every feature available in BridgePoint. This role is typically held by the agency director or a designated system administrator.
+</Accordion>
+
+<Accordion title="Admin">
+  Admins share the same broad access as Owners, including organization-level administration and security log visibility. Use this role for senior administrators who need full system control but are not the primary owner of the account.
+</Accordion>
+
+<Accordion title="Manager">
+  Managers have access to most day-to-day operations: client management, program cases, the walk-in queue, the ACA pipeline, documents, task management, invoices, and office settings. Managers can also invite new staff members and manage their roles. They do not have organization-level admin access or security log visibility.
+</Accordion>
+
+<Accordion title="Case Manager">
+  Case Managers handle client-facing work. They can view and edit client profiles, manage program enrollments, access the queue, work through the ACA pipeline, view and mark documents, and manage their own tasks and invoices. They cannot access office settings, invite staff, or view security logs.
+</Accordion>
+
+<Accordion title="Front Desk">
+  Front Desk staff have the most limited access. They can view client records and access the walk-in queue to check clients in and out, but cannot edit client profiles, manage cases, access the pipeline, or perform any administrative functions. This role is designed for reception staff who handle check-in only.
+</Accordion>
+
+## Permissions matrix
+
+The table below shows which features each role can access. A checkmark means the role has that permission; a dash means it does not.
+
+| Feature | Owner | Admin | Manager | Case Manager | Front Desk |
+|---|:---:|:---:|:---:|:---:|:---:|
+| View Clients | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Add/Edit Clients | ✅ | ✅ | ✅ | ✅ | — |
+| Manage Programs | ✅ | ✅ | ✅ | ✅ | — |
+| View Queue | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Manage Queue | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Pipeline Access | ✅ | ✅ | ✅ | ✅ | — |
+| All-Time Premium | ✅ | ✅ | — | — | — |
+| View Documents | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Mark Docs Reviewed | ✅ | ✅ | ✅ | ✅ | — |
+| Office Settings | ✅ | ✅ | ✅ | — | — |
+| Manage Staff Roles | ✅ | ✅ | ✅ | — | — |
+| Organization Admin | ✅ | ✅ | — | — | — |
+| Security Logs | ✅ | ✅ | — | — | — |
+| Invite Staff | ✅ | ✅ | ✅ | — | — |
+
+<Note>
+  This matrix reflects the permissions built into BridgePoint. Role assignments are per-staff-member and cannot be customized beyond the five defined roles.
+</Note>
+
+## Changing a staff member's role
+
+Only Owners, Admins, and Managers can change staff roles. When you change a role, the change takes effect immediately — the staff member's permissions update on their next page load.
+
+<Steps>
+  <Step title="Open Settings">
+    Click **Settings** in the left sidebar navigation.
+  </Step>
+  <Step title="Go to the Admin tab">
+    Select the **Admin** tab at the top of the Settings page. The Users table lists all staff members in your organization with their current role and status.
+
+    <Warning>
+      The Admin tab is only visible to staff with Owner, Admin, or Manager roles. If you don't see it, contact your administrator.
+    </Warning>
+  </Step>
+  <Step title="Edit the staff member">
+    Find the staff member in the table and click the **edit** (pencil) icon on their row. The Edit User panel opens.
+  </Step>
+  <Step title="Select the new role">
+    Use the **Role** dropdown to choose the new role. The dropdown lists all five roles: Owner, Admin, Manager, Case Manager, and Front Desk.
+  </Step>
+  <Step title="Save the change">
+    Click **Save Role**. A confirmation toast appears and the Users table updates immediately to show the new role badge.
+  </Step>
+</Steps>
+
+<Tip>
+  You can also reset a staff member's password from the same Edit User panel. Enter a new password of at least 12 characters and click **Reset**. The staff member will need to use this password on their next login.
+</Tip>
+
+## Inviting new staff
+
+Owners, Admins, and Managers can invite new staff members directly from the Admin tab.
+
+<Steps>
+  <Step title="Click + Invite Staff">
+    In the Admin tab, click the **+ Invite Staff** button above the Users table.
+  </Step>
+  <Step title="Fill in the invite form">
+    Enter the new staff member's first name, last name, and work email address. Select their role (Manager, Case Manager, or Front Desk — Owners and Admins must be promoted after initial setup) and assign them to an office.
+  </Step>
+  <Step title="Send the invite">
+    Click **Send Invite**. BridgePoint sends the new staff member an email with a link to set their password and complete account setup. They appear in the Users table immediately with an Active status.
+  </Step>
+</Steps>
+
+## Deactivating a staff member
+
+To remove access for a staff member who has left your organization, click the **deactivate** (circle-slash) icon on their row in the Users table. Their account is disabled immediately and they can no longer sign in. All their work, notes, case history, and audit records are preserved.

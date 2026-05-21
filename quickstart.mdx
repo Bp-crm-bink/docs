@@ -1,0 +1,113 @@
+---
+title: "Quick Start: Your First Day in BridgePoint CRM"
+sidebarTitle: "Quick Start"
+description: "Log in, orient yourself on the dashboard, and add your first client in minutes. This guide walks you through every step from sign-in to your first case."
+---
+
+Getting up and running in BridgePoint takes just a few minutes. This guide walks you through signing in, navigating the dashboard, and adding your first client record so you can see how the platform fits together.
+
+## Step 1 — Sign in
+
+<Steps>
+  <Step title="Go to the BridgePoint login page">
+    Open BridgePoint in your browser. You'll land on the sign-in screen. You can sign in with your email and password, or use **Continue with Google** if your organization uses Google Workspace.
+  </Step>
+  <Step title="Enter your credentials">
+    Type your work email address and password, then click **Sign in**.
+
+    <Tip>
+      If you've forgotten your password, click **Forgot password?** beneath the password field to receive a reset link by email.
+    </Tip>
+  </Step>
+  <Step title="Complete two-factor authentication">
+    BridgePoint requires two-factor authentication on every login. After your password is accepted, you'll be prompted for a second factor.
+
+    <Tabs>
+      <Tab title="Authenticator app (TOTP)">
+        Open Google Authenticator, Authy, or any TOTP app and enter the 6-digit code shown for BridgePoint. The code rotates every 30 seconds.
+      </Tab>
+      <Tab title="Email code">
+        If you haven't set up an authenticator app, BridgePoint emails a 6-digit code to your address. Enter the code within 10 minutes before it expires. You can click **Resend code** to get a fresh one.
+      </Tab>
+    </Tabs>
+
+    You can switch your MFA method at any time under **Settings → User Profile → Two-Factor Authentication**.
+  </Step>
+</Steps>
+
+<Note>
+  Sessions expire after 8 hours of continuous use or after 30 minutes of inactivity. You'll be signed out automatically and prompted to sign in again.
+</Note>
+
+## Step 2 — Select your office (if applicable)
+
+If your account has Owner or Admin access and your organization has multiple offices, an **office selector** appears at the top of the dashboard header. Click it and choose the office whose data you want to view. All stat cards, queues, and recent clients update to reflect the selected office.
+
+Staff with Manager, Case Manager, or Front Desk roles are scoped to their assigned office automatically — no selection required.
+
+## Step 3 — Explore the dashboard
+
+The dashboard is your home base. It loads immediately after login and gives you an at-a-glance view of what's happening today.
+
+### Stat cards
+
+Five cards run across the top of the page:
+
+| Card | What it shows |
+|---|---|
+| **Total Clients** | Total number of client records in the system for your office |
+| **Current Queue** | Clients currently in the walk-in queue with a "Waiting" status |
+| **ACA Pipeline** | Count of active ACA (Obamacare) enrollment cases in the pipeline |
+| **Auth Expiring Soon** | Clients whose release authorization expires within the next 30 days |
+| **My Open Tasks** | Your personal count of open and in-progress tasks |
+
+### Today's Schedule
+
+Below the stat cards, the **Today's Schedule** widget shows all appointments booked for the current day at your office, sorted by time. Each row shows the appointment time, client name and BP ID, reason for visit, assigned case manager, and status. Status dots indicate:
+
+- **Gray** — Scheduled
+- **Blue** — Checked In
+- **Green** — Completed
+- **Red** — No Show
+
+Click **View all →** to open the full appointments page.
+
+<Note>
+  Case managers only see appointments assigned to them. Managers, Admins, and Owners see all appointments for the office.
+</Note>
+
+### My Open Tasks
+
+The **My Open Tasks** widget shows your top 5 open and in-progress tasks, with the client name, due date, and priority badge (Urgent, High, Normal, or Low). Click any task row to open it directly, or click **View all →** to go to the Tasks page.
+
+### Recent Clients
+
+The **Recent Clients** table shows the last 10 clients added to the system. Each row displays the BP ID, full name, the date they were added, and colored program dots for their active enrollments (Medicaid, SNAP, TCA, ACA).
+
+### Global search
+
+The **search bar** in the top header lets you find any client, case, or record across the system. Click the bar or start typing a name or BP ID to see results instantly.
+
+## Step 4 — Add your first client
+
+<Steps>
+  <Step title="Navigate to Clients">
+    Click **Clients** in the left sidebar to open the client list.
+  </Step>
+  <Step title="Open the new client form">
+    Click the **+ New Client** button in the top-right area of the Clients page.
+  </Step>
+  <Step title="Fill in the client's profile">
+    Enter the client's first name, last name, date of birth, contact information, and any other required fields. BridgePoint automatically generates a unique BP ID when you save the record.
+  </Step>
+  <Step title="Add a program enrollment">
+    After saving the client profile, open the **Cases** tab on the client record and click **+ Add Case**. Select the program (Medicaid, SNAP, TCA, or ACA), set the status, and fill in any program-specific fields.
+  </Step>
+  <Step title="Save the case">
+    Click **Save**. The client and their case now appear in the client list, the Recent Clients dashboard widget, and any relevant program views.
+  </Step>
+</Steps>
+
+<Tip>
+  Use the global search bar at any time to pull up a client by name or BP ID — you don't have to navigate to the Clients page first.
+</Tip>

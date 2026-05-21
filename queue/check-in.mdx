@@ -1,0 +1,140 @@
+---
+title: "Check In Clients at the Front Desk"
+sidebarTitle: "Check-In"
+description: "Step-by-step instructions for checking in returning clients and handling first-time walk-ins, selecting a visit reason, and adding clients to the live queue."
+---
+
+The check-in flow is how front-desk staff add clients to the live queue at the start of each visit. You can check in a client who already has a record in BridgePoint CRM, or create a walk-in ticket for a first-time visitor so they can be served without a full intake upfront.
+
+To open the check-in flow, navigate to **Queue** in the sidebar and click the **Check In** button in the top-right corner, or go directly to **Queue > Check-In**.
+
+A banner at the top of the check-in screen always shows the current number of clients waiting so you can stay aware of queue volume as you work.
+
+---
+
+## Checking in a returning client
+
+Use this path when the client has visited before and already has a record on file.
+
+<Steps>
+  <Step title="Select 'Returning Client'">
+    On the first screen, click **Returning Client** ("We have their record on file"). This opens the client search screen.
+  </Step>
+  <Step title="Search for the client">
+    Type into the search field to find the client by **name**, **phone number**, or **SSN last 4 digits**. Results appear as you type. You can also search by **date of birth** using the date picker below the main search field.
+
+    Each result shows the client's full name, BP-ID, date of birth, phone number, and their assigned case manager.
+  </Step>
+  <Step title="Select the client">
+    Click the correct result. BridgePoint CRM automatically checks whether this client has a scheduled appointment today. If one is found, it is displayed on the next screen and pre-fills the case manager assignment.
+  </Step>
+  <Step title="Select the reason for visit">
+    Choose the reason that best describes why the client is here today. See [Reasons for visit](#reasons-for-visit) below for the full list.
+
+    If you select **New Application** or **Renewal**, you will be prompted to choose a program on the next screen.
+  </Step>
+  <Step title="Select a program (New Application or Renewal only)">
+    Choose the program the client is applying for or renewing. For returning clients with active enrollments, their current programs are pre-populated as options. You can skip program selection if it is not yet determined.
+  </Step>
+  <Step title="Assign to a case manager (optional)">
+    Select the case manager this client is here to see. If a scheduled appointment was detected, the assigned staff member is pre-selected — you can override it or skip assignment entirely.
+  </Step>
+  <Step title="Review and confirm">
+    A summary screen shows the client's name, BP-ID, date of birth, visit reason, program (if selected), and assignment. If the client has authorization forms expiring soon, a warning is shown so the case manager can address it during the visit.
+
+    Click **Add to Queue** to complete check-in. The client immediately appears in the **Waiting** section of the live queue.
+  </Step>
+</Steps>
+
+<Tip>
+If the check-in screen shows "No clients found," try searching by phone number or date of birth instead of name. If the client still cannot be found, use the **Check in as walk-in instead** option that appears in the no-results state.
+</Tip>
+
+---
+
+## Checking in a walk-in (first-time visitor)
+
+Use this path when the client has never visited before and does not have a record in BridgePoint CRM. A walk-in ticket captures just enough information to get them into the queue — a full intake can be completed during the visit.
+
+<Steps>
+  <Step title="Select 'First Time'">
+    On the first screen, click **First Time** ("Walk-in ticket — no record needed").
+  </Step>
+  <Step title="Enter the visitor's name and optional details">
+    Fill in the visitor's **First Name** and **Last Name** (both required). You can also optionally enter their **Phone** number and preferred **Language**.
+
+    Available language options are: English, Spanish, Creole, Portuguese, French, Arabic, Russian, German, and Other.
+
+    <Note>
+    BridgePoint CRM runs a live duplicate check as you type. If an existing client record closely matches the name or phone number you enter, a confirmation dialog will appear giving you the option to link to that existing record instead of creating a new walk-in ticket.
+    </Note>
+  </Step>
+  <Step title="Select the reason for visit">
+    Choose the reason for the visit. See [Reasons for visit](#reasons-for-visit) below.
+  </Step>
+  <Step title="Select a program (New Application or Renewal only)">
+    If the reason is **New Application** or **Renewal**, select the relevant program. Available programs are: ACA / Health Insurance, Food (SNAP), Cash (TCA), Medicaid, and Multiple / Not Sure.
+  </Step>
+  <Step title="Assign to a case manager (optional)">
+    Optionally assign the entry to a specific case manager.
+  </Step>
+  <Step title="Review and confirm">
+    Review the summary and click **Add to Queue**. The walk-in entry appears in the **Waiting** section with a **WALK-IN** tag in place of a BP-ID.
+  </Step>
+</Steps>
+
+---
+
+## Reasons for visit
+
+When checking in any client, you must select one of the following visit reasons. The reason appears as a color-coded badge on the queue board.
+
+<Tabs>
+  <Tab title="New Application">
+    The client is applying for benefits for the first time. After selecting this reason, you are prompted to choose a program: ACA / Health Insurance, Food (SNAP), Cash (TCA), Medicaid, or Multiple / Not Sure.
+  </Tab>
+  <Tab title="Renewal">
+    The client is renewing an existing benefit enrollment. For clients with an active record, their enrolled programs are shown as renewal options.
+  </Tab>
+  <Tab title="Status Check">
+    The client wants to check on the status of a pending application or existing case.
+  </Tab>
+  <Tab title="Document Drop-Off">
+    The client is dropping off documents for an active case.
+  </Tab>
+  <Tab title="Other">
+    Any reason not covered by the above options. Selecting **Other** reveals a free-text field (up to 200 characters) where you can describe the visit reason. The description appears on the queue entry as a tooltip and in the notes.
+  </Tab>
+</Tabs>
+
+<Note>
+**ACA Enrollment** is available as a reason when scheduling appointments (it appears in the appointment reason list), but the check-in flow uses **New Application** with the ACA / Health Insurance program selection for walk-in ACA visits.
+</Note>
+
+---
+
+## What happens after check-in
+
+Once you click **Add to Queue**, the client's entry is created and they immediately appear at the bottom of the **Waiting** section on the live queue board. All logged-in staff see the update in real time without refreshing.
+
+The success screen shows:
+- The client's name and walk-in status (if applicable)
+- The visit reason and program
+- How many clients are currently waiting
+
+From here you can click **Check In Another** to start a new check-in, or **View Queue** to return to the queue board.
+
+---
+
+## Walk-in clients: what happens when they're called
+
+When a case manager clicks **Call Next** on a walk-in entry, they are taken directly to the **new client intake form** if the reason is **New Application** — the form is pre-filled with the walk-in's name and phone number. For other reasons, the case manager sees a menu with two options:
+
+<CardGroup cols={2}>
+  <Card title="Start intake" icon="file-plus">
+    Opens the new-client intake form pre-filled with the walk-in's details. Completing intake creates a full client record and links it to the queue entry.
+  </Card>
+  <Card title="Find client record" icon="magnifying-glass">
+    Returns to the check-in search screen so you can locate an existing client record and link it to the walk-in entry.
+  </Card>
+</CardGroup>

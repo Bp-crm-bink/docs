@@ -1,0 +1,111 @@
+---
+title: "Cases & Programs: How BridgePoint Tracks Benefits"
+sidebarTitle: "Overview"
+description: "Understand what cases are in BridgePoint CRM, which programs are supported, and how case statuses track a client's progress from application to renewal."
+---
+
+A case in BridgePoint CRM represents a single program application for a single client. Each time a client applies for a benefit program — Medicaid, food assistance, cash assistance, or health coverage — a new case is opened to track that application through every stage, from initial submission to enrollment or denial, and through any subsequent renewals.
+
+## Supported programs
+
+BridgePoint CRM manages applications across seven benefit programs.
+
+<CardGroup cols={2}>
+  <Card title="Medicaid" icon="heart-pulse">
+    State-administered health coverage. Tracked with DCF status and renewal date; certain DCF outcomes automatically trigger an ACA pipeline referral.
+  </Card>
+  <Card title="Food (SNAP)" icon="wheat">
+    Supplemental Nutrition Assistance Program. Cases use a simplified status workflow: Pending Status, Enrolled, Denied, or Ineligible.
+  </Card>
+  <Card title="Cash (TCA)" icon="money-bill">
+    Temporary Cash Assistance. Like SNAP, TCA cases use the simplified four-status workflow rather than DCF status tracking.
+  </Card>
+  <Card title="Obamacare / ACA" icon="shield-heart">
+    Marketplace health and dental coverage. ACA cases carry full plan details — carrier, metal tier, premiums, member IDs, and effective dates.
+  </Card>
+  <Card title="Pregnancy" icon="baby">
+    Pregnancy-related Medicaid coverage. A Pregnancy Open or Pregnancy Closed DCF outcome can refer the client to the ACA marketplace pipeline.
+  </Card>
+  <Card title="Refugee Medical Assistance" icon="globe">
+    Medical coverage for qualifying refugees. A Refugee Medical Assistance DCF outcome triggers an automatic ACA pipeline referral.
+  </Card>
+  <Card title="Medicare" icon="stethoscope">
+    Federal health coverage for eligible individuals. Tracked as a standalone case alongside any other active programs.
+  </Card>
+</CardGroup>
+
+<Note>
+  ACA cases are managed through the **Pipeline** module rather than the main Cases board. The Cases board displays Medicaid, SNAP, and TCA cases only.
+</Note>
+
+## Case statuses
+
+Every case carries a status that reflects where the application currently stands. The status updates automatically when you record a DCF status change, or you can set it directly for SNAP and TCA cases.
+
+<Accordion title="Pending Review">
+  The case has been opened but no action has been taken yet. This is the default status for all newly created cases and for SNAP/TCA cases that have not yet been updated.
+</Accordion>
+
+<Accordion title="In Review">
+  The application has been submitted and is being reviewed — either internally or by DCF. For Medicaid cases, several DCF status outcomes (Medically Needy, Denied, Closed, Pregnancy Open/Closed, Refugee Medical Assistance) move the case into In Review while the client is evaluated for ACA eligibility.
+</Accordion>
+
+<Accordion title="Enrolled">
+  The client has been approved and is actively enrolled in the program. For Medicaid cases, this status is set automatically when you record a DCF status of **Enrolled**.
+</Accordion>
+
+<Accordion title="Renewal Due">
+  The case has an upcoming or past renewal date. Cases in this status appear in the **Renewal Due** tab on the Cases board and in renewal reminders.
+</Accordion>
+
+<Accordion title="Returned">
+  The case was sent back from the sales or processing team with a note. A banner on the case detail page displays the return reason. Returned cases are highlighted in the Cases board.
+</Accordion>
+
+<Accordion title="ACA Pipeline">
+  The client has been referred to the Obamacare / ACA marketplace and a pipeline entry has been created. This status is set automatically after you confirm the ACA pipeline referral following a qualifying DCF status change.
+</Accordion>
+
+<Accordion title="Denied">
+  The application was denied. For SNAP and TCA cases, you can set this status directly from the case workbench.
+</Accordion>
+
+<Accordion title="Ineligible">
+  The client was found ineligible for the program. For Medicaid, this maps to a DCF status of **Ineligible**. For SNAP and TCA, you can set it directly.
+</Accordion>
+
+<Accordion title="Closed">
+  The case is no longer active. For Medicaid, this corresponds to a DCF status of **Closed**.
+</Accordion>
+
+## How cases relate to clients
+
+A single client can have multiple cases open at the same time — one per program. For example, a client may simultaneously have an active Medicaid case, a SNAP case, and an ACA case.
+
+When you view a case detail page, the left panel shows an **Also Filed** section listing any other cases open for the same client, so you can quickly navigate between programs without returning to the client profile.
+
+Case numbers follow the format `BP-[CLIENT ID]-[PROGRAM CODE]-[CYCLE NUMBER]` (for example, `BP-10001-MCD-0001`). Each new renewal cycle increments the cycle number and generates a new case number.
+
+## Navigating to the Cases list
+
+<Steps>
+  <Step title="Open the main navigation">
+    Select **Cases** from the left sidebar. The Cases board loads with a summary bar showing counts for Pending Review, In Review, Returned, Reminders Due, and Renewal Due.
+  </Step>
+  <Step title="Filter by program">
+    Use the **program dropdown** to narrow the list to Medicaid, Food (SNAP), or Cash (TCA). The board defaults to Medicaid.
+  </Step>
+  <Step title="Filter by status tab">
+    Select a tab — All, Pending Review, In Review, Enrolled, Renewal Due, Returned, or Reminder Due — to focus on a specific stage of the workflow.
+  </Step>
+  <Step title="Search">
+    Type in the search box to find a case by client name, BP ID, BP Case number, or DCF case number. Results update as you type.
+  </Step>
+  <Step title="Open a case">
+    Click any row in the table to open the case detail page for that case.
+  </Step>
+</Steps>
+
+<Tip>
+  When viewing SNAP or TCA cases, check the **Include clients who also have Medicaid** checkbox to see all clients regardless of whether they also have a Medicaid case. By default, clients with an active Medicaid case are excluded from the SNAP and TCA views to reduce duplication.
+</Tip>

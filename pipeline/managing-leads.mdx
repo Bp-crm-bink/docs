@@ -1,0 +1,165 @@
+---
+title: "Filter, Update, and Enroll ACA Pipeline Leads"
+sidebarTitle: "Managing Leads"
+description: "Filter, search, and update ACA Pipeline leads — log contact attempts, set follow-up dates, record enrollment details, and manage lead status from one place."
+---
+
+The Pipeline board gives you full control over every ACA lead your team is working. You can narrow the list to exactly the records you need, open any lead to see its full history, and take action — all without leaving the pipeline view. This page walks through each task in the order you are likely to encounter it.
+
+## Filtering the Lead List
+
+### Filter by status
+
+The status tabs run across the top of the board. Select any tab to show only leads in that stage:
+
+- **All** — shows every active lead (excludes Removed)
+- **Eligible For ACA**
+- **Pending Password Creation**
+- **Ready To Enroll**
+- **Enrolled**
+- **Removed**
+
+Click a tab to switch views instantly. The record count at the bottom of the table updates to reflect the filtered results.
+
+### Search by name or Client ID
+
+Use the search box in the filter bar to find a specific client. You can type any part of the client's name or their BP-ID (the unique BridgePoint identifier shown in monospace under the client's name in each row). Results filter as you type.
+
+### Filter by assigned agent
+
+If your office has multiple agents working the pipeline, use the **All agents** dropdown to show only leads assigned to a specific person. The dropdown lists every agent who currently has at least one lead assigned to them.
+
+### Filter by trigger date range
+
+Use the **Triggered** date range inputs to limit results to leads that entered the pipeline within a specific window. Set a start date, an end date, or both. Click **✕ Clear** to remove the date filter.
+
+<Tip>
+Combine filters — for example, select the **Eligible For ACA** tab, choose an agent, and set a date range — to get a precise slice of the pipeline for a check-in or performance review.
+</Tip>
+
+## Reading the Pipeline Table
+
+Each row in the table shows the following columns at a glance:
+
+| Column | What it shows |
+|---|---|
+| **Client** | Full name and BP-ID |
+| **Language** | Client's preferred language |
+| **Trigger** | Color-coded badge for the trigger reason |
+| **Status** | Current pipeline stage badge; enrolled leads also show the monthly premium |
+| **Attempts** | Number of contact attempts logged |
+| **Last Contact** | Date of the most recent contact attempt |
+| **Next Follow-up** | Scheduled date for the next outreach |
+| **Assigned To** | The agent responsible for this lead |
+| **Days In** | Number of days since the lead was added |
+
+### Color-coded warnings
+
+BridgePoint highlights values that need your attention:
+
+<CardGroup cols={2}>
+  <Card title="Red — Overdue Follow-up" icon="flag">
+    The **Next Follow-up** date is shown in red with a flag (⚑) when that date has already passed. Prioritize these leads for immediate outreach.
+  </Card>
+  <Card title="Amber — Stale Last Contact" icon="clock">
+    The **Last Contact** date turns amber when more than 7 days have passed since the last recorded contact attempt.
+  </Card>
+  <Card title="Red — High Contact Attempts" icon="phone-xmark">
+    The **Attempts** count turns red when it reaches 5 or more, signaling that this client may be difficult to reach and may need a different approach.
+  </Card>
+  <Card title="Red — Long Days In Pipeline" icon="calendar-xmark">
+    The **Days In** count turns red when a lead has been in the pipeline for more than 30 days without reaching a terminal status.
+  </Card>
+</CardGroup>
+
+## Opening a Lead
+
+Click any row in the table to open the full lead detail page. The detail page shows a two-column layout: client information and program enrollments on the left, and the activity feed with editable fields on the right.
+
+## Updating a Lead
+
+### Change pipeline status
+
+From the lead detail page, use the **Update Status…** dropdown in the action bar at the top to move the lead to any of the four active stages:
+
+- Eligible For ACA
+- Pending Password Creation
+- Ready To Enroll
+- Enrolled (opens the enrollment form — see below)
+
+A confirmation dialog appears before the change is saved. Confirm to proceed.
+
+<Note>
+Moving a lead to **Ready To Enroll** automatically sends a notification to alert the responsible team member that the client is ready for their enrollment appointment.
+</Note>
+
+### Log a contact attempt
+
+<Steps>
+  <Step title="Open the Log Contact modal">
+    Click **Log Contact Attempt** in the action bar at the top of the lead detail page.
+  </Step>
+  <Step title="Select a contact status">
+    Choose the outcome from the dropdown: **Left Voicemail**, **Spoke with Client**, **No Answer**, **Not Interested**, or **Unreachable**.
+  </Step>
+  <Step title="Add notes">
+    Describe what happened during the contact attempt. This field is required.
+  </Step>
+  <Step title="Schedule a follow-up (optional)">
+    Pick a date in the **Schedule Follow Up** field to set the next follow-up date at the same time you log the attempt.
+  </Step>
+  <Step title="Save">
+    Click **Log Attempt**. The contact attempts counter increments, the last contact date updates to today, and the new entry appears in the Contact Log card.
+  </Step>
+</Steps>
+
+### Set the next follow-up date
+
+In the **Next Follow-up** card on the right side of the lead detail, select a date using the date picker. The date saves automatically when you make a selection. If you set a follow-up date while logging a contact attempt, that value will appear here as well.
+
+### Assign to a case manager
+
+In the **Assigned Agent** card, type the agent's email address and click elsewhere to save. The field saves on blur. The assigned agent's name then appears in the **Assigned To** column on the main pipeline board.
+
+<Note>
+Only users with Manager, Admin, or Owner access can edit the assigned agent field.
+</Note>
+
+### Record enrollment details
+
+When a client is ready to be marked as enrolled, use the **Enrolled** button in the action bar (or select **Enrolled** from the Update Status dropdown). A modal prompts you to fill in:
+
+<Steps>
+  <Step title="Select a plan type">
+    Choose from **Bronze**, **Silver**, **Gold**, **Platinum**, or **Catastrophic**.
+  </Step>
+  <Step title="Enter carrier name">
+    Type the insurance carrier (for example, *Florida Blue*).
+  </Step>
+  <Step title="Set the effective date">
+    Enter the date the coverage begins.
+  </Step>
+  <Step title="Enter the monthly premium">
+    Type the dollar amount of the client's monthly premium. This value feeds the **Monthly Premium** stat on the admin dashboard.
+  </Step>
+  <Step title="Set a renewal date (optional)">
+    Enter the program renewal date if known.
+  </Step>
+  <Step title="Confirm enrollment">
+    Click **Confirm Enrollment**. The lead moves to **Enrolled** status and the enrolled date is set to today.
+  </Step>
+</Steps>
+
+Once enrolled, the lead detail page shows a green **Enrollment Details** card with the plan type, carrier, effective date, premium, the staff member who enrolled the client, and the enrollment date.
+
+## Removing a Lead from the Pipeline
+
+To remove a lead, open the lead detail page and select **Remove from Pipeline** from the **Update Status…** dropdown. Confirm the action in the dialog that appears.
+
+<Warning>
+Removal is reversible — you can re-add a client to the pipeline later — but the lead will be hidden from the **All** tab immediately. It remains visible under the **Removed** status tab.
+</Warning>
+
+## Adding Notes
+
+Use the **Notes** card on the right side of the lead detail page to leave free-text notes about the client. Notes are shared with the client's full profile, so anything you add here is also visible to case managers on the client record. Press **⌘↵** (Mac) or **Ctrl↵** (Windows) to save a note quickly, or click **Save Note**.

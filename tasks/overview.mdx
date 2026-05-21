@@ -1,0 +1,217 @@
+---
+title: "Tasks: Manage Action Items Across Your Office"
+sidebarTitle: "Tasks"
+description: "Create, assign, and track action items linked to clients or standalone. Manage priorities, due dates, and statuses to keep your team on top of every follow-up."
+---
+
+Tasks in BridgePoint CRM are action items that help your team track follow-ups, outstanding work, and time-sensitive responsibilities. You can link a task to a specific client record or create standalone tasks for internal work that is not tied to any one client. Every task can be assigned to a staff member, given a priority level, and tracked through to completion.
+
+## Task fields
+
+Each task captures the following information:
+
+| Field | Description |
+|---|---|
+| **Title** | A short, descriptive name for the action item (required). |
+| **Description** | Optional detail or context for the task. |
+| **Priority** | How urgently the task needs attention. |
+| **Due Date** | The date by which the task should be completed. |
+| **Reminder** | An optional date and time to be notified about the task. |
+| **Assigned To** | The staff member responsible for completing the task. |
+| **Linked Client** | An optional link to a client record in BridgePoint CRM. |
+
+### Priority levels
+
+<CardGroup cols={2}>
+  <Card title="Urgent" icon="circle-exclamation">
+    Highest priority. Shown with a red badge and a filled dot indicator. Urgent tasks appear at the top of every task list.
+  </Card>
+  <Card title="High" icon="arrow-up">
+    High-importance tasks that need attention soon. Displayed with an orange badge.
+  </Card>
+  <Card title="Normal" icon="minus">
+    Standard priority for routine follow-up. Displayed with a blue badge. This is the default when creating a new task.
+  </Card>
+  <Card title="Low" icon="arrow-down">
+    Low-urgency items that can be addressed when bandwidth allows. Displayed with a gray badge.
+  </Card>
+</CardGroup>
+
+### Task statuses
+
+<Accordion title="Open">
+  The task has been created but work has not yet started. Tasks begin in the **Open** state by default.
+</Accordion>
+
+<Accordion title="In Progress">
+  A staff member is actively working on the task.
+</Accordion>
+
+<Accordion title="Pending">
+  The task is waiting on something external — for example, a client response or a third-party action — before it can move forward.
+</Accordion>
+
+<Accordion title="Deferred">
+  The task has been intentionally postponed. It remains visible in active views and can be moved back to any other status at any time.
+</Accordion>
+
+<Accordion title="Done">
+  The task is complete. Marking a task as **Done** requires you to enter a resolution comment explaining how the task was resolved. Done tasks move to the **Done** tab and no longer appear in active views.
+</Accordion>
+
+---
+
+## How to create a task
+
+You can create a task from two places: the Tasks page (for general or unlinked tasks) or directly from a client profile (which pre-fills the client link).
+
+<Tabs>
+  <Tab title="From the Tasks page">
+    <Steps>
+      <Step title="Open the Tasks page">
+        Select **Tasks** from the main navigation.
+      </Step>
+      <Step title="Click New Task">
+        Click the **New Task** button in the upper-right corner of the page.
+      </Step>
+      <Step title="Fill in the task details">
+        Enter a title, optional description, priority, due date, and an optional reminder time. Select a staff member from the **Assign To** dropdown, or leave the task unassigned.
+      </Step>
+      <Step title="Optionally link to a client">
+        In the **Link to Client** field, type a client's name to search and select them. You can clear this selection at any time before saving.
+      </Step>
+      <Step title="Create the task">
+        Click **Create Task**. The task appears immediately in the task list.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="From a client profile">
+    <Steps>
+      <Step title="Open the client record">
+        Navigate to the client you want to associate the task with.
+      </Step>
+      <Step title="Create a task from the client">
+        Find the Tasks section on the client profile and use the option to add a new task. The client is pre-filled automatically.
+      </Step>
+      <Step title="Complete and save">
+        Fill in the remaining fields and click **Create Task**.
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+---
+
+## Viewing your tasks
+
+<CardGroup cols={2}>
+  <Card title="My Open Tasks (dashboard)" icon="gauge">
+    The dashboard shows a **My Open Tasks** widget with your top five upcoming tasks ordered by due date. Tasks with no due date appear after dated tasks.
+  </Card>
+  <Card title="Tasks page (full list)" icon="list-check">
+    The Tasks page shows all tasks for your office, organized into tabs for quick filtering.
+  </Card>
+</CardGroup>
+
+### Tasks page tabs
+
+| Tab | What it shows |
+|---|---|
+| **My Tasks** | Tasks assigned to you that are not yet Done or archived. A badge shows your total open count. |
+| **All Office** | All active, non-archived tasks for your office across every staff member. |
+| **Unassigned** | Active tasks with no assigned staff member. |
+| **Done** | Tasks that have been marked as Done but have not been archived. |
+| **Archived** | Tasks that have been archived (visible to managers and admins only). |
+
+<Note>
+  Tasks are sorted by priority — **Urgent** tasks always appear first — and then by creation date within each priority level. Due dates that have passed are highlighted in red; due dates within the next 24 hours appear in amber.
+</Note>
+
+---
+
+## How to filter tasks
+
+On the Tasks page, click any of the tabs described above to filter the list. The **My Tasks** tab is selected by default when you open the page.
+
+To open a task and see its full detail — including description, comments, client link, and management options — click anywhere on the task row. A detail panel slides in from the right side of the screen.
+
+---
+
+## How to update a task status
+
+<Steps>
+  <Step title="Open the task">
+    Click the task row to open the detail panel.
+  </Step>
+  <Step title="Change the status">
+    Use the status dropdown in the detail panel to select **Open**, **In Progress**, **Pending**, or **Deferred**.
+  </Step>
+  <Step title="Save">
+    The status updates immediately when you choose a new value. No separate save step is required.
+  </Step>
+</Steps>
+
+---
+
+## How to mark a task as Done
+
+Marking a task Done requires a resolution comment so your team has a record of what was accomplished.
+
+<Steps>
+  <Step title="Open the task detail panel">
+    Click the task row in the task list.
+  </Step>
+  <Step title="Select Done from the status dropdown">
+    Choose **Mark as Done…** from the status dropdown. A confirmation dialog appears.
+  </Step>
+  <Step title="Write a resolution comment">
+    Describe how the task was resolved in the **Resolution Comment** field. This comment is required.
+  </Step>
+  <Step title="Confirm">
+    Click **Mark Done**. The task moves to the **Done** tab and a resolution comment is saved to the task's comment history.
+  </Step>
+</Steps>
+
+<Warning>
+  Once a task is marked Done, you cannot update its status from the detail panel. If you need to reopen a task, contact your office manager.
+</Warning>
+
+---
+
+## How to reassign a task
+
+Staff members with manager or admin permissions can reassign a task to a different staff member from within the task detail panel.
+
+<Steps>
+  <Step title="Open the task detail panel">
+    Click the task row to open the panel.
+  </Step>
+  <Step title="Select the new assignee">
+    Use the reassign dropdown (visible to managers and admins) to choose a different staff member.
+  </Step>
+  <Step title="Click Reassign">
+    Click the **Reassign** button to save the change.
+  </Step>
+</Steps>
+
+---
+
+## Adding comments to a task
+
+You can leave comments on any active (non-archived) task to communicate progress updates or additional context to your team.
+
+<Steps>
+  <Step title="Open the task detail panel">
+    Click the task row to open the panel.
+  </Step>
+  <Step title="Write your comment">
+    Type in the comment field at the bottom of the panel.
+  </Step>
+  <Step title="Post the comment">
+    Click **Post Comment**. All comments are visible to everyone who can view the task.
+  </Step>
+</Steps>
+
+<Tip>
+  Resolution comments — added when marking a task Done — are highlighted in green to make them easy to identify in the comment thread.
+</Tip>

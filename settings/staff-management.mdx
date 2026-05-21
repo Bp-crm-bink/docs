@@ -1,0 +1,167 @@
+---
+title: "Staff Management, Offices & Audit Logs"
+sidebarTitle: "Staff Management"
+description: "Invite staff, assign roles and offices, reset passwords, archive accounts, manage office details, and review audit logs from the Admin tab in Settings."
+---
+
+The Admin tab in Settings gives Managers, Admins, and Owners full control over who has access to BridgePoint CRM and how your organization is structured. From here you can invite new staff, update roles and office assignments, reset passwords, deactivate accounts, manage offices, and review the audit log.
+
+<Warning>
+  The Admin tab is only visible to users with the **Manager**, **Admin**, or **Owner** role. If you do not see this tab, your role does not include admin access.
+</Warning>
+
+---
+
+## Staff Roles
+
+Every staff member in BridgePoint CRM is assigned one of the following roles. Roles control what each person can see and do across the platform.
+
+| Role | Description |
+|------|-------------|
+| **Owner** | Full access to all features, including organization-level admin and security logs. |
+| **Admin** | Full access equivalent to Owner. |
+| **Manager** | Most access — can manage staff roles, invite staff, manage offices, and view pipeline details. Cannot access organization-level admin or security logs. |
+| **Case Manager** | Client and case work, program access, documents, and queue. Cannot manage staff roles or offices. |
+| **Front Desk** | Queue and check-in only. Cannot add or edit clients, access the pipeline, or manage staff. |
+
+<Tip>
+  Assign the least-privileged role that fits each person's responsibilities. Use **Front Desk** for reception staff who only need to manage the walk-in queue.
+</Tip>
+
+---
+
+## Inviting a New Staff Member
+
+<Steps>
+  <Step title="Open the Admin tab">
+    Go to **Settings** and click the **Admin** tab.
+  </Step>
+  <Step title="Click Invite Staff">
+    In the **Users** section, click the **+ Invite Staff** button in the top-right corner of the table.
+  </Step>
+  <Step title="Fill in the invitation form">
+    Enter the staff member's **First Name**, **Last Name**, and **Email address**. Then select their **Role** and the **Office** they belong to.
+
+    <Note>
+      When inviting via this form, you can assign the **Manager**, **Case Manager**, or **Front Desk** role. Owner and Admin roles must be assigned after the fact by editing the staff member's record.
+    </Note>
+  </Step>
+  <Step title="Send the invite">
+    Click **Send Invite**. The staff member receives an email with a link to set their password and complete account setup. Their status will show as **Inactive** until they finish setup.
+  </Step>
+</Steps>
+
+---
+
+## Changing a Staff Member's Role or Office
+
+<Steps>
+  <Step title="Find the staff member">
+    In the **Users** table under the Admin tab, locate the staff member you want to update.
+  </Step>
+  <Step title="Open the edit panel">
+    Click the **Edit** icon (pencil) in the Actions column for that row.
+  </Step>
+  <Step title="Change the role">
+    Select the new role from the **Role** dropdown, then click **Save Role**. The change takes effect immediately.
+  </Step>
+</Steps>
+
+<Note>
+  Office assignment is set at invite time. To move a staff member to a different office after they have been created, contact your system administrator.
+</Note>
+
+---
+
+## Resetting a Staff Member's Password
+
+<Steps>
+  <Step title="Open the edit panel">
+    Click the **Edit** icon next to the staff member in the Users table.
+  </Step>
+  <Step title="Enter a new password">
+    In the **Reset Password** field, type a new password. Passwords must be at least 12 characters.
+  </Step>
+  <Step title="Apply the reset">
+    Click **Reset**. The staff member must use this new password on their next login.
+  </Step>
+</Steps>
+
+<Warning>
+  Share the new password securely with the staff member. They will not receive an automated email notification of this change.
+</Warning>
+
+---
+
+## Archiving (Deactivating) a Staff Member
+
+Archiving a staff member disables their account so they cannot sign in. All their work, notes, and history are preserved.
+
+<Steps>
+  <Step title="Find the staff member">
+    Locate the active staff member in the Users table.
+  </Step>
+  <Step title="Click the deactivate button">
+    Click the **Deactivate** icon (circle with a slash) in the Actions column. A confirmation dialog appears.
+  </Step>
+  <Step title="Confirm deactivation">
+    Click **Yes, Deactivate**. The staff member's status changes to **Inactive** and they are immediately locked out.
+  </Step>
+</Steps>
+
+<Note>
+  Deactivation is not permanent deletion. All records associated with the archived staff member remain intact and visible in the system.
+</Note>
+
+---
+
+## Office Management
+
+### Creating a new office
+
+<Steps>
+  <Step title="Go to the Admin tab">
+    Open **Settings → Admin**.
+  </Step>
+  <Step title="Find the Offices section">
+    Scroll down to the **Offices** card.
+  </Step>
+  <Step title="Add a new office">
+    Click **+ Add Office** and fill in the office details: name, city, state, address, and phone number.
+  </Step>
+  <Step title="Save">
+    Click **Save**. The new office is immediately available to assign to staff members.
+  </Step>
+</Steps>
+
+### Editing an existing office
+
+Click the **Edit** icon next to any office in the Offices list. Update the name, city, state, address, or phone number, then click **Save Changes**.
+
+---
+
+## Audit Log
+
+BridgePoint CRM records an entry in the audit log for every significant action taken in the system — including client record creates and updates, case status changes, document uploads, login events, and admin actions such as staff invitations and role changes.
+
+### Viewing today's event count
+
+The **Security & Audit Logs** card at the bottom of the Admin tab shows the number of events logged today at a glance.
+
+### Viewing the full audit log
+
+<Steps>
+  <Step title="Open the Admin tab">
+    Go to **Settings → Admin** and scroll to the **Security & Audit Logs** card.
+  </Step>
+  <Step title="Click View Full Audit Log">
+    Click the **View Full Audit Log** button. This opens the dedicated audit log viewer.
+  </Step>
+  <Step title="Browse and filter entries">
+    The log viewer shows each entry's timestamp, actor (staff name and email), action type, affected record, and a plain-English description of what happened. Use the available filters to narrow results by date or action type.
+  </Step>
+</Steps>
+
+<Note>
+  The full audit log is only accessible to **Owner** and **Admin** roles. Managers can see today's event count on the Admin tab but cannot open the full log viewer.
+</Note>

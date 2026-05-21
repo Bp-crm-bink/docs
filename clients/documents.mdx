@@ -1,0 +1,118 @@
+---
+title: "Documents: Uploading and Managing Client Files"
+sidebarTitle: "Documents"
+description: "Upload, view, download, and archive files on a client's Documents tab. BridgePoint accepts PDFs and images up to 20 MB, organized into five document categories."
+---
+
+The Documents tab on a client profile stores every file associated with that client — scanned IDs, proof of income, program approval letters, intake forms, and anything else your agency needs to keep on record. Files are stored securely and accessed through short-lived signed URLs, so documents are never publicly accessible.
+
+## Document Categories
+
+BridgePoint organizes documents into five categories. When you upload a file, you select its document type, which determines the category automatically.
+
+<CardGroup cols={2}>
+  <Card title="Intake Forms" icon="pen-to-square">
+    Forms required or collected at intake, including the Release Authorization Form, Medicaid Intake Form, Income Attestation, ACA Pre-Qualification Form, and scanned paper copies of digital acknowledgements.
+  </Card>
+  <Card title="Identity & Residency" icon="id-card">
+    Documents that establish who the client is and where they live: Photo ID (driver's license or passport), Social Security card, birth certificate, proof of address, and immigration paperwork.
+  </Card>
+  <Card title="Program Documents" icon="file-certificate">
+    Program-specific records such as MyACCESS Status Update Notices, Medicaid cards, SNAP and TCA approval letters, ACA insurance cards, and denial letters.
+  </Card>
+  <Card title="Income & Financials" icon="money-bill">
+    Financial verification documents including pay stubs, Social Security award letters, bank statements, and tax returns.
+  </Card>
+  <Card title="Other" icon="folder-open">
+    Any document that does not fit the categories above. You can give these a custom title when uploading.
+  </Card>
+</CardGroup>
+
+## Supported File Types and Size Limit
+
+BridgePoint accepts the following file formats:
+
+- **PDF** (`.pdf`)
+- **JPEG** (`.jpg`, `.jpeg`)
+- **PNG** (`.png`)
+- **WebP** (`.webp`)
+
+The maximum file size is **20 MB**. If your file exceeds this limit, compress it or scan it at a lower resolution before uploading.
+
+<Warning>
+  Files outside these formats — such as Word documents, Excel spreadsheets, or HEIC images — are not accepted. Convert them to PDF or a supported image format before uploading.
+</Warning>
+
+## Uploading a Document
+
+<Steps>
+  <Step title="Open the client profile">
+    Navigate to the client's profile and click the **Documents** tab.
+  </Step>
+  <Step title="Click Upload Document">
+    Click the **Upload Document** button to open the upload panel.
+  </Step>
+  <Step title="Select the document type">
+    Choose the document type from the dropdown. The available types are grouped by category (Intake Forms, Identity & Residency, Program Documents, Income & Financials, and Other).
+
+    If you select **Other Document**, an additional **Custom Title** field appears. Enter a descriptive name so staff can identify the file later.
+  </Step>
+  <Step title="Choose the file">
+    Click **Choose File** or drag and drop the file onto the upload area. The file must be a PDF, JPEG, PNG, or WebP and no larger than 20 MB.
+  </Step>
+  <Step title="Confirm the upload">
+    Click **Upload**. BridgePoint validates the file type and size, stores the file securely, and creates a document record. The file appears in the Documents tab immediately with a generated name that includes the document type and upload date.
+  </Step>
+</Steps>
+
+<Note>
+  Uploaded documents are named automatically using the format `[Document Type] — [Month Day, Year]`. For **Other** documents, the custom title you provide is used instead. MyACCESS Status Update Notices are numbered sequentially across all uploads for that client (e.g., `MyACCESS Status Update Notice #3 — May 17, 2026`).
+</Note>
+
+## Viewing and Downloading a Document
+
+Click any document in the list to open or download it. BridgePoint generates a **signed URL** that is valid for **1 hour**. After that time, the link expires and a new one is generated automatically the next time you click the document.
+
+<Tabs>
+  <Tab title="View in browser">
+    Click the document name or the preview icon. PDFs open in your browser's built-in viewer. Images display inline.
+  </Tab>
+  <Tab title="Download">
+    Click the download icon next to the document. The file is downloaded to your device using its original storage name.
+  </Tab>
+</Tabs>
+
+## Archiving a Document
+
+Archiving removes a document from the active Documents tab without permanently deleting it. Use archiving when a file is outdated, uploaded in error, or superseded by a newer version.
+
+<Steps>
+  <Step title="Locate the document">
+    Find the document in the Documents tab.
+  </Step>
+  <Step title="Open the document menu">
+    Click the **⋯** (more options) button on the document row.
+  </Step>
+  <Step title="Select Archive">
+    Click **Archive**. The document is immediately removed from the active list. The archive timestamp and the email of the staff member who archived it are recorded on the document record.
+  </Step>
+</Steps>
+
+<Note>
+  Archived documents are not deleted from storage. Contact your BridgePoint administrator if you need to restore an archived document.
+</Note>
+
+## Document Checklist at Intake
+
+During intake, BridgePoint tracks which required documents have been collected based on the programs the client applied for. The following documents are flagged as intake-required:
+
+- **Release Authorization Form** — required for all clients
+- **Medicaid Intake Form** — required for all clients
+- **Income Attestation Form** — required when any program is selected
+- **ACA Pre-Qualification Form** — required when Medicaid or ACA is selected
+
+Any required document that has not yet been uploaded appears as missing in the post-intake checklist on the Documents tab.
+
+<Tip>
+  If you processed a client using the legacy paper bypass during intake, upload scanned copies of each signed paper form using the corresponding **Paper Scan** document types (e.g., **Marketplace Release (Paper Scan)**) so the intake checklist reflects the documents on file.
+</Tip>

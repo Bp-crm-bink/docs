@@ -1,0 +1,164 @@
+---
+title: "Client Profile: Viewing and Managing a Client"
+sidebarTitle: "Client Profile"
+description: "The client profile page brings together a client's cases, household, documents, notes, tasks, income, and forms in a single tabbed view you can act on directly."
+---
+
+The client profile page is your primary workspace for an individual client. You reach it by clicking any row in the Clients list or by searching for a client by name or BP-ID. The page header shows the client's full name as a breadcrumb trail (Clients › Name) and stays visible as you move between tabs.
+
+## Profile Tabs
+
+The profile is divided into tabs, each focused on a different aspect of the client's record. Click any tab heading to switch to it.
+
+<Tabs>
+  <Tab title="Overview">
+    The Overview tab displays the client's core demographic information and a summary of their packet status. From here you can edit all personal details and view or update fields such as:
+
+    - Full name, date of birth, phone, and email
+    - Mailing address (street, city, state, ZIP)
+    - Language preference and marital status
+    - US citizenship, country of birth, and immigration status
+    - Disability flag and health insurance details
+    - Packet status (Draft, In Progress, Complete, or Submitted to DCF)
+
+    **Editing basic info:** Click the **Edit** button next to any field group to enter edit mode. Make your changes, then click **Save** to commit them. Changes are applied immediately and logged in the Activity tab.
+  </Tab>
+  <Tab title="Programs">
+    The Programs tab lists every case record associated with the client — one per program enrollment. Each case shows:
+
+    - Program name (Medicaid, SNAP, TCA, ACA, etc.)
+    - Case number and DCF case number
+    - Enrollment status with a color-coded badge
+    - DCF status (for Medicaid cases)
+    - Renewal date and reminder date
+    - Assigned staff member
+
+    **Status badge colors:**
+
+    | Status | Color |
+    |---|---|
+    | Enrolled | Green |
+    | Pending Review / In Review | Amber |
+    | Denied / Closed / Ineligible | Red |
+    | Renewal Due | Purple |
+    | ACA Pipeline | Blue |
+    | Returned | Orange |
+
+    You can update the DCF status, set renewal reminders, and add a new enrollment cycle directly from each case card. To open a detailed case view, click the case card.
+  </Tab>
+  <Tab title="Household">
+    The Household tab lists everyone added as a household member during intake or since. Each member shows their name, relationship, date of birth, sex, US citizen status, and whether they are applying for benefits. You can add new members or edit existing ones from this tab.
+  </Tab>
+  <Tab title="Financials">
+    The Financials tab contains income entries, asset information, and expense details. Income entries show the type (Employment, SSI, SSA, Other), source, and monthly amount. You can add, edit, or remove entries from this tab.
+  </Tab>
+  <Tab title="Documents">
+    The Documents tab shows all files uploaded to the client's record, organized by category. See [Documents](/clients/documents) for full upload and management instructions.
+  </Tab>
+  <Tab title="Activity">
+    The Activity tab is a chronological audit log of every action taken on the client record — edits, status changes, document uploads, note additions, and form signings — with the acting staff member and timestamp for each entry.
+  </Tab>
+  <Tab title="Tasks">
+    The Tasks tab lists all open and completed tasks linked to this client. See [Adding tasks](#adding-a-task) below for how to create a new one.
+  </Tab>
+  <Tab title="Payment Info">
+    The Payment Info tab stores the client's preferred payment methods (check, cash, Zelle, ACH, credit/debit card, etc.) used for any fees or transactions associated with their cases.
+  </Tab>
+  <Tab title="Invoices">
+    The Invoices tab shows any invoices generated for this client, with their status (Draft, Pending, Paid, Overdue, or Cancelled) and outstanding balance.
+  </Tab>
+</Tabs>
+
+## Social Security Number
+
+The SSN is stored encrypted and is never displayed in plain text by default. On the Overview tab, the SSN field shows `•••-••-XXXX` (last four digits only) to all users.
+
+<Warning>
+  Revealing the full SSN requires elevated permissions. If your role does not include SSN access, the reveal button will not appear. Contact your administrator if you need access.
+</Warning>
+
+## Program Enrollment Status Badges
+
+Status badges appear on the Programs tab and in the client list. Each badge reflects the current `status` of that case record:
+
+<AccordionGroup>
+  <Accordion title="Enrolled">
+    The client is actively enrolled in this program. Displayed in green.
+  </Accordion>
+  <Accordion title="Pending Review / In Review">
+    An application has been submitted and is awaiting a decision. Displayed in amber.
+  </Accordion>
+  <Accordion title="Denied / Closed / Ineligible">
+    The case was denied, closed, or the client was determined ineligible. Displayed in red.
+  </Accordion>
+  <Accordion title="Renewal Due">
+    The enrollment is active but a renewal application is required. Displayed in purple.
+  </Accordion>
+  <Accordion title="ACA Pipeline">
+    The client has been referred to the ACA marketplace and is in the pipeline. Displayed in blue.
+  </Accordion>
+  <Accordion title="Returned">
+    Additional information was requested and the case has been returned. Displayed in orange.
+  </Accordion>
+</AccordionGroup>
+
+## Adding a Note
+
+Notes are freeform text entries visible to all staff with access to the client record.
+
+<Steps>
+  <Step title="Go to the Activity tab">
+    Navigate to the **Activity** tab on the client profile.
+  </Step>
+  <Step title="Click Add Note">
+    Click the **Add Note** button at the top of the activity feed.
+  </Step>
+  <Step title="Write and save">
+    Type your note in the text area and click **Save**. The note is timestamped and attributed to your staff account.
+  </Step>
+</Steps>
+
+## Adding a Task
+
+Tasks let you assign follow-up work to yourself or another staff member with an optional due date and priority level.
+
+<Steps>
+  <Step title="Go to the Tasks tab">
+    Navigate to the **Tasks** tab on the client profile.
+  </Step>
+  <Step title="Click New Task">
+    Click the **New Task** button.
+  </Step>
+  <Step title="Fill in task details">
+    Enter a title, optional description, priority (Low, Normal, High, or Urgent), due date, and the staff member to assign it to.
+  </Step>
+  <Step title="Save the task">
+    Click **Save**. The task appears in the Tasks tab and in the assigned staff member's task queue.
+  </Step>
+</Steps>
+
+## Scheduling an Appointment
+
+You can book a follow-up appointment for a client directly from their profile.
+
+<Steps>
+  <Step title="Open the queue or appointment area">
+    From the client profile header, click **Schedule Appointment** (if available) or navigate to the Queue section and create an appointment linked to this client by their BP-ID.
+  </Step>
+  <Step title="Set appointment details">
+    Choose the date, time, reason (New Application, Renewal, Status Check, Document Drop-Off, Follow-Up, or ACA Review), assigned staff member, and any notes.
+  </Step>
+  <Step title="Confirm">
+    Click **Save**. The appointment appears in the Queue and in the client's queue history.
+  </Step>
+</Steps>
+
+## Release of Information Authorizations
+
+The profile displays a **Release Auth** badge showing whether a current authorization is on file and how many days remain until it expires. Authorizations expiring within 15 days show an amber warning. Expired or missing authorizations show in red.
+
+To add a new authorization, go to the **Overview** section and use the release authorization controls to record the authorized person, their relationship to the client, and the expiry date.
+
+## Forms and Acknowledgements
+
+The profile tracks the four intake acknowledgements signed during intake — Marketplace Release, Enrollment & Coverage Disclosure, Income Attestation, and DCF Access Authorization — with their signed timestamps and expiry dates. You can re-collect signatures and view the status of each form here.

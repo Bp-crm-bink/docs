@@ -1,0 +1,123 @@
+---
+title: "Queue Overview: Managing the Live Client Queue"
+sidebarTitle: "Queue Overview"
+description: "Learn how BridgePoint CRM's live queue works, what each section shows, and how case managers use it to serve clients throughout their shift."
+---
+
+The live queue is BridgePoint CRM's real-time view of every client currently in your office — both those being actively served and those still waiting. It gives your entire team a shared, up-to-the-minute picture of the floor so case managers can coordinate, prioritize, and serve clients without confusion.
+
+## How the queue updates
+
+The queue refreshes automatically every 30 seconds and also responds instantly to real-time changes — so when a front-desk staff member checks in a client, that entry appears on the queue board for all logged-in staff without anyone needing to reload the page. A timestamp below the "Live Queue" heading shows when the data was last fetched.
+
+You can also trigger a manual refresh at any time using the **Refresh** button in the top-right corner of the queue page.
+
+## Navigating to the queue
+
+Select **Queue** in the left sidebar. The queue board loads for your office automatically.
+
+## The two queue sections
+
+The board is divided into two sections that reflect where each client is in their visit.
+
+### Currently Servicing
+
+This section lists every client whose status is **In Progress** — meaning a case manager has called them from the waiting list and is actively working with them. Each row shows:
+
+- **Client name** and a link to their client profile
+- **Client ID** (BP-ID) or a **WALK-IN** tag for clients without an existing record
+- **Language** (for walk-in entries)
+- **Reason** badge indicating why the client is visiting
+- **Assigned To** — the case manager serving this client
+- **Time** — how long the client has been in service
+
+From this section you can mark the visit **Complete** or **Return** the client to the waiting list if the case manager needs to pause and pick up another client first.
+
+### Waiting
+
+This section lists every client who has checked in but has not yet been called. Entries are sorted by check-in time — earliest first. Each row shows:
+
+- **Position number** — the client's place in line; the next-up client is highlighted
+- **Client ID** or **WALK-IN** tag
+- **Client name**
+- **Language**
+- **Reason** badge
+- **Appt** — the scheduled appointment time, if the client had a pre-booked appointment
+- **Assign** — a dropdown to assign the entry to a specific case manager before calling them
+- **Wait** — how long the client has been waiting, color-coded by urgency
+
+## Wait time color coding
+
+The wait time displayed in the Waiting section changes color as time passes so staff can quickly spot clients who need attention.
+
+<CardGroup cols={3}>
+  <Card title="Green" icon="circle-check">
+    Waiting less than 15 minutes. No action required.
+  </Card>
+  <Card title="Amber" icon="triangle-exclamation">
+    Waiting 15–30 minutes. Consider prioritizing this client.
+  </Card>
+  <Card title="Red" icon="circle-xmark">
+    Waiting more than 30 minutes. This client should be called next.
+  </Card>
+</CardGroup>
+
+## Actions on waiting entries
+
+<CardGroup cols={2}>
+  <Card title="Call Next" icon="phone">
+    Move the client from Waiting to In Progress and open their client profile (or the intake form for new walk-in applicants).
+  </Card>
+  <Card title="Assign" icon="user">
+    Pre-assign the queue entry to a specific case manager before calling. The assigned name appears on the entry for the whole team to see.
+  </Card>
+</CardGroup>
+
+## Actions on in-progress entries
+
+<CardGroup cols={2}>
+  <Card title="Complete" icon="check">
+    Mark the visit as finished. The entry is removed from the board and logged as complete.
+  </Card>
+  <Card title="Return" icon="arrow-rotate-left">
+    Send the client back to the Waiting section, clearing the assignment. Use this if a case manager needs to step away mid-visit.
+  </Card>
+</CardGroup>
+
+## Walk-in entries
+
+Clients without an existing record are checked in as walk-ins and appear with a **WALK-IN** tag in place of a BP-ID. When you click **Call Next** on a walk-in entry, you can choose to:
+
+- **Start intake** — open the new-client intake form pre-filled with the walk-in's name and phone number.
+- **Find client record** — go back to check-in search to link the entry to an existing client.
+
+<Note>
+Walk-in entries marked **NEW** have no linked client record yet. Completing their intake during the visit will create a full client profile and link it to the queue entry automatically.
+</Note>
+
+## Admin controls
+
+Two additional buttons appear in the top action bar for administrators and managers.
+
+<Accordion title="Clear Stale">
+Marks all open queue entries from **previous days** as Complete. Use this at the start of the day if overnight entries were not closed out properly. You will be prompted to confirm before any changes are made.
+</Accordion>
+
+<Accordion title="Clear Today">
+Marks all of **today's** open queue entries (both Waiting and In Progress) as Complete. Use this at end-of-day to close out the queue. You will be prompted to confirm before any changes are made.
+</Accordion>
+
+<Warning>
+**Clear Today** is irreversible — all open entries for the day will be marked complete immediately. Only use it when the office is closing and all visits are genuinely finished.
+</Warning>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Check In a Client" icon="arrow-right-to-bracket" href="/queue/check-in">
+    Learn how to check in returning clients and handle first-time walk-ins at the front desk.
+  </Card>
+  <Card title="Appointments" icon="calendar" href="/queue/appointments">
+    Schedule future appointments, view today's schedule, and see how booked clients appear in the queue.
+  </Card>
+</CardGroup>

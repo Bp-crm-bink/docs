@@ -1,0 +1,149 @@
+---
+title: "Adding Clients: Creating a New Client Record"
+sidebarTitle: "Adding Clients"
+description: "Learn how to create a new client in BridgePoint CRM, from filling in required personal details to completing intake acknowledgements and getting a BP-ID."
+---
+
+Creating a new client record in BridgePoint captures everything your agency needs to enroll someone in benefits programs — personal information, household composition, income, and signed intake forms. When the record is saved, the system automatically assigns the client a unique BridgePoint ID (BP-ID) that you can use to find and reference them in every part of the platform.
+
+## Starting a New Client
+
+Click the **New Client** button in the top-right corner of the Clients page, or visit `/clients/new` directly. This opens the intake form, organized into numbered sections.
+
+<Tip>
+  If a client has already checked in through the walk-in queue, you can open their queue entry and click **Start Intake** to pre-fill their first name, last name, phone number, and selected program — skipping the manual re-entry of that information.
+</Tip>
+
+## Completing the Intake Form
+
+<Steps>
+  <Step title="Client Information">
+    Fill in the client's personal details. The fields marked with a red asterisk are required before you can submit.
+
+    **Required fields:**
+    - **First Name**
+    - **Last Name**
+    - **Date of Birth**
+    - **At least one program** selected in Section 2
+
+    **Optional but recommended:**
+    - **Phone Number** — formatted automatically as `(305) 555-0100`
+    - **Street Address**, **City**, **State**, **ZIP**
+    - **Email Address**
+    - **DCF Case Number** — enter if one already exists in the state system
+    - **DCF Application Number** — optional; enter if available
+    - **Social Security Number** — required for US citizens; stored encrypted at rest. The last four digits are displayed for quick reference
+    - **Marital Status** — Single, Married, Divorced, or Widow
+    - **Language Preference** — defaults to English; options include Spanish, Haitian Creole, Portuguese, French, and Other
+    - **US Citizen** toggle and, if not a citizen, **Country of Birth** and **Immigration Status**
+    - **Disability** indicator
+
+    <Warning>
+      Social Security Numbers are stored encrypted and are never displayed in plain text by default. Only users with the appropriate permissions can reveal the full SSN on a client's profile. Never enter SSN data into notes or free-text fields.
+    </Warning>
+  </Step>
+
+  <Step title="Benefits Programs">
+    Select every program the client is applying for. You can choose any combination of:
+
+    - **Obamacare / ACA**
+    - **Food (SNAP)**
+    - **Cash (TCA)**
+    - **Medicaid**
+    - **Medicare**
+
+    A case record is created for each selected program when the intake form is submitted.
+
+    <Note>
+      Selecting **Obamacare / ACA** automatically adds the client to the ACA pipeline with the trigger reason "Direct ACA Application."
+    </Note>
+  </Step>
+
+  <Step title="Household Members">
+    Add anyone who lives with the client and may be applying for benefits. For each household member, provide:
+
+    - Full name, relationship, sex, and date of birth
+    - Social Security Number (for US citizens)
+    - Marital status
+    - Whether they want to apply for benefits
+
+    Click **Add Member** to add additional members. Each member's SSN is also stored encrypted.
+  </Step>
+
+  <Step title="Income">
+    Toggle **Has Income** to yes and add one or more income entries. Each entry captures:
+
+    - Income type — Employment, SSI, SSA, or Other
+    - Source or employer name
+    - Monthly amount
+
+    The form calculates an estimated annual income total as you fill in entries.
+  </Step>
+
+  <Step title="Assets">
+    Toggle **Has Assets** to yes to disclose checking or savings accounts and vehicle information, including bank names, balances, car make, year, and monthly payment.
+  </Step>
+
+  <Step title="Expenses">
+    Toggle **Has Expenses** to yes and enter amounts for rent, mortgage, electricity, water, phone bill, and internet.
+  </Step>
+
+  <Step title="Intake Acknowledgements">
+    The client must sign four digital acknowledgement forms before submission:
+
+    - **Marketplace Release**
+    - **Enrollment & Coverage Disclosure**
+    - **Income Attestation**
+    - **DCF Access Authorization**
+
+    Each form is signed in-browser with the client present. The client must also give consent to electronic signing.
+
+    Staff must capture the client's **Government-Issued Photo ID** using the ID capture tool before the form can be submitted.
+
+    <Note>
+      If you are processing a paper-based ("legacy") intake, use the **legacy bypass** option. Paper forms must then be scanned and uploaded to the client's Documents tab manually after the record is created.
+    </Note>
+  </Step>
+</Steps>
+
+## Duplicate Detection
+
+Before you submit, BridgePoint searches for existing clients with the same full name, date of birth, or phone number. If a potential match is found, a warning appears listing the existing records with their BP-IDs. Review these carefully before proceeding — creating a duplicate record causes case and document history to be split across two profiles.
+
+## After Submission
+
+When you click **Submit**, BridgePoint:
+
+1. Creates the client record and assigns a unique **BP-ID** (formatted `BP-XXXXX`).
+2. Creates one case record per selected program.
+3. Saves all signed acknowledgements with timestamps and staff witness information.
+4. Generates the intake packet PDF in the background and attaches it to the client's Documents tab.
+5. Redirects you to a delivery prompt where you can email or print the intake packet for the client.
+
+After dismissing the delivery prompt, you are taken directly to the new client's profile page.
+
+## Required vs. Optional Fields at a Glance
+
+<Accordion title="Required fields">
+  - First Name
+  - Last Name
+  - Date of Birth
+  - At least one program selected
+  - All four intake acknowledgements signed (unless using legacy bypass)
+  - Government-issued ID captured (unless using legacy bypass)
+  - Electronic consent confirmed (unless using legacy bypass)
+</Accordion>
+
+<Accordion title="Optional fields">
+  - Phone Number
+  - Email Address
+  - Mailing Address (street, city, state, ZIP)
+  - DCF Case Number
+  - DCF Application Number
+  - Social Security Number (required for US citizens, not collected for non-citizens)
+  - Marital Status
+  - Language Preference
+  - Country of Birth and Immigration Status (for non-US citizens)
+  - Disability flag
+  - Household members, income entries, assets, and expenses
+</Accordion>

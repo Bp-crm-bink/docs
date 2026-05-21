@@ -1,0 +1,154 @@
+---
+title: "Invoices: Create and Track Client Billing Records"
+sidebarTitle: "Invoices"
+description: "Create invoices linked to client records, add itemized services, track payment status, and generate downloadable PDFs — all from within BridgePoint CRM."
+---
+
+Invoices in BridgePoint CRM let you create and manage billing records for the services your office provides. Each invoice can be linked to a client record, assigned to a staff member, itemized with individual service line items, and exported as a PDF. Invoice numbers are generated automatically so you always have a consistent, sequential reference for every billing record.
+
+## Invoice fields
+
+| Field | Description |
+|---|---|
+| **Invoice Number** | Auto-generated when you create the invoice (e.g. `INV-0042`). You cannot edit this value. |
+| **Invoice Date** | The date the invoice is issued. Defaults to today. |
+| **Due Date** | The date payment is expected. |
+| **Status** | The current state of the invoice (see [Invoice statuses](#invoice-statuses) below). |
+| **Contact Name** | The name of the person being billed. |
+| **Opportunity Name** | An optional label for the service opportunity (e.g. "ACA Enrollment Q1"). |
+| **Assigned To** | The staff member responsible for this invoice. |
+| **Billing Address** | Street, city, state, and ZIP for the billing contact. Pre-filled from the client record when available. |
+| **Line Items** | Individual services with item name, quantity, unit price, and calculated line total. |
+| **Adjustment** | An optional amount to add to or deduct from the item subtotal, with an optional note. |
+| **Amount Received** | Payments already collected against this invoice. |
+| **Terms & Conditions** | Payment terms that appear on the invoice PDF. |
+| **Linked Client** | The client record this invoice is associated with. |
+
+---
+
+## Invoice statuses
+
+<CardGroup cols={2}>
+  <Card title="Draft" icon="pen">
+    The invoice has been created but has not yet been sent or finalized. Use this status while you are still editing the invoice.
+  </Card>
+  <Card title="Pending" icon="clock">
+    The invoice has been issued and you are waiting for payment. The due date has not yet passed.
+  </Card>
+  <Card title="Paid" icon="circle-check">
+    Payment has been received in full. The balance due is zero.
+  </Card>
+  <Card title="Overdue" icon="triangle-exclamation">
+    The due date has passed and the invoice has not been paid. Overdue invoices are highlighted in red in the invoice list.
+  </Card>
+  <Card title="Cancelled" icon="ban">
+    The invoice has been voided and is no longer actionable.
+  </Card>
+</CardGroup>
+
+---
+
+## How to create an invoice
+
+<Steps>
+  <Step title="Open the Invoices section">
+    Select **Invoices** from the main navigation.
+  </Step>
+  <Step title="Click New Invoice">
+    Click the **+ New Invoice** button in the upper-right corner of the Invoices page.
+  </Step>
+  <Step title="Fill in invoice details">
+    Enter the invoice date, due date, contact name, and an optional opportunity name. Set the initial status (defaults to **Draft**) and select the staff member to assign the invoice to.
+  </Step>
+  <Step title="Add a billing address">
+    Enter the billing address for the contact. If you are creating the invoice from a client profile, the address is pre-filled from the client record.
+  </Step>
+  <Step title="Add line items">
+    In the **Services / Line Items** section, enter a description for each service, its quantity, and its unit price. The line total and grand total are calculated automatically. Click **+ Add Service** to add more rows.
+  </Step>
+  <Step title="Apply adjustments if needed">
+    Optionally add or deduct an adjustment amount from the subtotal. Enter a note to explain the adjustment.
+  </Step>
+  <Step title="Record any amount already received">
+    If partial payment has already been collected, enter it in the **Amount Received** field. The balance due updates automatically.
+  </Step>
+  <Step title="Save the invoice">
+    Click **Create Invoice**. BridgePoint CRM assigns an invoice number and saves the record. You are taken directly to the invoice detail page.
+  </Step>
+</Steps>
+
+<Note>
+  Invoice numbers follow the format `INV-XXXX` and are assigned sequentially per office. You cannot manually set or change an invoice number.
+</Note>
+
+---
+
+## How to update an invoice
+
+<Steps>
+  <Step title="Open the invoice">
+    Click any invoice row in the Invoices list to open it.
+  </Step>
+  <Step title="Edit the fields you need to change">
+    Update any field — including status, due date, line items, amount received, or assigned staff.
+  </Step>
+  <Step title="Save your changes">
+    Click **Save Changes**. All edits are saved and totals are recalculated immediately.
+  </Step>
+</Steps>
+
+### Updating invoice status
+
+To change the status of an existing invoice, open the invoice and use the **Status** dropdown in the Invoice Details section. Select the new status and click **Save Changes**.
+
+<Tip>
+  When a client pays, update the **Amount Received** field and change the status to **Paid** in the same save action to keep your records consistent.
+</Tip>
+
+---
+
+## How to generate and download a PDF
+
+BridgePoint CRM can generate a formatted PDF of any saved invoice. The PDF includes all invoice fields, line items, totals, and terms and conditions.
+
+<Steps>
+  <Step title="Save the invoice first">
+    A PDF can only be generated after the invoice has been saved at least once. Click **Create Invoice** or **Save Changes** if you have unsaved edits.
+  </Step>
+  <Step title="Click Generate PDF">
+    Click the **Generate PDF** button in the header or at the bottom of the invoice form. BridgePoint CRM generates the PDF and opens it in a new browser tab.
+  </Step>
+  <Step title="Download the PDF">
+    Once the PDF is open in the new tab, use your browser's download option to save it to your device.
+  </Step>
+</Steps>
+
+You can also generate a PDF directly from the Invoices list without opening the invoice: click the **PDF** button in the Actions column next to the invoice row.
+
+<Warning>
+  If you make changes to an invoice after generating a PDF, generate a new PDF to ensure the downloaded file reflects the latest information.
+</Warning>
+
+---
+
+## How to filter invoices
+
+The Invoices page provides three ways to narrow the list:
+
+| Filter | How to use |
+|---|---|
+| **Search** | Type an invoice number, contact name, or opportunity name into the search box. Results update as you type. |
+| **Status** | Select a status from the **All Statuses** dropdown to show only invoices in that state. |
+| **Assignee** | Select a staff member from the **All Assignees** dropdown to show only invoices assigned to that person. |
+
+To remove all active filters at once, click the **Clear** button that appears when any filter is applied.
+
+---
+
+## Invoices on a client record
+
+When you create an invoice and link it to a client, the invoice appears in that client's profile alongside their other records. You can view and manage all invoices for a specific client directly from their profile without leaving the client record.
+
+<Note>
+  Linking an invoice to a client is optional. You can create invoices without a client association for billing situations that do not correspond to a specific client record.
+</Note>

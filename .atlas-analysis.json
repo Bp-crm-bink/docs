@@ -1,0 +1,99 @@
+{
+  "projectType": "saas",
+  "projectName": "BridgePoint CRM",
+  "projectDescription": "A full-featured CRM platform for social services agencies to manage client cases, program enrollments, appointments, and the ACA insurance pipeline.",
+  "theme": "almond",
+  "primaryColor": "#7c3aed",
+  "lightColor": "#ede9fe",
+  "darkColor": "#4338ca",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "User Guide",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "roles-permissions"
+            ]
+          },
+          {
+            "group": "Clients",
+            "pages": [
+              "clients/overview",
+              "clients/adding-clients",
+              "clients/client-profile",
+              "clients/documents"
+            ]
+          },
+          {
+            "group": "Cases & Programs",
+            "pages": [
+              "cases/overview",
+              "cases/managing-cases",
+              "cases/enrollments"
+            ]
+          },
+          {
+            "group": "Queue & Appointments",
+            "pages": [
+              "queue/overview",
+              "queue/check-in",
+              "queue/appointments"
+            ]
+          },
+          {
+            "group": "ACA Pipeline",
+            "pages": [
+              "pipeline/overview",
+              "pipeline/managing-leads"
+            ]
+          },
+          {
+            "group": "Tasks & Invoices",
+            "pages": [
+              "tasks/overview",
+              "invoices/overview"
+            ]
+          },
+          {
+            "group": "Reports & Settings",
+            "pages": [
+              "reports/overview",
+              "settings/overview",
+              "settings/staff-management"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Client profile management with program enrollments (Medicaid, SNAP, TCA, ACA)",
+    "Live queue management with walk-in and appointment check-in",
+    "ACA insurance pipeline tracking with contact history and enrollment stats",
+    "Case management across multiple programs and renewal cycles",
+    "Task management with priority levels and due dates",
+    "Invoice creation and PDF generation",
+    "Custom report builder across clients, pipeline, and queue data",
+    "Role-based access control (Owner, Admin, Manager, Case Manager, Front Desk)",
+    "Multi-office support with office-scoped data views",
+    "Document storage with signed URL access and archiving",
+    "Multi-factor authentication (TOTP and email)",
+    "Audit logging for all data changes"
+  ],
+  "publicApiSurface": [
+    "Dashboard: stat cards (total clients, current queue, ACA pipeline, renewals due, open tasks)",
+    "Clients: list, create, edit, view profile with program tabs",
+    "Cases: list by office, create case, add enrollment cycle, update status",
+    "Queue: live queue board with check-in, call-next, assign, complete actions",
+    "Appointments: schedule, check-in via queue, edit, cancel",
+    "ACA Pipeline: track leads through Eligible → Pending Password → Ready to Enroll → Enrolled",
+    "Tasks: create, assign, set priority (urgent/high/normal/low), track status",
+    "Invoices: create, assign to staff, generate PDF, track payment status",
+    "Reports: pre-built and custom report builder with CSV export",
+    "Settings: user profile, MFA enrollment, staff invite/archive/reset, office management"
+  ]
+}

@@ -1,0 +1,153 @@
+---
+title: "Scheduling and Managing Client Appointments"
+sidebarTitle: "Appointments"
+description: "Learn how to schedule appointments, view today's schedule, understand appointment statuses, and how booked clients appear in the live queue when they arrive."
+---
+
+Appointments let you schedule a specific client for a future visit with a designated staff member at a set date and time. Unlike walk-ins — where clients arrive without notice — appointments give your office advance visibility into who is coming in, why, and who will be seeing them, so case managers can prepare ahead of time.
+
+## Appointments vs. walk-ins
+
+| | Appointments | Walk-ins |
+|---|---|---|
+| Advance scheduling | Yes | No |
+| Linked to a client record | Yes (optional) | No — ticket only |
+| Appear on the queue when checked in | Yes | Yes |
+| Show appointment time on queue board | Yes | No |
+| Case manager pre-assigned | Yes | Optional |
+
+When a client with a scheduled appointment checks in, their queue entry shows a calendar icon and their appointment time in the **Appt** column of the Waiting section.
+
+---
+
+## Viewing appointments
+
+### Queue > Appointments
+
+Navigate to **Queue > Appointments** in the left sidebar to open the full appointment calendar. The calendar shows all scheduled and checked-in appointments for the current month. Click any date to see the appointments for that day listed below the calendar.
+
+Case managers see only their own appointments. Managers, admins, and owners see all appointments across the office and can filter by staff member using the dropdown in the top bar.
+
+### Dashboard widget
+
+The dashboard includes an upcoming appointments widget that shows today's and tomorrow's scheduled and checked-in appointments. Case managers see only appointments assigned to them; managers and above see the full office schedule.
+
+---
+
+## Scheduling an appointment
+
+You can create a new appointment from the **Queue > Appointments** page.
+
+<Steps>
+  <Step title="Open the new appointment form">
+    Navigate to **Queue > Appointments** and click **New Appointment** in the top-right corner.
+  </Step>
+  <Step title="Search for a client (optional)">
+    Type a client's name or BP-ID in the **Client** field to link the appointment to an existing client record. This field is optional — you can create an appointment without a linked client if the visitor is not yet in the system.
+  </Step>
+  <Step title="Set the date and time">
+    Choose the appointment **Date** using the date picker. Then select a **Time** from the dropdown. Available time slots run from 8:00 AM to 7:00 PM in 15-minute increments.
+  </Step>
+  <Step title="Select a reason">
+    Choose the reason for the appointment. Available reasons are: New Application, Renewal, Status Check, Document Drop-Off, Follow-Up, ACA Review, and Other.
+  </Step>
+  <Step title="Assign to a staff member">
+    Select the staff member who will see the client. Case managers are automatically assigned to themselves and cannot change this field. Managers and above can assign to any active staff member in the office.
+  </Step>
+  <Step title="Add notes (optional)">
+    Enter any context that will help the assigned staff member prepare for the visit.
+  </Step>
+  <Step title="Save the appointment">
+    Click **Create Appointment**. The appointment is saved with a status of **Scheduled** and appears on the calendar immediately.
+  </Step>
+</Steps>
+
+<Tip>
+You can also schedule an appointment directly from a client's profile page. Open the client record, navigate to the Appointments tab, and use the same form — the client field will be pre-filled.
+</Tip>
+
+---
+
+## Appointment statuses
+
+Each appointment has one of the following statuses, visible on the calendar and in the day detail list.
+
+<CardGroup cols={2}>
+  <Card title="Scheduled" icon="calendar">
+    The appointment is confirmed and upcoming. Edit and Cancel actions are available.
+  </Card>
+  <Card title="Checked In" icon="arrow-right-to-bracket">
+    The client has arrived and been checked in. The appointment is linked to their active queue entry.
+  </Card>
+  <Card title="Completed" icon="circle-check">
+    The visit has been marked complete. No further actions are available.
+  </Card>
+  <Card title="No Show" icon="circle-xmark">
+    The client did not arrive for their scheduled appointment.
+  </Card>
+</CardGroup>
+
+<Note>
+Cancelled appointments are hidden from the calendar by default. Only **Scheduled** and **Checked In** statuses are shown in the month view and day detail list.
+</Note>
+
+---
+
+## Editing an appointment
+
+You can edit any appointment with a **Scheduled** status.
+
+<Steps>
+  <Step title="Locate the appointment">
+    In **Queue > Appointments**, click the date of the appointment on the calendar to load the day detail list.
+  </Step>
+  <Step title="Click Edit">
+    Find the appointment card and click **Edit**. An edit modal opens.
+  </Step>
+  <Step title="Update the fields">
+    Change the date, time, reason, assigned staff member, or notes as needed.
+  </Step>
+  <Step title="Save">
+    Click **Save Changes**. The calendar updates immediately.
+  </Step>
+</Steps>
+
+---
+
+## Cancelling an appointment
+
+<Steps>
+  <Step title="Locate the appointment">
+    Navigate to the appointment's date on the calendar in **Queue > Appointments**.
+  </Step>
+  <Step title="Click Cancel">
+    Click the red **Cancel** button on the appointment card. A confirmation dialog appears.
+  </Step>
+  <Step title="Confirm">
+    Confirm the cancellation. The appointment status changes to **Cancelled** and it is removed from the calendar view.
+  </Step>
+</Steps>
+
+<Warning>
+Cancelling an appointment is permanent. If you need to reschedule, cancel the existing appointment and create a new one with the updated date and time.
+</Warning>
+
+---
+
+## How scheduled clients appear in the queue
+
+When a client with a scheduled appointment arrives and is checked in at the front desk, BridgePoint CRM automatically detects today's appointment for that client. The check-in flow:
+
+1. Displays a blue banner showing the appointment time and the assigned staff member's name.
+2. Pre-selects the assigned case manager in the assignment step.
+3. Links the resulting queue entry to the appointment record.
+
+On the queue board, the client's entry shows a calendar icon and their appointment time in the **Appt** column of the Waiting section, making it easy for the assigned case manager to identify their scheduled clients at a glance.
+
+<Accordion title="What if a client with an appointment is checked in for a different reason?">
+The check-in flow detects the appointment automatically but does not lock the visit reason. Staff can select any reason during check-in. The appointment link is still recorded on the queue entry, and the appointment status updates to **Checked In** when the client is added to the queue.
+</Accordion>
+
+<Accordion title="What if the client arrives but the case manager is unavailable?">
+Any staff member can call the client from the queue and either start the visit or return them to the queue. You can also use the **Assign** dropdown on the waiting entry to re-assign the client to a different case manager before calling them.
+</Accordion>

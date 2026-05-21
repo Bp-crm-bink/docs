@@ -1,0 +1,104 @@
+---
+title: "ACA Pipeline: Track Leads from Eligibility to Enrollment"
+sidebarTitle: "Pipeline Overview"
+description: "Learn how BridgePoint CRM's ACA Pipeline tracks clients who may qualify for Affordable Care Act health insurance coverage, from eligibility to enrollment."
+---
+
+The ACA Pipeline is a dedicated workspace in BridgePoint CRM for managing clients who may qualify for Affordable Care Act (ACA) health insurance coverage. It gives your team a single view of every prospective ACA enrollee — showing where each client stands, who is responsible for follow-up, and how the overall enrollment effort is progressing month to month.
+
+## Navigating to the Pipeline
+
+Select **Pipeline** from the left sidebar. The board loads immediately with all active leads visible across the status tabs.
+
+<Note>
+Only users with pipeline access can view this page. If Pipeline does not appear in your sidebar, contact your administrator.
+</Note>
+
+## How Clients Enter the Pipeline
+
+Clients enter the ACA Pipeline in two ways: automatically when a qualifying event is detected on their case, or manually by a staff member.
+
+### Automatic triggers
+
+The system adds a client to the pipeline when their case reaches one of the following states:
+
+<Accordion title="Medicaid — Medically Needy">
+The client has been determined medically needy through the Medicaid program, which may mean ACA coverage is a better fit for their situation.
+</Accordion>
+
+<Accordion title="Medicaid Application Denied">
+The client's Medicaid application was denied. BridgePoint flags them so your team can explore ACA marketplace options.
+</Accordion>
+
+<Accordion title="Ineligible for Medicaid">
+The client does not meet Medicaid eligibility criteria. The pipeline captures them so they are not lost between programs.
+</Accordion>
+
+<Accordion title="Referred to Marketplace">
+A case manager has explicitly referred the client to the Health Insurance Marketplace for an ACA plan.
+</Accordion>
+
+<Accordion title="Current Benefit Ending Soon">
+An existing benefit is approaching its end date, prompting review of ACA coverage as a continuation option.
+</Accordion>
+
+<Accordion title="No Health Insurance">
+The client has been identified as having no health insurance and may be eligible for an ACA plan.
+</Accordion>
+
+<Accordion title="Applying for SNAP/TCA Only">
+The client is applying only for food or cash assistance. They are flagged so staff can assess whether ACA coverage should also be explored.
+</Accordion>
+
+<Accordion title="Client Interested in ACA Coverage">
+The client has expressed direct interest in obtaining ACA health insurance coverage.
+</Accordion>
+
+### Manual addition
+
+A staff member with the appropriate permissions can also add a client to the pipeline directly from the client's profile or case record.
+
+## The Five Pipeline Stages
+
+Every lead in the pipeline sits in one of five statuses. Leads move forward (or back) as your team works with each client.
+
+<Tabs>
+  <Tab title="Eligible For ACA">
+    The default entry status. The client has been identified as a potential ACA candidate but outreach has not yet begun. Your team should initiate contact and confirm interest before moving the lead forward.
+  </Tab>
+  <Tab title="Pending Password Creation">
+    The client is confirmed as interested and eligible, but their Healthcare.gov account (portal password) has not yet been created. This stage ensures no one falls through the cracks before the enrollment appointment.
+  </Tab>
+  <Tab title="Ready To Enroll">
+    The client's portal account is set up and they are ready for an enrollment session. When a lead is moved to this stage, an automatic notification is sent to alert the assigned team.
+  </Tab>
+  <Tab title="Enrolled">
+    The client has been successfully enrolled in an ACA plan. The record captures the plan type, carrier, effective date, and monthly premium. Enrolled leads are included in the monthly stats dashboard.
+  </Tab>
+  <Tab title="Removed">
+    The lead has been removed from the active pipeline — for example, because the client declined coverage, became ineligible, or was entered in error. Removed leads are excluded from the **All** tab but remain visible when you select the **Removed** tab for reference.
+  </Tab>
+</Tabs>
+
+## Stats Dashboard
+
+Administrators and owners see a summary row at the top of the Pipeline board with four key metrics for the current month.
+
+<CardGroup cols={2}>
+  <Card title="Total Pipeline" icon="users">
+    The count of all active leads — every lead that is not in **Removed** status. Use this to gauge your team's overall workload.
+  </Card>
+  <Card title="Enrolled This Month" icon="circle-check">
+    The number of clients successfully enrolled in an ACA plan since the first of the current month.
+  </Card>
+  <Card title="Monthly Premium" icon="dollar-sign">
+    The combined monthly premium (in dollars) for all plans enrolled this month. This reflects the total value of coverage your team has secured.
+  </Card>
+  <Card title="Removed" icon="circle-xmark">
+    The total number of leads removed from the pipeline. Review this periodically to understand drop-off patterns and improve outreach.
+  </Card>
+</CardGroup>
+
+<Note>
+The stats dashboard is visible only to users with the **Admin** or **Owner** role. Case managers and standard agents see the pipeline table only.
+</Note>
