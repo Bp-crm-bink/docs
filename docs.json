@@ -27,7 +27,10 @@
               "clients/overview",
               "clients/adding-clients",
               "clients/client-profile",
-              "clients/documents"
+              "clients/documents",
+              "clients/document-center",
+              "clients/additional-insurance",
+              "clients/merging-duplicates"
             ]
           },
           {
@@ -43,6 +46,7 @@
             "pages": [
               "queue/overview",
               "queue/check-in",
+              "queue/kiosk",
               "queue/appointments"
             ]
           },
@@ -65,7 +69,8 @@
             "pages": [
               "reports/overview",
               "settings/overview",
-              "settings/staff-management"
+              "settings/staff-management",
+              "settings/internal-forms"
             ]
           }
         ]

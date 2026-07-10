@@ -1,0 +1,64 @@
+---
+title: "Kiosk Self Check-In"
+sidebarTitle: "Kiosk"
+description: "Let clients check themselves into the walk-in queue from an in-office iPad kiosk, in English, Spanish, or Haitian Creole — no staff action required."
+---
+
+The kiosk is a client-facing self check-in screen designed for an iPad at your reception desk. Clients add themselves to the live walk-in queue without a staff member entering anything — the entry appears in the **Waiting** section of the [queue board](/queue/overview) just like a front-desk check-in.
+
+Each kiosk runs from a unique, per-office link (`/kiosk/<token>`). Because the iPad has no staff login, the office is fixed to the token — a device set up for one office can only ever add clients to that office's queue.
+
+<Note>
+The kiosk link is generated per office. Ask an administrator to set up the iPad with your office's kiosk URL and leave it open in full-screen (guided-access) mode.
+</Note>
+
+## Languages
+
+The kiosk opens on a language picker. Clients choose one of three languages, and every screen after that is fully translated:
+
+- **English**
+- **Español** (Spanish)
+- **Kreyòl** (Haitian Creole)
+
+## New client (first-time visitor)
+
+<Steps>
+  <Step title="Choose a language">
+    The client taps their language on the welcome screen, which shows your office name.
+  </Step>
+  <Step title="Select 'New' client">
+    On the next screen the client picks **New** — they have never visited before.
+  </Step>
+  <Step title="Enter name and phone">
+    The client types their **first name** and **last name** (required) and, optionally, a **phone number**. Their chosen language is saved automatically.
+  </Step>
+  <Step title="Choose a program">
+    The client selects which program they are here for. Their entry is added to the queue with a **New Application** reason — staff refine the reason and program from the queue when the client is called.
+  </Step>
+  <Step title="Done">
+    A confirmation screen greets the client by first name and tells them to take a seat. Their **WALK-IN** entry is now in the queue.
+  </Step>
+</Steps>
+
+## Returning client
+
+Returning clients look themselves up so their check-in links to their existing record. They can find their record two ways:
+
+<Tabs>
+  <Tab title="Phone + last name">
+    The client enters their **phone number** and **last name**. If more than one record matches, they are asked for their **date of birth** to pick the right one.
+  </Tab>
+  <Tab title="SSN (last 4) + date of birth">
+    The client enters the **last 4 digits of their SSN** and their **date of birth**.
+  </Tab>
+</Tabs>
+
+After a match, the client confirms it is them and is added to the queue. Returning entries are added with a neutral reason so staff triage the visit from the queue.
+
+<Note>
+To protect client privacy, the kiosk automatically clears any half-finished check-in after **60 seconds** of inactivity, and the confirmation screen resets on its own after a few seconds so the next person always starts fresh. Repeated failed lookups are rate-limited.
+</Note>
+
+## What staff see
+
+Kiosk check-ins are indistinguishable from front-desk check-ins on the queue board — same **Waiting** section, same real-time updates for all logged-in staff. When a case manager clicks **Call Next** on a kiosk **New Application** walk-in, they land in the new-client intake form pre-filled with the name and phone the client entered. See [Check In Clients](/queue/check-in) for what happens after a walk-in is called.
