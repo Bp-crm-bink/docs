@@ -77,6 +77,39 @@ The SSN is stored encrypted and is never displayed in plain text by default. On 
   Revealing the full SSN requires elevated permissions. If your role does not include SSN access, the reveal button will not appear. Contact your administrator if you need access.
 </Warning>
 
+## Client Portal Account
+
+From the client profile **Overview**, you can create and manage a portal account so the client can log in and track their enrollment status. The same controls are available on the ACA pipeline lead detail page.
+
+### Creating a portal account
+
+<Steps>
+  <Step title="Open the Generate Portal Account dialog">
+    On the Overview, click **Generate Portal Account**.
+  </Step>
+  <Step title="Enter the portal login email">
+    Type the client's portal login email. The password is set to the default, **Password1** — you do not enter one.
+  </Step>
+  <Step title="Generate">
+    Click **Generate**. The email must be a valid address and cannot already be in use by another client's portal account, or you'll be asked to enter a different one.
+  </Step>
+</Steps>
+
+Once created, the card shows the portal email and password. You can reveal the password and use **Print Credentials** to hand the login details to the client.
+
+### Updating an existing portal account
+
+After an account exists, two actions let you change the credentials:
+
+<CardGroup cols={2}>
+  <Card title="Set Email" icon="envelope">
+    Enter a new portal login email for the client. As with creation, the email must be unique across client portal accounts.
+  </Card>
+  <Card title="Set Password" icon="key">
+    Enter a new password for the client. Passwords must be at least 6 characters.
+  </Card>
+</CardGroup>
+
 ## Program Enrollment Status Badges
 
 Status badges appear on the Programs tab and in the client list. Each badge reflects the current `status` of that case record:
