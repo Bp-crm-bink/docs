@@ -1,0 +1,57 @@
+---
+title: "Finding and Merging Duplicates"
+sidebarTitle: "Merging Duplicates"
+description: "Identify likely-duplicate client records and merge two records into one, choosing which values the surviving record keeps."
+---
+
+Over time the same person can end up with more than one record — a walk-in ticket that was never linked, a re-import, or a second intake. BridgePoint CRM gives you tools to find those duplicates and merge them into a single record without losing data.
+
+<Note>
+Finding and merging duplicates requires the **Merge Clients** permission — available to **Owner**, **Admin**, and **Manager** roles. Case Managers and Front Desk staff cannot merge records.
+</Note>
+
+## Reviewing likely duplicates
+
+The **Duplicates** page (`/clients/duplicates`) surfaces clusters of client records that look like the same person, grouped for review.
+
+<Steps>
+  <Step title="Open Duplicates">
+    Navigate to the Duplicates page. Each card is a cluster of records that appear to match.
+  </Step>
+  <Step title="Review a cluster">
+    Compare the records in a cluster. If they are genuinely the same person, start a merge directly from the cluster. If they are different people, leave them as-is.
+  </Step>
+</Steps>
+
+## Starting a merge
+
+You can reach the merge review screen three ways:
+
+- From the **Duplicates** page, on a cluster you have confirmed.
+- From the **Clients list**, by multi-selecting two records.
+- From a **client profile**, using the merge action to find a record to merge with.
+
+All three open the same **Merge Review** screen (`/clients/merge?a=…&b=…`).
+
+## Choosing what the surviving record keeps
+
+The merge review screen shows the two records side by side, field by field. One record survives; the other is merged into it. For each field you choose which record's value the survivor should keep.
+
+<Steps>
+  <Step title="Pick the primary (surviving) record">
+    Choose which of the two records is the one to keep. The other record's data is carried into it.
+  </Step>
+  <Step title="Resolve each field">
+    Go down the field list and select the value to keep for each one. Some values move as a **unit**: the SSN carries its encrypted value and last-4 together, and a client portal account moves as a whole block.
+  </Step>
+  <Step title="Resolve cases and related data">
+    Cases, household members, documents, and other related records from the merged record are re-parented onto the survivor. The surviving record keeps its own case-manager assignment.
+  </Step>
+  <Step title="Confirm">
+    Review the summary in the confirmation dialog and confirm. The two records become one, and a success message appears.
+  </Step>
+</Steps>
+
+<Warning>
+A merge combines two records into one. Review the field selections carefully before confirming — the surviving record is the single record that remains afterward.
+</Warning>
