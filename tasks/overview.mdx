@@ -127,29 +127,77 @@ You can create a task from two places: the Tasks page (for general or unlinked t
   Tasks are sorted by priority — **Urgent** tasks always appear first — and then by creation date within each priority level. Due dates that have passed are highlighted in red; due dates within the next 24 hours appear in amber.
 </Note>
 
+### Board and table views
+
+The Tasks page can display your tasks two ways. Switch between them with the **Board / Table** toggle in the upper-right corner of the page. The page opens in **Board** view by default.
+
+<CardGroup cols={2}>
+  <Card title="Board view" icon="table-columns">
+    A Kanban board with a column for each status — **Open**, **In Progress**, **Pending**, **Reassigned**, and **Done**. Each column header shows how many tasks it contains. Drag a card from one column to another to change its status (see below).
+  </Card>
+  <Card title="Table view" icon="table-list">
+    A sortable, paginated list. Sort by any column and choose how many tasks to show per page (25, 50, or 100).
+  </Card>
+</CardGroup>
+
+To open a task and see its full detail — including description, comments, client link, and management options — click a card (on the board) or a row (in the table). A detail panel slides in from the right side of the screen.
+
 ---
 
 ## How to filter tasks
 
-On the Tasks page, click any of the tabs described above to filter the list. The **My Tasks** tab is selected by default when you open the page.
+Start by choosing a tab — **My Tasks**, **All Office**, **Follow Ups**, **Unassigned**, **Done**, or **Archived** — to set which tasks are in view. The **My Tasks** tab is selected by default when you open the page.
 
-To open a task and see its full detail — including description, comments, client link, and management options — click anywhere on the task row. A detail panel slides in from the right side of the screen.
+Beneath the tabs is a filter bar that lets you narrow the list further. Each filter is always shown as a chip. Click a chip to open its picker and choose one or more values; the chip highlights and shows your selection, and a **×** appears to clear that filter on its own.
+
+| Filter | What it does |
+|---|---|
+| **Search** | Type to match tasks by title or related text. |
+| **Priority** | Show only tasks at the priorities you pick (Urgent, High, Normal, Low). You can select more than one. |
+| **Status** | Show only tasks in the statuses you pick. You can select more than one. |
+| **Type** | Show only the task types you pick. You can select more than one. |
+| **Assignee** | Show only tasks assigned to the people you pick. A **Me** shortcut is pinned to the top of the list. You can select more than one. |
+
+Filters combine, so you can, for example, show only **Urgent** and **High** tasks assigned to **Me**. When any filter is active, a **Clear all** button appears to remove every filter at once.
+
+<Note>
+  Your Priority, Status, Type, and Assignee selections are remembered across tabs and after you refresh or reopen the page. The **Search** box is intentionally *not* remembered — because it can contain a client's name, it is cleared each time so it does not linger on a shared workstation.
+</Note>
 
 ---
 
 ## How to update a task status
 
-<Steps>
-  <Step title="Open the task">
-    Click the task row to open the detail panel.
-  </Step>
-  <Step title="Change the status">
-    Use the status dropdown in the detail panel to select **Open**, **In Progress**, **Pending**, or **Deferred**.
-  </Step>
-  <Step title="Save">
-    The status updates immediately when you choose a new value. No separate save step is required.
-  </Step>
-</Steps>
+You can change a task's status from the detail panel, or by dragging it on the board.
+
+<Tabs>
+  <Tab title="From the detail panel">
+    <Steps>
+      <Step title="Open the task">
+        Click the task card or row to open the detail panel.
+      </Step>
+      <Step title="Change the status">
+        Use the status dropdown in the detail panel to select **Open**, **In Progress**, **Pending**, or **Reassigned**.
+      </Step>
+      <Step title="Save">
+        The status updates immediately when you choose a new value. No separate save step is required.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="By dragging on the board">
+    <Steps>
+      <Step title="Switch to Board view">
+        Use the **Board / Table** toggle to open the board.
+      </Step>
+      <Step title="Drag the card to a new column">
+        Pick up a task card and drop it into another status column. The column you drop onto highlights as you drag over it, and the task's status changes to match that column.
+      </Step>
+    </Steps>
+    <Note>
+      Dropping a card onto the **Done** column does not silently complete the task — it opens the same resolution-comment dialog described below, so a record of how the task was resolved is always captured.
+    </Note>
+  </Tab>
+</Tabs>
 
 ---
 
