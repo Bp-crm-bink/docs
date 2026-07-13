@@ -59,6 +59,67 @@ Each task captures the following information:
   The task is complete. Marking a task as **Done** requires you to enter a resolution comment explaining how the task was resolved. Done tasks move to the **Done** tab and no longer appear in active views.
 </Accordion>
 
+<Note>
+  Follow-up tasks use their own set of call-outcome statuses instead of the generic statuses above. See [Follow-up tasks and call outcomes](#follow-up-tasks-and-call-outcomes).
+</Note>
+
+---
+
+## Follow-up tasks and call outcomes
+
+Follow-up tasks track the outcome of reaching out to a client — typically a call. Instead of the generic Open / In Progress / Pending / Deferred / Done statuses, a follow-up task uses a dedicated **call-outcome status** that records what happened on the last attempt. These outcomes are organized into three groups: **To-Do**, **In Progress**, and **Complete**.
+
+<AccordionGroup>
+  <Accordion title="To-Do">
+    | Status | Meaning |
+    |---|---|
+    | **Not Contacted** | No attempt has been made yet. Every new follow-up task starts here. |
+  </Accordion>
+  <Accordion title="In Progress">
+    | Status | Meaning |
+    |---|---|
+    | **No Answer** | The client did not pick up. |
+    | **Left Voicemail** | A voicemail was left for the client. |
+    | **Needs Callback** | The client needs to be called back. |
+    | **Busy / Try Again** | The line was busy or the attempt should be retried. |
+    | **Wrong / Bad Number** | The number on file was incorrect or unreachable. |
+    | **Requested Callback Time** | The client asked to be called at a specific time. |
+    | **Awaiting Response** | Waiting to hear back from the client. |
+  </Accordion>
+  <Accordion title="Complete">
+    | Status | Meaning |
+    |---|---|
+    | **Enrolled** | The client was successfully enrolled. |
+    | **Not Interested** | The client declined. |
+    | **Unreachable - Closed** | The client could not be reached and the follow-up is being closed. |
+  </Accordion>
+</AccordionGroup>
+
+<Note>
+  Moving a follow-up task to any of the three **Complete** outcomes (Enrolled, Not Interested, or Unreachable - Closed) also marks the task as Done. Like marking any task Done, this requires a resolution comment (see [How to mark a task as Done](#how-to-mark-a-task-as-done)).
+</Note>
+
+### The Follow Ups board
+
+The **Follow Ups** tab shows a Kanban board with one column for each call outcome, laid out left to right in **To-Do → In Progress → Complete** order with a faint group caption above each group. Each column header shows how many tasks it contains.
+
+Unlike the other active tabs, the Follow Ups board keeps completed follow-ups visible in their **Complete** columns, so you can see Enrolled, Not Interested, and Unreachable - Closed outcomes at a glance rather than losing them to the Done tab.
+
+<Steps>
+  <Step title="Open the Follow Ups tab">
+    On the Tasks page, select the **Follow Ups** tab.
+  </Step>
+  <Step title="Drag a card to record an outcome">
+    Pick up a follow-up card and drop it into the column that matches what happened. The column highlights as you drag over it, and the task's call outcome updates to match that column.
+  </Step>
+</Steps>
+
+<Note>
+  Dropping a follow-up onto a **Complete** column (Enrolled, Not Interested, or Unreachable - Closed) opens the resolution-comment dialog — the same gate used for the Done column — so how the follow-up was resolved is always captured. When the dialog is opened this way, its title reflects the outcome you chose, for example **Mark as Enrolled**.
+</Note>
+
+You can also change a follow-up's call outcome from its detail panel: open the task and use the status dropdown, which lists the call outcomes for follow-up tasks. Choosing a **Complete** outcome opens the same resolution-comment dialog.
+
 ---
 
 ## How to create a task
@@ -119,6 +180,7 @@ You can create a task from two places: the Tasks page (for general or unlinked t
 |---|---|
 | **My Tasks** | Tasks assigned to you that are not yet Done or archived. A badge shows your total open count. |
 | **All Office** | All active, non-archived tasks for your office across every staff member. |
+| **Follow Ups** | Follow-up tasks shown as a call-outcome Kanban board. Completed follow-ups stay visible in their Complete columns. See [Follow-up tasks and call outcomes](#follow-up-tasks-and-call-outcomes). |
 | **Unassigned** | Active tasks with no assigned staff member. |
 | **Done** | Tasks that have been marked as Done but have not been archived. |
 | **Archived** | Tasks that have been archived (visible to managers and admins only). |
