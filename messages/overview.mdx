@@ -27,7 +27,7 @@ Both surfaces show the same conversations and the same messages — anything you
 
 ## Conversations
 
-Your conversation list holds two kinds of conversation:
+Your conversation list holds two kinds of conversation, grouped under **Channels** and **Direct messages** headings:
 
 <CardGroup cols={2}>
   <Card title="Direct messages" icon="user">
@@ -38,7 +38,11 @@ Your conversation list holds two kinds of conversation:
   </Card>
 </CardGroup>
 
-Each conversation in the list shows a preview of the latest message, how long ago it arrived, and — when you have unread messages — a count badge. Conversations are ordered with the most recent activity on top. Opening a conversation marks it as read and clears its badge.
+Each conversation in the list shows a preview of the latest message, how long ago it arrived, and — when you have unread messages — a count badge. In a channel, the preview is prefixed with the sender's first name so you can see who spoke last. Conversations are ordered with the most recent activity on top. Opening a conversation marks it as read and clears its badge.
+
+### Finding a conversation
+
+Use the **Search** box at the top of the conversation list to filter it by name. Type any part of a channel name or colleague's name and the list narrows to the matches; clear the box to show everything again.
 
 ---
 
@@ -98,7 +102,7 @@ Type in the message box at the bottom of a conversation and press **Enter** to s
     Select a name to insert their **@Name** into your message. You can mention more than one person.
   </Step>
   <Step title="Send">
-    When you send, each mentioned teammate is notified.
+    When you send, each mentioned teammate is notified. In the thread, every **@Name** that matches a real staff member is highlighted so mentions stand out.
   </Step>
 </Steps>
 
@@ -121,11 +125,17 @@ Click the GIF button to open the picker. It shows trending GIFs by default, or t
   <Card title="Seen receipts" icon="check-double">
     In a direct message, your most recent message shows a **Seen** time once the other person has read it.
   </Card>
+  <Card title="Copy a message" icon="copy">
+    Hover over any message and click the **copy** icon to copy its text to your clipboard.
+  </Card>
   <Card title="Delete your messages" icon="trash">
-    Open the menu on a message you sent and choose **Delete message**. It is replaced with a "deleted a message" note. You can only delete your own messages.
+    Hover over a message you sent and click the **trash** icon. It is replaced with a "deleted a message" note. You can only delete your own messages.
   </Card>
   <Card title="Message grouping" icon="layer-group">
     Consecutive messages from the same person within a few minutes are grouped together under one header for a cleaner thread.
+  </Card>
+  <Card title="Day and unread markers" icon="calendar-day">
+    A day label (**Today**, **Yesterday**, or the date) separates messages sent on different days, and a **New** divider marks where the messages that arrived since you last opened the conversation begin.
   </Card>
 </CardGroup>
 
