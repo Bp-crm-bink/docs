@@ -66,6 +66,12 @@
             ]
           },
           {
+            "group": "Messages",
+            "pages": [
+              "messages/overview"
+            ]
+          },
+          {
             "group": "Reports & Settings",
             "pages": [
               "reports/overview",
