@@ -23,6 +23,12 @@
             ]
           },
           {
+            "group": "Dashboard",
+            "pages": [
+              "dashboard/overview"
+            ]
+          },
+          {
             "group": "Clients",
             "pages": [
               "clients/overview",
