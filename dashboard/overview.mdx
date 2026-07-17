@@ -1,0 +1,156 @@
+---
+title: "Dashboard: Your Customizable Widget Board"
+sidebarTitle: "Dashboard Overview"
+description: "The dashboard is now a customizable board of widgets. Add, remove, rearrange, resize, and configure the widgets that matter to you, then save your personal layout."
+---
+
+The dashboard is your home base — it loads immediately after login. Instead of a fixed set of cards, it's now a **customizable board of widgets** that you arrange to match how you work. Add the cases, pipeline, queue, tasks, and revenue views you care about, size and order them the way you like, and save the layout to your own account.
+
+## Your starting layout
+
+The first time you open the dashboard, BridgePoint builds a starting layout tailored to your role — for example, a front-desk user opens to the live queue and today's schedule, while a case manager sees their caseload, follow-ups, and tasks. You don't have to configure anything to get a useful board on day one.
+
+<Note>
+  Every widget is scoped to what your role is allowed to see. The widgets available to you, and the data inside them, follow the same permissions used everywhere else in BridgePoint. See [Roles & Permissions](/roles-permissions) for the full breakdown.
+</Note>
+
+## Customizing your dashboard
+
+All editing happens in **Customize** mode, so the board stays clean and calm the rest of the time.
+
+<Steps>
+  <Step title="Enter Customize mode">
+    Click **Customize** in the top-right of the dashboard. The board switches into edit mode, and each widget gains a small control strip with a drag handle, resize buttons, and a menu.
+  </Step>
+  <Step title="Rearrange, resize, add, or remove widgets">
+    Make your changes (see the actions below). Everything updates live as you go.
+  </Step>
+  <Step title="Save or cancel">
+    Click **Save** to keep your layout, or **Cancel** to discard your changes and return to how the board looked when you started editing.
+  </Step>
+</Steps>
+
+### What you can do in Customize mode
+
+<CardGroup cols={2}>
+  <Card title="Add widget" icon="plus">
+    Opens the widget catalog so you can add a new widget to the board.
+  </Card>
+  <Card title="Rearrange" icon="up-down-left-right">
+    Drag any widget by its handle to reorder the board.
+  </Card>
+  <Card title="Resize" icon="maximize">
+    Use the narrower/wider buttons to change a widget's width, or the widget menu's **Taller** / **Shorter** option to change its height.
+  </Card>
+  <Card title="Configure" icon="sliders">
+    Open a widget's menu and choose **Configure** to tune what it shows (see [Configuring a widget](#configuring-a-widget)).
+  </Card>
+  <Card title="Remove" icon="trash">
+    Open a widget's menu and choose **Remove** to take it off your board.
+  </Card>
+  <Card title="Reset to default" icon="arrow-rotate-left">
+    Click **Reset** to clear your personal customizations and return to your role's default layout.
+  </Card>
+</CardGroup>
+
+<Note>
+  The board is a four-column grid on desktop that reflows to fewer columns on narrower screens. Widgets can span 1–4 columns wide and 1–3 rows tall.
+</Note>
+
+## Adding a widget
+
+In Customize mode, click **Add widget** to open the widget catalog panel. Widgets are grouped by category and only the ones your role can use are shown. Use the search box at the top to find a widget by name or description, then click it to drop a fresh copy onto your board. You can configure it after adding.
+
+<Tip>
+  You can add the same widget more than once — for example, two copies of a chart with different filters — and give each a custom title so they're easy to tell apart.
+</Tip>
+
+## Configuring a widget
+
+Open a widget's menu in Customize mode and choose **Configure**. Only the controls that widget actually uses appear, so a simple number tile won't show a date-range picker it doesn't need.
+
+<Tabs>
+  <Tab title="Scope">
+    Choose whose data the widget counts:
+
+    - **Assigned to me** — only records assigned to you
+    - **My office** — the office you're currently viewing
+    - **Whole organization** — a wider view (still limited to what your role is allowed to see)
+  </Tab>
+  <Tab title="Time range">
+    For time-based widgets, choose the window: **Last 7 days**, **Last 30 days**, **Last 90 days**, **Last 12 weeks**, **Last 12 months**, or **All time**.
+  </Tab>
+  <Tab title="Program">
+    For program-aware widgets, narrow to a single program — **Medicaid**, **SNAP**, **TCA**, **ACA**, or **Medicare** — or leave it on **All programs**.
+  </Tab>
+  <Tab title="Custom title">
+    Give the widget your own label so two similar widgets read clearly on the board.
+  </Tab>
+</Tabs>
+
+Click **Save widget** to apply your changes to that widget.
+
+## The widget catalog
+
+<AccordionGroup>
+  <Accordion title="Programs & Cases">
+    - **Case Status Breakdown** — Cases grouped by status. Filter to a single program to see just Medicaid or SNAP.
+    - **Program Mix** — How the caseload splits across Medicaid, SNAP, TCA, ACA, and Medicare.
+    - **Renewals Due** — Cases with a renewal date inside the selected window.
+    - **Case Intake Trend** — New cases opened per week.
+    - **DCF Status Breakdown** — Cases grouped by their DCF status — surfaces medically needy and family planning volume.
+  </Accordion>
+  <Accordion title="ACA Pipeline">
+    - **ACA Funnel** — Pipeline volume at each stage, from Eligible through Enrolled.
+    - **ACA Enrollments** — Completed enrollments per week.
+    - **Follow-Ups Due** — Pipeline entries whose next follow-up date has arrived.
+
+    <Note>
+      ACA pipeline widgets are read-only views. The [ACA Pipeline](/pipeline/overview) remains the source of truth for pipeline status.
+    </Note>
+  </Accordion>
+  <Accordion title="Operations">
+    - **Queue — Live** — Who is waiting right now, with wait times.
+    - **Check-Ins by Reason** — What people are actually walking in for.
+    - **Today's Schedule** — Today's appointments in time order.
+    - **Appointment Outcomes** — Completed vs no-show vs cancelled — the no-show rate at a glance.
+    - **Authorizations Expiring** — Release authorizations expiring inside the window — re-sign before they lapse.
+    - **Saved Report** — Surface a report you saved in [Reports](/reports/overview) as a card on your dashboard, with a link to open it.
+  </Accordion>
+  <Accordion title="My Work">
+    - **My Open Tasks** — Your open and in-progress tasks, overdue first.
+    - **Tasks by Priority** — Open task load split by priority.
+    - **My Caseload** — Clients assigned to you.
+    - **Recent Clients** — Most recently added clients.
+    - **Client Intake Trend** — New clients added per week.
+  </Accordion>
+  <Accordion title="Revenue">
+    - **Premium by Carrier** — Total monthly enrolled premium, grouped by carrier.
+    - **Invoices by Status** — Draft, pending, paid, overdue, cancelled.
+    - **Revenue Collected** — Payments received per week.
+    - **Overdue Invoices** — Invoices past their due date and still unpaid.
+
+    <Note>
+      Revenue widgets are available only to roles with premium and invoice access.
+    </Note>
+  </Accordion>
+</AccordionGroup>
+
+## Resetting your dashboard
+
+Click **Reset** while in Customize mode to clear your personal customizations. Your board returns to the default layout for your role, and stays in step with any future updates to that default rather than freezing today's copy.
+
+## When a widget can't load
+
+If a single widget fails to load, it shows a quiet failed state on its own card — the rest of your board keeps working. Try removing and re-adding the widget, or reconfiguring it. An empty widget (no data in the selected range yet) simply shows an empty message rather than an error.
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Run Reports" icon="chart-column" href="/reports/overview">
+    Build and save reports you can surface on your dashboard with the Saved Report widget.
+  </Card>
+  <Card title="Manage the Queue" icon="list-ul" href="/queue/overview">
+    See how the live queue widget mirrors the full queue board.
+  </Card>
+</CardGroup>
