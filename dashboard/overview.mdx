@@ -11,6 +11,10 @@ The dashboard is your home base — it loads immediately after login. Instead of
 The first time you open the dashboard, BridgePoint builds a starting layout tailored to your role — for example, a front-desk user opens to the live queue and today's schedule, while a case manager sees their caseload, follow-ups, and tasks. You don't have to configure anything to get a useful board on day one.
 
 <Note>
+  Your organization's Admins and Owners can tailor the starting layout each role sees. If your default board looks different from these examples, that's your organization's published default. See [Setting default dashboards for a role](/settings/overview#default-dashboards).
+</Note>
+
+<Note>
   Every widget is scoped to what your role is allowed to see. The widgets available to you, and the data inside them, follow the same permissions used everywhere else in BridgePoint. See [Roles & Permissions](/roles-permissions) for the full breakdown.
 </Note>
 
@@ -83,6 +87,9 @@ Open a widget's menu in Customize mode and choose **Configure**. Only the contro
   <Tab title="Program">
     For program-aware widgets, narrow to a single program — **Medicaid**, **SNAP**, **TCA**, **ACA**, or **Medicare** — or leave it on **All programs**.
   </Tab>
+  <Tab title="Report">
+    For the **Saved Report** widget, pick which of your saved reports the card runs. Only reports you can already see in [Reports](/reports/overview) are listed.
+  </Tab>
   <Tab title="Custom title">
     Give the widget your own label so two similar widgets read clearly on the board.
   </Tab>
@@ -115,7 +122,7 @@ Click **Save widget** to apply your changes to that widget.
     - **Today's Schedule** — Today's appointments in time order.
     - **Appointment Outcomes** — Completed vs no-show vs cancelled — the no-show rate at a glance.
     - **Authorizations Expiring** — Release authorizations expiring inside the window — re-sign before they lapse.
-    - **Saved Report** — Surface a report you saved in [Reports](/reports/overview) as a card on your dashboard, with a link to open it.
+    - **Saved Report** — Surface a report you saved in [Reports](/reports/overview) as a card on your dashboard. It runs the report inline and shows the top rows of results right on the board, with an **Open** link to the full report. Configure the widget to point it at one of your saved reports (see [Configuring a widget](#configuring-a-widget)).
   </Accordion>
   <Accordion title="My Work">
     - **My Open Tasks** — Your open and in-progress tasks, overdue first.
@@ -132,6 +139,17 @@ Click **Save widget** to apply your changes to that widget.
 
     <Note>
       Revenue widgets are available only to roles with premium and invoice access.
+    </Note>
+  </Accordion>
+  <Accordion title="Sales">
+    - **New Clients** — New client intake per week for your office.
+    - **Follow-Ups Due** — Pipeline entries whose next follow-up date has arrived — leads to chase.
+    - **ACA Conversion Funnel** — Pipeline volume at each stage, Eligible through Enrolled.
+    - **Enrollments** — Completed ACA enrollments per week.
+    - **Premium by Carrier** — Total monthly enrolled premium, grouped by carrier.
+
+    <Note>
+      Sales widgets show office-level totals, not per-rep numbers. They're available to the Sales role as well as Managers, Admins, and Owners.
     </Note>
   </Accordion>
 </AccordionGroup>
