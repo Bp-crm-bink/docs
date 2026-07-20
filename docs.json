@@ -41,6 +41,12 @@
             ]
           },
           {
+            "group": "Leads",
+            "pages": [
+              "leads/triage-inbox"
+            ]
+          },
+          {
             "group": "Cases & Programs",
             "pages": [
               "cases/overview",

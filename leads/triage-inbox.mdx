@@ -1,0 +1,126 @@
+---
+title: "Triaging Leads"
+sidebarTitle: "Triaging Leads"
+description: "Work through incoming leads from the Leads inbox — review the details, check them against existing clients, keep triage notes, and convert or reject each lead."
+---
+
+The **Leads inbox** is where your team works through incoming leads. Each lead
+holds the prospective client's contact details, the programs they are interested
+in, and an optional message. From here you review a lead, check whether that
+person is already in your system, keep a running set of triage notes, and then
+either convert the lead into a client record or reject it.
+
+<Note>
+Viewing leads, adding triage notes, and running the duplicate check all require
+permission to view leads. See [Roles & Permissions](/roles-permissions) for how
+access is assigned.
+</Note>
+
+## Finding a lead
+
+The lead list runs down the left side of the inbox. Use the status tabs above
+the list to narrow it to the leads you want to work — for example only the
+**Pending** leads still awaiting a decision, or the **Converted** and
+**Rejected** leads for reference.
+
+Each lead in the list shows, at a glance:
+
+- The applicant's name
+- The lead's current status
+- The programs the applicant is interested in
+- How long ago the lead was submitted
+
+Click a lead to open its full detail on the right.
+
+## Reviewing a lead
+
+The detail view lays out everything captured for the lead:
+
+| Field | What it shows |
+|---|---|
+| **Phone** | The applicant's phone number |
+| **Email** | The applicant's email address |
+| **Language** | The applicant's preferred language |
+| **Programs** | The programs the applicant is interested in |
+| **Message** | Any free-text message the applicant included (shown only when present) |
+
+The header shows the applicant's name and the date and time the lead was
+submitted, alongside a status badge. Once a lead has been acted on, the detail
+view also reflects the outcome: a **converted** lead links to the client record
+it became, and a **rejected** lead shows the rejection reason.
+
+## Checking for existing clients
+
+Before converting a lead, check whether that person already has a record so you
+don't create a duplicate. On a **pending** lead, a **Check duplicates** button
+appears next to the status badge. If any possible matches are found, a small
+count badge on the button tells you how many.
+
+<Info>
+The duplicate check uses the same fuzzy name-and-phone matching as the client
+intake flow, and is limited to your own office.
+</Info>
+
+<Steps>
+  <Step title="Open the duplicate check">
+    Click **Check duplicates**. If nothing matches, you'll see **No possible
+    duplicates found**. Otherwise you get a list of possible existing clients.
+  </Step>
+  <Step title="Review each possible match">
+    Each match shows the client's name, mobile phone, and date of birth so you
+    can tell whether it is really the same person.
+  </Step>
+  <Step title="Open a match to compare">
+    Click any match to open that client's record and confirm the details.
+  </Step>
+  <Step title="Clear matches you've reviewed">
+    If the listed matches are not the same person, click **Clear all**. Cleared
+    matches drop out of both the count and the list, so the button stops
+    flagging leads you've already checked.
+  </Step>
+</Steps>
+
+<Tip>
+Clearing matches doesn't switch the check off. If a genuinely new possible
+duplicate appears later, it still surfaces on the button — only the matches you
+already reviewed stay hidden.
+</Tip>
+
+## The Journey — notes and activity
+
+Every lead has a **Journey** section that brings the lead's history into one
+place. It merges the triage notes your team adds with the lead's own status
+changes — when it was received, converted, or rejected — into a single
+time-ordered list.
+
+### Add a triage note
+
+<Steps>
+  <Step title="Write the note">
+    Type into the **Add a note…** box in the Journey section.
+  </Step>
+  <Step title="Save it">
+    Click **Add note**. The note appears in the Journey with your name and the
+    time you added it.
+  </Step>
+</Steps>
+
+Use notes to record anything the next person triaging the lead should know — who
+you spoke to, what the applicant asked for, or why you're leaning toward
+converting or rejecting.
+
+<Note>
+When you convert a lead into a client, its triage notes are copied onto the new
+client record (each prefixed with **[From lead triage]**), so the history you
+built up while triaging carries over and isn't lost.
+</Note>
+
+## Converting or rejecting a lead
+
+A **pending** lead shows two actions at the bottom of the detail view:
+
+- **Convert to client** — turns the lead into a client record. Its triage notes
+  are carried over to the new client (see above), and the lead is marked
+  converted with a link to the client record it became.
+- **Reject** — opens a dialog to record why the lead won't move forward. The
+  reason you enter is then shown on the rejected lead's detail view.
