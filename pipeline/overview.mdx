@@ -82,22 +82,41 @@ Every lead in the pipeline sits in one of five statuses. Leads move forward (or 
 
 ## Stats Dashboard
 
-Administrators and owners see a summary row at the top of the Pipeline board with four key metrics for the current month.
+Administrators and owners see a summary row at the top of the Pipeline board with four key metrics. These totals are org-wide (or office-scoped) counts across the whole pipeline — they do not change as you switch tabs or page through the table.
 
 <CardGroup cols={2}>
-  <Card title="Total Pipeline" icon="users">
-    The count of all active leads — every lead that is not in **Removed** status. Use this to gauge your team's overall workload.
+  <Card title="Total Eligible For ACA" icon="users">
+    The count of leads currently sitting in the **Eligible For ACA** stage. Use this to gauge how many candidates are still awaiting outreach.
   </Card>
-  <Card title="Enrolled This Month" icon="circle-check">
-    The number of clients successfully enrolled in an ACA plan since the first of the current month.
+  <Card title="Enrolled" icon="calendar">
+    The number of clients successfully enrolled in an ACA plan within the selected time window. Use the built-in period selector (see below) to switch between **Day**, **Week**, **Month**, and **Year**.
   </Card>
-  <Card title="Monthly Premium" icon="dollar-sign">
-    The combined monthly premium (in dollars) for all plans enrolled this month. This reflects the total value of coverage your team has secured.
+  <Card title="Ready To Enroll" icon="clock">
+    The count of leads currently in the **Ready To Enroll** stage — clients whose portal accounts are set up and who are waiting for an enrollment session.
   </Card>
-  <Card title="Removed" icon="circle-xmark">
-    The total number of leads removed from the pipeline. Review this periodically to understand drop-off patterns and improve outreach.
+  <Card title="Total Enrolled Clients" icon="user-check">
+    The all-time count of clients enrolled in an ACA plan through the pipeline.
   </Card>
 </CardGroup>
+
+### Choosing the Enrolled period
+
+The **Enrolled** card includes a dropdown that lets you re-scope its count to a different time window. It defaults to **This Month**.
+
+<Tabs>
+  <Tab title="Day">
+    Counts clients enrolled since midnight today. The card reads **Enrolled Today**.
+  </Tab>
+  <Tab title="Week">
+    Counts clients enrolled since Monday of the current week. The card reads **Enrolled This Week**.
+  </Tab>
+  <Tab title="Month">
+    Counts clients enrolled since the 1st of the current month. The card reads **Enrolled This Month**. This is the default.
+  </Tab>
+  <Tab title="Year">
+    Counts clients enrolled since January 1 of the current year. The card reads **Enrolled This Year**.
+  </Tab>
+</Tabs>
 
 <Note>
 The stats dashboard is visible only to users with the **Admin** or **Owner** role. Case managers and standard agents see the pipeline table only.
