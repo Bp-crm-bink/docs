@@ -1,0 +1,117 @@
+---
+title: "Leads: Triaging Public Appointment Requests"
+sidebarTitle: "Leads Overview"
+description: "Learn how appointment requests submitted from the public marketing site arrive in the Leads inbox, and how staff review, convert, or reject them."
+---
+
+The **Leads** inbox collects appointment requests submitted by prospective clients from your public marketing site. A lead is not yet a client — it is unverified information someone typed into a web form. Staff review each lead, then either convert it into a full client record through the standard intake flow or reject it.
+
+## How a lead arrives
+
+When a visitor fills out the "Request Appointment" form on the marketing site, their submission is saved as a new lead with a **Pending** status. A lead captures:
+
+- **First name** and **last name**
+- **Phone number** and/or **email address** — at least one is required
+- **Program interest** — one or more of **Medicaid**, **Food (SNAP)**, or **Cash (TCA)**
+- **Language** preference
+- A free-text **message**, if they left one
+
+<Note>
+  Leads are never written directly into your client records. Every lead has to be reviewed and converted by staff before it becomes a client, so all client data stays staff-verified.
+</Note>
+
+## Who can see and act on leads
+
+<CardGroup cols={2}>
+  <Card title="View leads" icon="eye">
+    Owners, Admins, Managers, Case Managers, Front Desk, and Sales staff can open the Leads inbox and read incoming requests.
+  </Card>
+  <Card title="Convert or reject" icon="user-check">
+    Owners, Admins, Managers, Case Managers, and Sales staff can convert a lead into a client or reject it. Front Desk staff can view leads but cannot act on them.
+  </Card>
+</CardGroup>
+
+Leads are shared across the whole organization — they are not tied to a specific office. Any staff member with access can triage a lead from any office.
+
+## Navigating the inbox
+
+Select **Leads** in the left sidebar. The inbox opens as a two-pane view: a list of leads on the left and the details of the selected lead on the right.
+
+### Filtering the list
+
+The list is organized into tabs so you can focus on what needs attention:
+
+<CardGroup cols={2}>
+  <Card title="Pending" icon="clock">
+    New requests that have not yet been reviewed. This is the default tab.
+  </Card>
+  <Card title="Converted" icon="circle-check">
+    Leads that have been turned into client records.
+  </Card>
+  <Card title="Rejected" icon="circle-xmark">
+    Leads that were dismissed, with the reason recorded.
+  </Card>
+  <Card title="All" icon="list">
+    Every lead regardless of status.
+  </Card>
+</CardGroup>
+
+Each card in the list shows the person's name, a status badge, the programs they are interested in, and how long ago the request came in. Select a card to open its full details on the right.
+
+## Reviewing a lead
+
+The detail pane shows everything the visitor submitted — phone, email, language, programs, and any message — along with the exact date and time the request was received.
+
+### Duplicate check
+
+For pending leads, BridgePoint automatically checks whether the person may already exist as a client, matching on name and phone number within your office. If a possible match is found, a warning banner lists the existing client records with links to their profiles. Review these before converting so you don't create a duplicate.
+
+## Converting a lead to a client
+
+When a lead is legitimate, convert it into a full client record.
+
+<Steps>
+  <Step title="Open the lead and click Convert to client">
+    On a pending lead, click **Convert to client**. This opens the standard new-client intake form, pre-filled from the lead's submission.
+  </Step>
+  <Step title="Review the pre-filled fields">
+    The client's **first name**, **last name**, **phone**, **email**, **language preference**, and **programs** are carried over from the lead automatically.
+  </Step>
+  <Step title="Complete the full intake">
+    Everything else — Social Security Number, ID capture, household members, income, and the signed acknowledgements — is still collected fresh, with the client present, exactly as it is for any other intake. Nothing about identity verification or consent is skipped.
+  </Step>
+  <Step title="Submit">
+    When you submit the intake, the new client record is created and linked back to the lead, which moves to the **Converted** tab.
+  </Step>
+</Steps>
+
+<Note>
+  Once converted, the lead's detail pane shows a link to the client record it created, so you can jump straight to the new profile.
+</Note>
+
+## Rejecting a lead
+
+If a lead is spam, a duplicate, unreachable, or otherwise not worth pursuing, reject it.
+
+<Steps>
+  <Step title="Click Reject">
+    On a pending lead, click **Reject**.
+  </Step>
+  <Step title="Enter a reason">
+    In the dialog, type a short reason — for example spam, duplicate, or unreachable.
+  </Step>
+  <Step title="Confirm">
+    Click **Reject**. The lead moves to the **Rejected** tab, and the reason is recorded on the lead for future reference.
+  </Step>
+</Steps>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Adding Clients" icon="user-plus" href="/clients/adding-clients">
+    See the full intake form that a converted lead flows into.
+  </Card>
+  <Card title="Roles & Permissions" icon="shield-halved" href="/roles-permissions">
+    Review which roles can view and act on leads.
+  </Card>
+</CardGroup>

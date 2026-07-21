@@ -43,6 +43,7 @@
           {
             "group": "Leads",
             "pages": [
+              "leads/overview",
               "leads/triage-inbox"
             ]
           },
