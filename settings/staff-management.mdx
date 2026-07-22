@@ -142,11 +142,16 @@ Click the **Edit** icon next to any office in the Offices list. Update the name,
 
 ## Audit Log
 
-BridgePoint CRM records an entry in the audit log for every significant action taken in the system — including client record creates and updates, case status changes, document uploads, login events, and admin actions such as staff invitations and role changes.
+BridgePoint CRM records an entry in the audit log for every significant action taken in the system. Alongside data changes — client record creates and updates, case status changes, document uploads, and admin actions such as staff invitations and role changes — the log also captures:
 
-### Viewing today's event count
+- **Record views** — each time a staff member opens a specific client, case, or ACA pipeline record, tracking who has accessed which record.
+- **Sign-in and session events** — logins, logouts, and two-factor authentication activity, including enrollment and verification.
+- **Security events** — failed logins, failed two-factor attempts, permission-denied attempts, and password changes.
+- **Exports** — intake packet generation.
 
-The **Security & Audit Logs** card at the bottom of the Admin tab shows the number of events logged today at a glance.
+### Viewing today's event counts
+
+The **Security & Audit Logs** card at the bottom of the Admin tab shows counts of activity logged today at a glance, including data changes and security events.
 
 ### Viewing the full audit log
 
@@ -158,10 +163,19 @@ The **Security & Audit Logs** card at the bottom of the Admin tab shows the numb
     Click the **View Full Audit Log** button. This opens the dedicated audit log viewer.
   </Step>
   <Step title="Browse and filter entries">
-    The log viewer shows each entry's timestamp, actor (staff name and email), action type, affected record, and a plain-English description of what happened. Use the available filters to narrow results by date or action type.
+    The log viewer shows each entry's timestamp, actor (staff name and email), action type, affected record, a plain-English description, and IP address. Narrow results by **Date Range** (all time, today, this week, this month, or a custom range), by **Action Type**, by **User**, or by searching an email address or message.
+  </Step>
+  <Step title="Page through results">
+    Entries are shown 50 at a time. Use **Previous** and **Next** to move between pages; the viewer shows which entries you are viewing out of the total.
   </Step>
 </Steps>
 
+The **Action Type** filter groups entries into categories: **Logins & Sessions**, **Security**, **Record Views**, **Data Changes**, **Pipeline**, **Documents**, **Exports**, and **Portal Accounts**.
+
+<Tip>
+  Click **Export CSV** to download the log entries currently shown as a spreadsheet.
+</Tip>
+
 <Note>
-  The full audit log is only accessible to **Owner** and **Admin** roles. Managers can see today's event count on the Admin tab but cannot open the full log viewer.
+  The full audit log is only accessible to **Owner** and **Admin** roles. Managers can see today's event counts on the Admin tab but cannot open the full log viewer.
 </Note>
