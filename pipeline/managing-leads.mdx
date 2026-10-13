@@ -1,7 +1,7 @@
 ---
 title: "Filter, Update, and Enroll ACA Pipeline Leads"
 sidebarTitle: "Managing Leads"
-description: "Filter, search, and update ACA Pipeline leads — log contact attempts, set follow-up dates, record enrollment details, and manage lead status from one place."
+description: "Filter, search, and update ACA Pipeline leads — log contact attempts, set follow-up dates, record enrollment details, shop plans with HealthSherpa, and manage lead status from one place."
 ---
 
 The Pipeline board gives you full control over every ACA lead your team is working. You can narrow the list to exactly the records you need, open any lead to see its full history, and take action — all without leaving the pipeline view. This page walks through each task in the order you are likely to encounter it.
@@ -151,6 +151,53 @@ When a client is ready to be marked as enrolled, use the **Enrolled** button in 
 </Steps>
 
 Once enrolled, the lead detail page shows a green **Enrollment Details** card with the plan type, carrier, effective date, premium, the staff member who enrolled the client, and the enrollment date.
+
+## Shopping Plans with HealthSherpa
+
+The lead detail action bar includes two HealthSherpa tools: **Preview Plans** to compare on-exchange ACA plans for the client, and **Send to HealthSherpa** to hand the client off to HealthSherpa's guided shop-and-apply flow without re-entering their information. Both buttons are hidden when the lead is read-only.
+
+### Preview plans
+
+<Steps>
+  <Step title="Open the plan preview">
+    Click **Preview Plans** in the action bar. The **Preview ACA Plans** window opens.
+  </Step>
+  <Step title="Enter the household details">
+    - **ZIP Code** — pre-filled from the client's mailing ZIP. Change it if needed.
+    - **Household Size** — defaults to 1.
+    - **Annual Household Income ($)** — the household's yearly income.
+  </Step>
+  <Step title="Get plans">
+    Click **Get Plans**. The button stays disabled until a ZIP code is entered.
+  </Step>
+</Steps>
+
+BridgePoint shows the five lowest-premium plans for that household. Each plan card shows:
+
+- The carrier name and the plan name
+- The monthly premium — when a subsidy lowers the price, the reduced premium is shown with the full price crossed out beneath it
+- The metal level and plan type (for example, HMO or PPO)
+- A **View SBC →** link to the plan's Summary of Benefits and Coverage, when one is available
+
+<Note>
+The client's age is calculated from their date of birth on file. In November and December, quotes are for the next year's coverage, matching open enrollment. Previewing plans does not save anything to the lead.
+</Note>
+
+<Tip>
+The colored header on each plan card only helps you tell carriers apart at a glance — it is not the carrier's actual brand color.
+</Tip>
+
+If no plans come back, the window shows **No plans found for that household.** If the ZIP code can't be matched to a county, you'll see **No county found for that ZIP code**.
+
+### Send a client to HealthSherpa
+
+Click **Send to HealthSherpa** in the action bar. BridgePoint generates a HealthSherpa enrollment link pre-filled with the client's name, email, mobile phone, date of birth, and mailing state and ZIP, then opens it in a new browser tab. The button reads **Generating…** while the link is being created.
+
+<Note>
+Each link you generate is recorded in the audit log. Nothing from HealthSherpa is saved to the lead or its status.
+</Note>
+
+If HealthSherpa isn't set up for your environment, you'll see the message **HealthSherpa is not configured for this environment**. Contact your administrator.
 
 ## Removing a Lead from the Pipeline
 
