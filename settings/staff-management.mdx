@@ -1,13 +1,13 @@
 ---
 title: "Staff Management, Offices & Audit Logs"
 sidebarTitle: "Staff Management"
-description: "Invite staff, assign roles and offices, reset passwords, archive accounts, manage office details, and review audit logs from the Admin tab in Settings."
+description: "Invite staff, assign roles and offices, reset passwords, archive accounts, manage office details, and review audit logs from the Administration sections of Settings."
 ---
 
-The Admin tab in Settings gives Managers, Admins, and Owners full control over who has access to BridgePoint CRM and how your organization is structured. From here you can invite new staff, update roles and office assignments, reset passwords, deactivate accounts, manage offices, and review the audit log.
+The **Administration** sections of Settings give Managers, Admins, and Owners full control over who has access to BridgePoint CRM and how your organization is structured. From here you can invite new staff, update roles and office assignments, reset passwords, deactivate accounts, manage offices, and review the audit log.
 
 <Warning>
-  The Admin tab is only visible to users with the **Manager**, **Admin**, or **Owner** role. If you do not see this tab, your role does not include admin access.
+  The Administration group is only visible to users with the **Manager**, **Admin**, or **Owner** role. If you do not see it, your role does not include admin access.
 </Warning>
 
 ---
@@ -33,11 +33,11 @@ Every staff member in BridgePoint CRM is assigned one of the following roles. Ro
 ## Inviting a New Staff Member
 
 <Steps>
-  <Step title="Open the Admin tab">
-    Go to **Settings** and click the **Admin** tab.
+  <Step title="Open Users">
+    Go to **Settings** and select **Users** under **Administration**.
   </Step>
-  <Step title="Click Invite Staff">
-    In the **Users** section, click the **+ Invite Staff** button in the top-right corner of the table.
+  <Step title="Click Invite staff">
+    Click the **Invite staff** button in the top-right corner of the **Staff** panel.
   </Step>
   <Step title="Fill in the invitation form">
     Enter the staff member's **First Name**, **Last Name**, and **Email address**. Then select their **Role** and the **Office** they belong to.
@@ -47,7 +47,7 @@ Every staff member in BridgePoint CRM is assigned one of the following roles. Ro
     </Note>
   </Step>
   <Step title="Send the invite">
-    Click **Send Invite**. The staff member receives an email with a link to set their password and complete account setup. Their status will show as **Inactive** until they finish setup.
+    Click **Send invite**. The staff member receives an email with a link to set their password and complete account setup. Their status will show as **Inactive** until they finish setup.
   </Step>
 </Steps>
 
@@ -57,13 +57,13 @@ Every staff member in BridgePoint CRM is assigned one of the following roles. Ro
 
 <Steps>
   <Step title="Find the staff member">
-    In the **Users** table under the Admin tab, locate the staff member you want to update.
+    In **Settings → Users**, locate the staff member you want to update.
   </Step>
   <Step title="Open the edit panel">
     Click the **Edit** icon (pencil) in the Actions column for that row.
   </Step>
   <Step title="Change the role">
-    Select the new role from the **Role** dropdown, then click **Save Role**. The change takes effect immediately.
+    Select the new role from the **Role** dropdown, then click **Save role**. The change takes effect immediately.
   </Step>
 </Steps>
 
@@ -105,7 +105,7 @@ Archiving a staff member disables their account so they cannot sign in. All thei
     Click the **Deactivate** icon (circle with a slash) in the Actions column. A confirmation dialog appears.
   </Step>
   <Step title="Confirm deactivation">
-    Click **Yes, Deactivate**. The staff member's status changes to **Inactive** and they are immediately locked out.
+    Click **Yes, deactivate**. The staff member's status changes to **Inactive** and they are immediately locked out.
   </Step>
 </Steps>
 
@@ -120,8 +120,8 @@ Archiving a staff member disables their account so they cannot sign in. All thei
 ### Creating a new office
 
 <Steps>
-  <Step title="Go to the Admin tab">
-    Open **Settings → Admin**.
+  <Step title="Open Settings">
+    Open **Settings** and use the sections under **Administration**.
   </Step>
   <Step title="Find the Offices section">
     Scroll down to the **Offices** card.
@@ -151,16 +151,16 @@ BridgePoint CRM records an entry in the audit log for every significant action t
 
 ### Viewing today's event counts
 
-The **Security & Audit Logs** card at the bottom of the Admin tab shows counts of activity logged today at a glance, including data changes and security events.
+The **Audit Log** section under **Administration** shows the number of **Events today** — client record changes, sign-ins and admin actions since midnight.
 
 ### Viewing the full audit log
 
 <Steps>
-  <Step title="Open the Admin tab">
-    Go to **Settings → Admin** and scroll to the **Security & Audit Logs** card.
+  <Step title="Open Audit Log">
+    Go to **Settings → Audit Log**.
   </Step>
   <Step title="Click View Full Audit Log">
-    Click the **View Full Audit Log** button. This opens the dedicated audit log viewer.
+    Click the **View full audit log** button. This opens the dedicated audit log viewer.
   </Step>
   <Step title="Browse and filter entries">
     The log viewer shows each entry's timestamp, actor (staff name and email), action type, affected record, a plain-English description, and IP address. Narrow results by **Date Range** (all time, today, this week, this month, or a custom range), by **Action Type**, by **User**, or by searching an email address or message.
@@ -177,5 +177,5 @@ The **Action Type** filter groups entries into categories: **Logins & Sessions**
 </Tip>
 
 <Note>
-  The full audit log is only accessible to **Owner** and **Admin** roles. Managers can see today's event counts on the Admin tab but cannot open the full log viewer.
+  The full audit log is only accessible to **Owner** and **Admin** roles. Managers can see today's event count in the Audit Log section but cannot open the full log viewer.
 </Note>
