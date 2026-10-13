@@ -1,0 +1,116 @@
+---
+title: "Sending the Client Intake Form (CIF) Remotely"
+sidebarTitle: "Send CIF"
+description: "Text or email a client a one-time link to complete the full Client Intake Form on their own phone — including for brand-new callers not yet in BridgePoint."
+---
+
+**Send CIF** lets a client complete the full Client Intake Form themselves, remotely, instead of sitting down with staff in the office. You send a one-time link by email or text; the client fills in every intake section on their own device, signs the required forms, uploads a photo of their ID, and submits. Their answers are saved to the client record the same way an in-office intake is.
+
+The **Send CIF** button is on the Clients page, next to **New Client**. It only appears if your role has permission to send the Client Intake Form.
+
+## Sending a CIF
+
+<Tabs>
+  <Tab title="Existing client">
+    <Steps>
+      <Step title="Check the client">
+        On the Clients page, tick the checkbox next to **exactly one** client. The selection bar reads "Ready to send a CIF — use the Send CIF button above."
+      </Step>
+      <Step title="Click Send CIF">
+        The **Send Client Intake Form** window opens for that client.
+      </Step>
+      <Step title="Choose how to send it">
+        Pick **Email** or **Text (SMS)**, choose when the link expires, and click **Send**. See [Delivery options](#delivery-options) below.
+      </Step>
+    </Steps>
+
+    <Note>
+      **Send CIF** is disabled when more than one client is checked. Check at most one client first.
+    </Note>
+  </Tab>
+  <Tab title="New caller (not yet in BridgePoint)">
+    Use this when you're on the phone with someone who doesn't have a client record yet.
+
+    <Steps>
+      <Step title="Click Send CIF with nothing checked">
+        Make sure no clients are checked, then click **Send CIF**. The **Add a new client** window opens.
+      </Step>
+      <Step title="Enter the basics">
+        Fill in **First name**, **Last name**, and **Mobile phone** (10 digits). **Email** is optional. Click **Continue**.
+      </Step>
+      <Step title="Review possible duplicates">
+        BridgePoint checks for existing clients with a similar name or the same phone number. If any are found, they're listed — click one to open that profile in a new tab. If this really is a different person, click **Create new client anyway**.
+      </Step>
+      <Step title="Send the link">
+        The new client record is created, assigned to you, and the **Send Client Intake Form** window opens for them automatically.
+      </Step>
+    </Steps>
+
+    <Tip>
+      The quick-add record holds only the name, phone, and email. Everything else — address, household, income, ID, signatures — comes in when the client completes the CIF.
+    </Tip>
+  </Tab>
+</Tabs>
+
+## Delivery options
+
+<Tabs>
+  <Tab title="Email">
+    Choose the client's **primary** or **secondary** email from the **Send to** list. If the client has no email on file, add one on the client's Overview tab first.
+  </Tab>
+  <Tab title="Text (SMS)">
+    The link is texted to the client's mobile phone on file. Texting is only available when:
+
+    - The client has a mobile phone on file
+    - The client has **SMS consent** on file
+    - The client has **not opted out** of texts (by replying STOP)
+
+    If any of these isn't met, the window explains why. Send by email instead, collect SMS consent first, or resolve an opt-out on the Overview tab.
+  </Tab>
+</Tabs>
+
+**Link expires in** can be set to **24 hours**, **72 hours**, or **7 days** (the default).
+
+After sending, the window confirms who the link went to. You'll get an email notification when the client completes the form.
+
+## What the client sees
+
+The link opens a mobile-friendly, step-by-step form with no login. It's pre-filled with the name, phone, and email already on file so the client only needs to check them.
+
+The steps are: **Basics**, **About You**, **Benefits**, **Additional Insurance**, **Household**, **Income**, **Assets**, **Expenses**, **Notes**, and **Sign & Submit**. The client can't move past a step until its fields are valid.
+
+On **Sign & Submit**, the client must:
+
+<Steps>
+  <Step title="Sign every required form">
+    Marketplace Release, Enrollment & Coverage, Income Attestation, DCF Access Authorization, FFM Consent, and SMS & Email Consent. Any form the client has already signed (or been exempted from) shows as **Already on file** and doesn't need signing again.
+  </Step>
+  <Step title="Upload a photo ID">
+    The client picks the ID type (Driver's License, State ID, Passport, or Other Gov't ID) and taps **Take Photo / Choose File**. The front is required; the back is optional. There is no ID bypass for a remote intake.
+  </Step>
+  <Step title="Consent to electronic signing">
+    The client checks the electronic-consent box, then taps **Submit**.
+  </Step>
+</Steps>
+
+<Note>
+  Progress saves automatically as the client moves between steps and as they sign forms or upload their ID. If they close the link and reopen it before it expires, they pick up where they left off.
+</Note>
+
+## After the client submits
+
+- The client's answers are saved to their existing record — household members, income, programs (with a case per program), signed forms, ID photos, and notes — the same way an in-office intake is saved.
+- If the client signed the **SMS & Email Consent** form, their SMS and email consent are recorded on the profile.
+- An intake packet PDF is generated and attached to the client's documents, marked as signed remotely with no staff witness.
+- The staff member who sent the link gets an email notification that the Client Intake Form was completed.
+
+Each link works for **one** submission only. If the client opens a link that has already been submitted, has expired, or is no longer active, they see a message asking them to contact your office for a new link.
+
+<CardGroup cols={2}>
+  <Card title="Adding Clients" icon="user-plus" href="/clients/adding-clients">
+    Complete the full intake in the office with the client present.
+  </Card>
+  <Card title="Document Center" icon="file-signature" href="/clients/document-center">
+    Send a link for a single form or an ID photo instead of the full intake.
+  </Card>
+</CardGroup>
