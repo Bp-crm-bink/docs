@@ -35,28 +35,15 @@ Leads are shared across the whole organization — they are not tied to a specif
 
 ## Navigating the inbox
 
-Select **Leads** in the left sidebar. The inbox opens as a two-pane view: a list of leads on the left and the details of the selected lead on the right.
+Select **Leads** in the left sidebar. The page opens as a two-pane view: a list of leads on the left and, on the right, either the selected lead or the **Board** — a summary of your team's leads.
 
 ### Filtering the list
 
-The list is organized into tabs so you can focus on what needs attention:
+Above the list are a search bar and dropdowns for **status**, **owner**, and more **Filters**. The status dropdown defaults to **Open**, which covers every lead still being worked: **Pending**, **Prospecting**, and **Awaiting info**. You can also show **Converted** or **Rejected** leads, or all statuses.
 
-<CardGroup cols={2}>
-  <Card title="Pending" icon="clock">
-    New requests that have not yet been reviewed. This is the default tab.
-  </Card>
-  <Card title="Converted" icon="circle-check">
-    Leads that have been turned into client records.
-  </Card>
-  <Card title="Rejected" icon="circle-xmark">
-    Leads that were dismissed, with the reason recorded.
-  </Card>
-  <Card title="All" icon="list">
-    Every lead regardless of status.
-  </Card>
-</CardGroup>
+Each card in the list shows the person's name, a status badge, the programs they are interested in, where the lead came from, and who owns it. It also shows how long ago the request came in, or a chip if the person is waiting on your team. Select a card to open its full details on the right.
 
-Each card in the list shows the person's name, a status badge, the programs they are interested in, and how long ago the request came in. Select a card to open its full details on the right.
+See [Assigning & Working Leads](/leads/working-leads) for statuses, ownership, filters, and the Board.
 
 ## Reviewing a lead
 
@@ -81,9 +68,13 @@ When a lead is legitimate, convert it into a full client record.
     Everything else — Social Security Number, ID capture, household members, income, and the signed acknowledgements — is still collected fresh, with the client present, exactly as it is for any other intake. Nothing about identity verification or consent is skipped.
   </Step>
   <Step title="Submit">
-    When you submit the intake, the new client record is created and linked back to the lead, which moves to the **Converted** tab.
+    When you submit the intake, the new client record is created and linked back to the lead, which becomes **Converted**. If the lead had an owner, that person becomes the new client's case manager.
   </Step>
 </Steps>
+
+<Tip>
+  If the person is already a client, don't create a new record. Link the lead to their existing record instead — see [When the person is already a client](/leads/working-leads#when-the-person-is-already-a-client).
+</Tip>
 
 <Note>
   Once converted, the lead's detail pane shows a link to the client record it created, so you can jump straight to the new profile.
@@ -98,10 +89,10 @@ If a lead is spam, a duplicate, unreachable, or otherwise not worth pursuing, re
     On a pending lead, click **Reject**.
   </Step>
   <Step title="Enter a reason">
-    In the dialog, type a short reason — for example spam, duplicate, or unreachable.
+    In the dialog, give a reason — for example **Spam**, **Duplicate lead**, **Unreachable**, **Not eligible**, or **Wrong number**. A reason is required.
   </Step>
   <Step title="Confirm">
-    Click **Reject**. The lead moves to the **Rejected** tab, and the reason is recorded on the lead for future reference.
+    Click **Reject**. The lead becomes **Rejected**, and the reason is recorded on the lead for future reference.
   </Step>
 </Steps>
 

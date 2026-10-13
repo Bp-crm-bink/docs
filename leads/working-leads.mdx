@@ -1,0 +1,188 @@
+---
+title: "Assigning and Working Leads"
+sidebarTitle: "Assigning & Working Leads"
+description: "Give every lead an owner, move it through its working statuses, see who is waiting on your team, and track how quickly people are reached from the Leads Board."
+---
+
+Every lead can have an **owner** — the case manager or case specialist responsible for reaching that person and helping them get started. The Leads page shows who owns each lead, which people are still waiting to hear from your team, and how the team is doing this month.
+
+## Who can do what
+
+<CardGroup cols={2}>
+  <Card title="Assign leads" icon="user-plus">
+    Owners, Admins, and Managers can assign a lead to a case manager or case specialist, move it to someone else, or unassign it.
+  </Card>
+  <Card title="Work leads" icon="hand">
+    Case managers and case specialists are the people leads can be assigned to. They can also take an unassigned lead for themselves.
+  </Card>
+  <Card title="Update lead status" icon="arrows-rotate">
+    Staff with the **Update Lead Status** permission can move an open lead between its working statuses, or reopen a rejected lead.
+  </Card>
+  <Card title="View the leaderboard" icon="trophy">
+    Staff with the **View Lead Leaderboard** permission see the team leaderboard on the Leads Board.
+  </Card>
+</CardGroup>
+
+<Note>
+These permissions appear in **Settings → Role Permissions** as **Assign Leads to Staff**, **Work Leads (assignable, can self-assign)**, **View Lead Leaderboard**, and **Update Lead Status**.
+</Note>
+
+## Lead statuses
+
+A lead is **open** while your team is still working it. There are three open statuses, which staff set by hand:
+
+| Status | Use it when |
+|---|---|
+| **Pending** | The lead is new or hasn't been worked yet |
+| **Prospecting** | You're actively reaching out to the person |
+| **Awaiting info** | You're waiting on something from the person |
+
+A lead closes in one of two ways:
+
+- **Converted** — the person became a client, either as a new client record or by being linked to a client already on file. A converted lead's status is final.
+- **Rejected** — the lead was closed without helping, with a reason recorded.
+
+### Change a lead's status
+
+<Steps>
+  <Step title="Click the status badge">
+    On a lead's card in the list, click its status badge.
+  </Step>
+  <Step title="Pick the new status">
+    Under **Move to**, choose **Pending**, **Prospecting**, or **Awaiting info**. A check mark shows the current status.
+  </Step>
+</Steps>
+
+On a rejected lead, the same menu reads **Reopen as** — pick a working status to put the lead back into the open list.
+
+## Assigning a lead
+
+### Assign, reassign, or unassign (managers)
+
+<Steps>
+  <Step title="Open the owner control">
+    On an unassigned lead, click **Assign**. On a lead that already has an owner, click the owner's name.
+  </Step>
+  <Step title="Choose a person">
+    Search or scroll the list of **Case managers & specialists**. Each person shows their role and how many open leads they already have, so you can spread the work evenly.
+  </Step>
+  <Step title="Confirm">
+    Select the person. They get a notification in the bell that opens the lead directly.
+  </Step>
+</Steps>
+
+To take a lead off everyone's list, open the owner control and choose **Unassign**.
+
+### Take a lead yourself (case managers and specialists)
+
+On an unassigned open lead, click **Assign to me**. The lead is now yours. Leads are first come, first served — you can only take a lead nobody owns. Only a manager can move a lead that someone else already owns.
+
+<Tip>
+You can assign leads and change their status straight from the cards in the list, without opening each lead.
+</Tip>
+
+### What ownership means when a lead converts
+
+The lead's owner keeps the person as their client:
+
+- When a lead becomes a **new client** (through the full intake or a self-service intake link), the lead's owner becomes the client's case manager. If the lead has no owner, the staff member who handled the intake becomes the case manager. An intake started from the Queue still uses the staff member chosen there.
+- When a lead is **linked to a client already on file**, the lead's owner becomes that client's case manager only if the client doesn't have one yet. A client's existing case manager is never replaced.
+
+## Finding leads in the list
+
+The list header has a search bar and a row of dropdowns:
+
+- **Search** — find a lead by name, phone, or email.
+- **Status** — **Open** (all three working statuses) is the default. You can also show a single status, **Rejected**, or all statuses. Each choice shows its count.
+- **Owner** — **Everyone**, **Mine**, or **Unassigned**. **Mine** only appears for staff who can be assigned leads.
+- **Filters** — narrow by **Program**, where the lead came from, **Location**, and when it was **Submitted**. A number on the button shows how many filters are on. Choose **Clear filters** to reset them.
+
+Leads you haven't seen yet show a **NEW** tag.
+
+### Who is waiting on you
+
+BridgePoint tracks every contact with a lead — texts, calls, and intake links — and uses it to flag people who are waiting on your team. On each open lead's card, a chip replaces the lead's age when there's something to show:
+
+- **New** — the lead arrived within the last hour and nobody has reached out yet.
+- **Waiting** — nobody has reached out yet. It's flagged as overdue once a full business day has passed.
+- **Replied** — the person texted or called after your last outreach, so it's your turn to respond.
+
+A lead that is overdue or has replied **needs attention**. Its avatar gets a ring and its chip pulses gently.
+
+<Info>
+Reaching out means a text that actually went out, any outbound call (an attempt counts), or a sent intake link. Notes and the automatic confirmation text don't count.
+</Info>
+
+## Logging a call
+
+If you called a lead from a phone outside BridgePoint, log it on the lead's call log so it still counts as reaching out. Choose how the call went:
+
+- **Talked**
+- **No answer**
+- **Left voicemail**
+
+A logged call counts as outreach on the list, on the lead, and on the Board. You can only log a call on an open lead that has a phone number on file.
+
+## When the person is already a client
+
+If the person behind a lead already has a client record, choose **Already a client** and pick their record. This links the lead to the existing client instead of creating a duplicate or rejecting the lead. The lead counts as **converted**, and its triage notes are copied onto that client's record.
+
+## Rejecting a lead
+
+A reason is now required when you reject a lead, so reports can show why leads were closed. Common reasons are **Spam**, **Duplicate lead**, **Unreachable**, **Not eligible**, and **Wrong number**. Reasons can be up to 500 characters.
+
+## The Leads Board
+
+When no lead is open, the right side of the Leads page shows the **Board**. Click **Board** at the top of the list to return to it at any time.
+
+<Tabs>
+  <Tab title="Case managers & specialists">
+    If you can be assigned leads, the Board shows your own numbers:
+
+    - **Your open leads**
+    - **Waiting on you** — your open leads that need attention
+    - **You converted this month**
+    - **Fast-reach streak** — how many of your leads in a row you reached within one business day of them becoming yours
+  </Tab>
+  <Tab title="Managers">
+    Otherwise, the Board shows the whole team:
+
+    - **Open leads**
+    - **Unassigned**
+    - **Waiting on us** — open leads that need attention
+    - **Median time to reach** — how long people waited to hear from your team, for leads from the last 30 days
+  </Tab>
+</Tabs>
+
+Everyone also sees:
+
+- **Converted this month** — the team's conversions so far this month, with a bar that fills toward last month's total and a per-day chart for the last 30 days. When the team beats last month, a **New record** badge appears. This count includes new clients and leads linked to a client already on file.
+- **Still waiting for assistance** — pending leads that need attention, longest-waiting first. Case managers and specialists see their own leads plus unassigned ones. Click a person to open their lead.
+
+### Team board (leaderboard)
+
+Staff with the **View Lead Leaderboard** permission also see the **Team board**, which ranks each case manager and specialist by:
+
+| Column | What it shows |
+|---|---|
+| **Converted** | Leads they converted this month |
+| **Reach** | Their median time to reach a lead after it became theirs, over the last 30 days |
+| **Open** | Their open leads, with how many are waiting |
+| **Streak** | Their fast-reach streak |
+
+The ranking uses leads converted this month first, then the fastest median reach time. Closing leads quickly doesn't move anyone up.
+
+<Note>
+The Board's numbers come from the same leads shown in the list, so they always match. Month and day boundaries use Eastern Time.
+</Note>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Leads Overview" icon="inbox" href="/leads/overview">
+    How leads arrive and how they become clients.
+  </Card>
+  <Card title="Triaging Leads" icon="list-check" href="/leads/triage-inbox">
+    Review details, check for duplicates, and keep triage notes.
+  </Card>
+</CardGroup>
