@@ -1,0 +1,138 @@
+---
+title: "Medicare: Call Lists and Program Cards"
+sidebarTitle: "Medicare"
+description: "Work the Medicare page's MSP candidates and Medicaid 65+ call lists, and record a client's Medicare and Medicare Savings Program details from the Programs tab."
+---
+
+The **Medicare** page holds two call lists of clients to contact about Medicare. A client's Medicare details — their Medicare number, which parts they have, and the plan they were enrolled into — are recorded on the Medicare program card in the client's **Programs** tab.
+
+## The Medicare page
+
+The page has two tabs. Each shows how many clients are on that list right now.
+
+<Tabs>
+  <Tab title="MSP candidates">
+    The default list. It shows clients who screen as likely candidates for a Medicare Savings Program (QMB, SLMB, or QI-1).
+
+    | Column | What it shows |
+    |---|---|
+    | **Level** | The MSP level the client likely qualifies for |
+    | **Name** | Client name and BP ID |
+    | **Age** | Current age |
+    | **Case manager** | The client's case manager, or *Unassigned* |
+    | **Medicare** | What Medicare is on file (for example *Straight (A + B)*, *Part C*, or *Not recorded*) |
+    | **MSP case** | **MSP open** if the client already has an open Medicare Savings Program case, otherwise **No MSP case** |
+    | **Contact** | Call and Text buttons |
+
+    <Note>
+      Clients with Part A but not Part B are not listed. They have declined Part B, so they are not a lead.
+    </Note>
+  </Tab>
+  <Tab title="Medicaid 65+">
+    Clients 65 or older who have an open Medicaid case but no Medicare on file. The application may have skipped the Medicare question, so call and ask whether they have Medicare.
+
+    | Column | What it shows |
+    |---|---|
+    | **Name** | Client name and BP ID |
+    | **Age** | Current age |
+    | **Case manager** | The client's case manager, or *Unassigned* |
+    | **Medicare** | What Medicare is on file |
+    | **Medicaid** | The status of the client's Medicaid case |
+    | **Medicaid renews** | The Medicaid case's renewal date |
+    | **Contact** | Call and Text buttons |
+  </Tab>
+</Tabs>
+
+Both lists are sorted oldest client first. Click any row to open that client's **Programs** tab, where the Medicare card is.
+
+<Note>
+  Staff with the Medicare agent role see only their own clients on both lists.
+</Note>
+
+### Filtering the lists
+
+Use the filter bar above the table to narrow either list:
+
+- **Name** — search by client name or BP ID
+- **Age** — Under 65, 65–69, 70–74, 75–79, or 80+
+- **Case manager** — one or more case managers, or **Unassigned**
+- **Medicare** — what Medicare is on file, including **Not recorded**
+
+The **MSP candidates** list also has these filters:
+
+- **Level** — QMB, SLMB, or QI-1
+- **MSP case** — **MSP open** or **No MSP case**
+
+Your filters are kept when you come back to the page. The name search is not kept.
+
+### Calling or texting a client
+
+The **Contact** column on each row has:
+
+- **Call** — calls the client's phone. It is greyed out, with the tooltip *No phone on file*, when there is no usable number.
+- **Text** — opens the client's **Messages** tab. It only appears when the client has a mobile number on file, has given SMS consent, and has not texted STOP.
+
+## Recording Medicare details on the Programs tab
+
+Every Medicare program card has a **Medicare Details** section that shows the client's Medicare number, what Medicare they have, and their plan. Click **Edit** in that section to update it, or set the card's status to **Enrolled** to record the plan they were enrolled into.
+
+### Medicare on File
+
+The **Medicare on File** answer records what the client has:
+
+| Option | Meaning |
+|---|---|
+| **Straight Medicare (A + B)** | Part A and Part B, with no plan on top |
+| **Part A only** | Recorded, but not a lead |
+| **Part B only** | Recorded, but not a lead |
+| **Part C** | Part A + B with a Part C plan |
+| **Supplement** | Part A + B with a Supplement |
+| **Part D** | Part A + B with a Part D plan |
+| **None** | No Medicare, recorded but not a lead |
+
+When **Part A only** or **None** is on file, the card notes that the client is not a lead.
+
+### Marking a Medicare case Enrolled
+
+<Steps>
+  <Step title="Set the status to Enrolled">
+    On the client's Programs tab, choose **Enrolled** in the Medicare card's status dropdown, or add a Medicare program with the status **Enrolled**. The **Mark Enrolled — Medicare** dialog opens.
+  </Step>
+  <Step title="Enter the Medicare number">
+    Type the client's **Medicare Number** (for example `1EG4-TE5-MK73`).
+  </Step>
+  <Step title="Choose Medicare on File">
+    To mark the case Enrolled, choose the plan they were enrolled into: **Part C**, **Supplement**, or **Part D**.
+  </Step>
+  <Step title="Enter Part A and Part B dates">
+    For each part, enter the **Start Date** and choose how often it **Renews** (every 6 or 12 months). The **Renewal Date** fills in from the start date. You can type over it.
+  </Step>
+  <Step title="Enter the plan details">
+    For a Part C plan, choose the **Part C Type** (D-SNP, C-SNP, or Standard) and the **Network** (HMO, PPO, or HMO-POS). For every plan, choose the **Carrier** (pick **Other** to type a carrier name that isn't listed) and enter the **Enrollment Date**. Then choose how often the plan **Renews**. The **Renewal Date** fills in from the enrollment date.
+  </Step>
+  <Step title="Confirm the enrollment">
+    Click **Confirm Enrollment**. The plan details and the Enrolled status are saved together. If you close the dialog instead, the status does not change.
+  </Step>
+</Steps>
+
+<Tip>
+  Use **Edit** on the Medicare Details section to record what a client has without enrolling them, for example **Part A only** or **None**. When you edit, you must still choose Medicare on File, but the plan fields are optional.
+</Tip>
+
+Saving a client's Part A and Part B also updates their Medicare Savings Program screening, so the MSP candidates list stays current.
+
+## Recording Medicare Savings Program enrollment
+
+When you set a Medicare Savings Program card to **Enrolled**, the **Mark Enrolled — Medicare Savings Program** dialog asks for:
+
+- **Part B Premium Reduction** — Yes or No: whether the program pays the client's Part B premium
+- **Medically Needy** — Yes or No
+- **Share of Cost (per month)** — only asked when Medically Needy is Yes
+- **Enrolled Date**
+- **Renews** — every 6 or 12 months. The **Renewal Date** fills in from the enrolled date.
+
+These details appear in the **Enrollment Details** section of the MSP card. Click **Edit** there to change them.
+
+<Tip>
+  Compare the share of cost with the client's income. If the share of cost looks too high for what they earn, something on the application may be wrong and the client may qualify for more.
+</Tip>
