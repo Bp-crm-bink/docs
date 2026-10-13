@@ -1,0 +1,110 @@
+---
+title: "Medicare Savings Program Screening: Find Likely QMB, SLMB, and QI-1 Clients"
+sidebarTitle: "Medicare Savings Program"
+description: "Learn how BridgePoint CRM screens clients for the Medicare Savings Program, where the result appears, and how to open an MSP program for a likely candidate."
+---
+
+BridgePoint CRM automatically screens every client for the Medicare Savings Program (MSP). It compares the client's income, household, assets, and Medicare details against this year's limits in **Settings → Program Limits**, and marks clients who look like they qualify as **Likely QMB**, **Likely SLMB**, or **Likely QI-1**.
+
+<Note>
+  The screen is a starting point for follow-up, not an eligibility decision. DCF makes the final call.
+</Note>
+
+## What each level pays
+
+| Level | Pays |
+|---|---|
+| **QMB** | Part A and Part B premiums, deductibles, and copays |
+| **SLMB** | Part B premium |
+| **QI-1** | Part B premium |
+
+## How the screen works
+
+The screen places a client at the lowest level whose monthly income limit they fall under — QMB first, then SLMB, then QI-1. A client over the QI-1 limit is not a candidate.
+
+- **Who is screened** — clients with Medicare Part A or Part B on file, and clients aged 65 or older even if they aren't on Medicare yet. Clients under 65 with no Medicare are not screened.
+- **Income** — the client's own monthly income entries. If a household member is marked **Spouse**, the couple limits are used and the spouse's income is added. Income from other household members is not counted.
+- **Assets** — the client's checking and savings amounts. If they are over the asset limit, the client is not a candidate. If neither amount is entered, the screen still runs and notes that assets were not checked.
+- **Limits** — the current year's limits in **Settings → Program Limits**, or the most recent year on file. If no limits are on file, no one is flagged.
+
+### When the screen runs
+
+The screen runs again automatically, and never holds up your save, whenever something it depends on changes:
+
+- An intake is submitted (in the office or from a client intake link)
+- Income entries are saved
+- A household member is added or edited
+- The client's date of birth, Medicare Part A or Part B, or checking or savings amounts are edited
+- Program limits are saved in Settings
+
+### Screening notes
+
+A candidate can come with notes that explain the result or what to do next:
+
+| Note | Meaning |
+|---|---|
+| **Can get Part B through QMB** | The client has Part A but not Part B. QMB can enroll them in Part B at any time. |
+| **Needs Part A and Part B** | SLMB and QI-1 require both parts, and the client doesn't have both on file. |
+| **Not on Medicare yet** | The client is 65 or older but has no Part A on file. |
+| **Assets not checked** | No checking or savings amounts are entered, so assets weren't part of the answer. |
+
+## Where the screen appears
+
+<CardGroup cols={3}>
+  <Card title="Medicare page" icon="list-check">
+    **Medicare** in the sidebar lists every candidate you can see.
+  </Card>
+  <Card title="Medicare card" icon="id-card">
+    A **Likely QMB / SLMB / QI-1** pill on the client's Overview tab.
+  </Card>
+  <Card title="Programs tab" icon="layer-group">
+    A screening panel at the top of the Programs tab, with a shortcut to add the program.
+  </Card>
+</CardGroup>
+
+### The Medicare candidates page
+
+Click **Medicare** in the sidebar to open **Medicare Savings Program candidates**. Use the **All**, **QMB**, **SLMB**, and **QI-1** tabs at the top to filter by level. Each tab shows how many clients are at that level.
+
+Each row shows:
+
+- The client's level
+- Their name, BP ID, age, and case manager
+- Their Medicare Part A and Part B answers
+- **MSP open** if they already have an active Medicare Savings Program case, or **No MSP case** if they don't
+- Any screening notes
+
+Click a row to open that client's **Programs** tab. The bottom of the list shows how many clients are shown and when the list was last checked.
+
+<Tip>
+  The selected level filter is in the page URL, so you can bookmark or share a filtered view.
+</Tip>
+
+### On the client profile
+
+- **Medicare card (Overview tab)** — candidates show a green **Likely QMB**, **Likely SLMB**, or **Likely QI-1** pill. Hover over it to see the screening notes behind it.
+- **Programs tab** — candidates show a **Medicare Savings Program screen** panel at the top. It shows the likely level and what it pays, the three levels with the client's level highlighted, the screening notes, and the date the screen was last checked.
+
+Both update on their own after you save a change that affects the screen.
+
+## Open an MSP program for a candidate
+
+<Steps>
+  <Step title="Open the client's Programs tab">
+    Click the client's row on the **Medicare** page, or open their profile and go to the **Programs** tab.
+  </Step>
+  <Step title="Review the screen">
+    Check the likely level and any notes in the **Medicare Savings Program screen** panel. For example, **Assets not checked** means you should confirm the client's checking and savings amounts first.
+  </Step>
+  <Step title="Click Add Medicare Savings Program">
+    The button appears at the bottom of the panel only if the client doesn't already have an active MSP program. It opens the Add Program form with **Medicare Savings Program** already selected.
+  </Step>
+</Steps>
+
+## Notifications
+
+When a client newly screens as a candidate, or moves to a different level, BridgePoint CRM sends a bell notification to the client's case manager and to every active owner and admin. The notification reads, for example, "*Client name* may qualify for QMB (Medicare Savings Program)", followed by the first screening note if there is one. Clicking it opens the client's **Programs** tab.
+
+## When program limits change
+
+Saving a year's limits in **Settings → Program Limits** screens every client the new limits could affect again: anyone with Part A or Part B on file, anyone 65 or older, and anyone currently flagged. The confirmation message shows how many clients were checked and how many changed level. A limits change does not send bell notifications.
