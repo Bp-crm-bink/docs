@@ -117,10 +117,44 @@ built up while triaging carries over and isn't lost.
 
 ## Converting or rejecting a lead
 
-A **pending** lead shows two actions at the bottom of the detail view:
+A **pending** lead shows three actions at the bottom of the detail view:
 
 - **Convert to client** — turns the lead into a client record. Its triage notes
   are carried over to the new client (see above), and the lead is marked
   converted with a link to the client record it became.
+- **Send CIF** — creates a client record from the lead's details and sends the
+  applicant a self-service intake link (see below).
 - **Reject** — opens a dialog to record why the lead won't move forward. The
   reason you enter is then shown on the rejected lead's detail view.
+
+## Sending a self-service intake link
+
+Use **Send CIF** when you'd rather have the applicant fill in their own intake
+remotely than complete it with them live, as you would for a walk-in or phone
+call with **Convert to client**.
+
+<Steps>
+  <Step title="Click Send CIF">
+    On a pending lead, click **Send CIF**. BridgePoint creates a client record
+    using the name, phone, and email the lead already gave you, so you don't
+    have to type them again. You're set as that client's case manager.
+  </Step>
+  <Step title="Choose how to send the link">
+    The same Send CIF dialog used on the Clients table opens. Send the link by
+    email or by text message, and choose when it expires.
+  </Step>
+  <Step title="Wait for the applicant to submit">
+    The lead stays **Pending** after you send the link. It's only marked
+    **converted**, with a link to the new client record, once the applicant
+    actually submits the intake form. At that point its triage notes are copied
+    onto the client record, just as they are with **Convert to client**.
+  </Step>
+</Steps>
+
+<Note>
+You don't need SMS consent on file to text the link. The intake form includes
+the SMS & Email Consent form unless the client has already signed it. If the
+client has opted out of SMS by replying STOP, though, texting stays blocked
+until that's resolved on the client's Overview tab.
+</Note>
+
