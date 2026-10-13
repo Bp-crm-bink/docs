@@ -90,6 +90,7 @@
               "reports/overview",
               "settings/overview",
               "settings/staff-management",
+              "settings/program-limits",
               "settings/internal-forms"
             ]
           }

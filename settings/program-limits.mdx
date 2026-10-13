@@ -1,0 +1,94 @@
+---
+title: "Program Limits: Medicare Savings Program Income and Asset Limits"
+sidebarTitle: "Program Limits"
+description: "View and update the yearly QMB, SLMB, and QI-1 income and asset limits that Medicare Savings Program candidates are measured against."
+---
+
+The **Program Limits** section of Settings holds the yearly Medicare Savings Program (MSP) income and asset limits for your organization. These are the figures QMB, SLMB, and QI-1 candidates are measured against. The limits change every year (income follows the federal poverty level), so they are kept here as editable data rather than built into the app.
+
+<Note>
+  **Every staff member can view** Program Limits. Only **Owners** and **Admins** can add or edit them. The permission is called **manageProgramLimits** and appears in **Settings → Roles & Permissions**. See [Roles and Permissions](/roles-permissions).
+</Note>
+
+---
+
+## What's on file for each year
+
+Each year on file includes:
+
+| Limit | What it covers |
+|------|-------------|
+| **QMB** (100% FPL) | Monthly income ceiling, single and couple. Pays Part A + B premiums, deductibles and copays. |
+| **SLMB** (120% FPL) | Monthly income ceiling, single and couple. Pays the Part B premium. |
+| **QI-1** (135% FPL) | Monthly income ceiling, single and couple. Pays the Part B premium. |
+| **Assets** | One asset limit, single and couple, shared by all three levels. |
+| **Effective date** | When DCF starts using that year's figures. Optional; it stays blank until someone confirms it. |
+
+<Info>
+  2026 starting figures (the federal baseline) are already loaded for every organization. Florida uses the federal figures. Check them against DCF and edit them if they need to change.
+</Info>
+
+---
+
+## Viewing the limits
+
+<Steps>
+  <Step title="Open Program Limits">
+    Go to **Settings** and select **Program Limits** under **Workspace** in the section list.
+  </Step>
+  <Step title="Pick a year">
+    Year chips run across the top. The most recent year opens by default. Click any year to view its figures.
+  </Step>
+  <Step title="Read the ladder">
+    The **Monthly income ceiling** chart shows QMB, SLMB, and QI-1 as stepped bars, so you can see the income band for each level at a glance. Use the **Single** / **Couple** toggle to switch household size.
+  </Step>
+  <Step title="Check the full table">
+    Below the chart, a table lists every level's monthly income limit for single and couple, plus the asset limit for all three levels.
+  </Step>
+</Steps>
+
+The panel heading shows the year's effective date (or **Effective date not set**) and when the figures were last updated.
+
+---
+
+## Adding or editing a year
+
+<Tabs>
+  <Tab title="Edit an existing year">
+    <Steps>
+      <Step title="Select the year">
+        In **Settings → Program Limits**, click the year you want to change.
+      </Step>
+      <Step title="Click Edit">
+        Click **Edit** in the top-right corner of the year's limits panel.
+      </Step>
+      <Step title="Update the figures">
+        Change the **Single** and **Couple** amounts for QMB, SLMB, QI-1, and Assets as needed. Optionally set the **Effective date**.
+      </Step>
+      <Step title="Save">
+        Click **Save [year]**. A confirmation shows when the limits are saved.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Add next year's figures">
+    <Steps>
+      <Step title="Click the new-year chip">
+        In **Settings → Program Limits**, click the dashed **+ [year]** chip at the end of the year row. It only appears when that year has no figures yet.
+      </Step>
+      <Step title="Update what changed">
+        The **Add [year] limits** form starts from the latest year on file, so you only need to type the figures that moved.
+      </Step>
+      <Step title="Save">
+        Optionally set the **Effective date**, then click **Save [year]**. The new year is added to the year chips and opens automatically.
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+<Warning>
+  Every amount must be more than $0. Check the figures against DCF before saving. Each save is recorded in the [audit log](/settings/staff-management#audit-log) along with the previous figures for that year.
+</Warning>
+
+<Tip>
+  If no limits are on file yet, the section shows **No limits on file yet**. Owners and Admins can add the current year to get started.
+</Tip>

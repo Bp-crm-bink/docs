@@ -1,16 +1,27 @@
 ---
 title: "Settings: Profile, MFA, and Admin Controls"
 sidebarTitle: "Settings"
-description: "Manage your profile, configure two-factor authentication, and—if you hold a Manager, Admin, or Owner role—access organization-wide admin controls."
+description: "Manage your profile, two-factor authentication, and notifications, view program limits, and—if your role allows—access organization-wide admin controls."
 ---
 
-The Settings page is where you manage your personal account and, depending on your role, your organization's staff and offices. It is organized into tabs: **User Profile**, available to every user; **Dashboards**, visible to Admins and Owners for setting each role's default dashboard; and **Admin**, visible to Manager, Admin, and Owner roles.
+The Settings page is where you manage your personal account and, depending on your role, your organization's staff and offices. A section list on the left (a scrolling row of chips on smaller screens) groups everything into three areas. Click a section to open it on the right.
+
+| Group | Sections | Who sees them |
+|------|-------------|-------------|
+| **Account** | **Profile**, **Security**, **Notifications** | Everyone |
+| **Workspace** | **Dashboards** | Roles that can manage dashboard templates |
+| **Workspace** | **[Program Limits](/settings/program-limits)** | Everyone (only Owners and Admins can edit) |
+| **Administration** | **Users**, **Roles & Permissions**, **Check-in Kiosks**, **Lead Kiosks**, **Office Locations**, **Audit Log** | Roles with office settings access |
+
+<Tip>
+  The open section is saved in the page address (for example, `/settings?section=program-limits`). You can bookmark or share a link to a section, and refreshing or using the back button returns you to the same place. If a link points to a section you can't see, Settings opens your first available section.
+</Tip>
 
 ---
 
-## User Profile Tab
+## Profile
 
-The User Profile tab contains your personal information, two-factor authentication settings, and notification preferences.
+The **Profile** section shows your account details and lets you change your name. Two-factor authentication lives in **Security**, and reminder and chat sound preferences live in **Notifications**.
 
 ### Updating your name
 
@@ -18,20 +29,20 @@ The User Profile tab contains your personal information, two-factor authenticati
   <Step title="Open Settings">
     Select **Settings** from the left sidebar.
   </Step>
-  <Step title="Locate Profile Information">
-    The **Profile Information** card is shown by default on the User Profile tab.
+  <Step title="Open Profile">
+    **Profile** opens by default under **Account**.
   </Step>
   <Step title="Edit your name">
-    Update the **First Name** and **Last Name** fields with the values you want.
+    In the **Your name** panel, update the **First name** and **Last name** fields. Your name is shown on notes, tasks and messages you send.
   </Step>
   <Step title="Save">
-    Click **Save Changes**. Your updated name takes effect immediately.
+    Click **Save changes**. Your updated name takes effect immediately.
   </Step>
 </Steps>
 
 ### Viewing your role and office
 
-Your **Role**, **Office**, and **Organization** are displayed as read-only fields in the Profile Information card. These are assigned by your organization's admin and cannot be changed from this page.
+Your **Email**, **Role**, **Office**, and **Organization** are displayed as read-only details in the Profile section. These are assigned by your organization's admin and cannot be changed from this page.
 
 ---
 
@@ -48,7 +59,7 @@ Two-factor authentication (2FA) is required for all BridgePoint CRM accounts. Yo
         Download Google Authenticator, Authy, or any TOTP-compatible app on your phone if you do not already have one.
       </Step>
       <Step title="Open the MFA section">
-        Go to **Settings → User Profile**. Scroll to the **Two-Factor Authentication** card.
+        Go to **Settings → Security**.
       </Step>
       <Step title="Start enrollment">
         In the **Authenticator App** row, click **Switch to this**. A QR code appears inline.
@@ -73,7 +84,7 @@ Two-factor authentication (2FA) is required for all BridgePoint CRM accounts. Yo
 
     <Steps>
       <Step title="Open the MFA section">
-        Go to **Settings → User Profile**. Scroll to the **Two-Factor Authentication** card.
+        Go to **Settings → Security**.
       </Step>
       <Step title="Switch to Email Code">
         In the **Email Code** row, click **Switch to this**. A confirmation dialog appears.
@@ -93,14 +104,14 @@ Two-factor authentication (2FA) is required for all BridgePoint CRM accounts. Yo
 
 ## Default Dashboards
 
-The **Dashboards** tab is visible to **Admin** and **Owner** roles. It lets you set the starting [dashboard](/dashboard/overview) each role sees — the board a user gets before they customize their own, and the board every new hire in that role opens to.
+The **Dashboards** section is visible to **Admin** and **Owner** roles. It lets you set the starting [dashboard](/dashboard/overview) each role sees — the board a user gets before they customize their own, and the board every new hire in that role opens to.
 
 <Note>
   Publishing a default only changes what people who haven't customized their own dashboard (and new hires) get. Anyone who has already customized their board keeps their personal layout.
 </Note>
 
 <Steps>
-  <Step title="Open the Dashboards tab">
+  <Step title="Open Dashboards">
     Go to **Settings → Dashboards**.
   </Step>
   <Step title="Pick a role">
@@ -120,12 +131,21 @@ The **Dashboards** tab is visible to **Admin** and **Owner** roles. It lets you 
 
 ---
 
-## Admin Tab
+## Notifications
 
-The Admin tab is visible only to users with the **Manager**, **Admin**, or **Owner** role. It contains tools for managing staff, offices, and audit logs across your organization.
+The **Notifications** section has two panels:
+
+- **Reminders** — turn bell notifications on or off for **Case reminders**, **Pregnancy renewal due**, **Case returned to review**, and **Release auth expiring**. Changes save as you switch them.
+- **Chat sound** — the same setting as the sound menu on [Messages](/messages/overview).
+
+---
+
+## Administration
+
+The **Administration** group holds **Users**, **Roles & Permissions**, **Check-in Kiosks**, **Lead Kiosks**, **Office Locations** (shown once your organization has offices), and **Audit Log**. It is only visible to roles with office settings access. The **Users** entry shows a count of active staff.
 
 <Note>
-  If you do not see the Admin tab, your role does not include admin access. Contact your organization's Owner or Admin to request a role change.
+  If you do not see the Administration group, your role does not include admin access. Contact your organization's Owner or Admin to request a role change.
 </Note>
 
-For full documentation on staff management, office management, and audit logs, see [Staff Management](/settings/staff-management).
+For full documentation on staff management and audit logs, see [Staff Management](/settings/staff-management). For yearly Medicare Savings Program limits, see [Program Limits](/settings/program-limits).
