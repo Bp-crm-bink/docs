@@ -72,6 +72,12 @@
             ]
           },
           {
+            "group": "Groups",
+            "pages": [
+              "groups/overview"
+            ]
+          },
+          {
             "group": "Tasks & Invoices",
             "pages": [
               "tasks/overview",

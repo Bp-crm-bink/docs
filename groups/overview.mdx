@@ -1,0 +1,182 @@
+---
+title: "Groups: Employer Group Insurance"
+sidebarTitle: "Groups Overview"
+description: "Track your employer group insurance book of business — group coverage, contributions, commissions, renewals, and each group's employee roster with dependents."
+---
+
+The **Groups** page holds your book of employer-sponsored (group) insurance business. Each employer group has its own page with its contact details, the lines of coverage it carries, plan and funding details, notes, and a roster of the employees enrolled under it.
+
+Select **Groups** in the left sidebar to open the board.
+
+## Who can see and edit groups
+
+Groups use four permissions, which you'll see listed under role permissions in Settings:
+
+<CardGroup cols={2}>
+  <Card title="View Groups" icon="eye">
+    Open the Groups board and individual group pages.
+  </Card>
+  <Card title="Edit Groups" icon="pen">
+    Add new groups, edit a group's details, upload its logo, and save notes.
+  </Card>
+  <Card title="View Group Employees" icon="users">
+    See the employee roster on a group page. Employee coverage elections are protected health information, so this is separate from viewing the group itself.
+  </Card>
+  <Card title="Edit Group Employees" icon="user-plus">
+    Add employees to a roster and edit existing employees and their dependents.
+  </Card>
+</CardGroup>
+
+By default every role has all four permissions. An owner can narrow them from role permissions in [Settings](/settings/overview).
+
+Groups belong to an office. A new group is saved to the office of the staff member who creates it. You see the groups in your own office, and staff who can view all offices see every office in the organization.
+
+<Note>
+  Opening a group page that shows the employee roster is recorded in the audit log, the same as opening a client or case record.
+</Note>
+
+## The Groups board
+
+### Book of business summary
+
+A summary strip at the top of the board shows your whole book at a glance:
+
+- **Groups** — how many employer groups are on file
+- **Employees on file** — the total of every group's **# of EEs**
+- **Monthly commissions** — the total monthly commission across all groups, with the yearly amount underneath
+- **Renewing in 90 days** — how many groups have their next renewal within 90 days
+
+<Note>
+  The summary always covers the full book. Searching and filtering narrows the table below it but doesn't change these totals.
+</Note>
+
+### The groups table
+
+Each row shows the group's name and logo, the lines of coverage it carries, its number of employees, the employer contribution (with the dependent contribution underneath), the next renewal date with a countdown, and the monthly commission. The table is sorted by next renewal, so the soonest renewals are at the top. Click any row to open that group's page.
+
+### Searching and filtering
+
+- **Search** matches the group name, contact name, email, phone, carriers, and group numbers.
+- **Renewal** filters by how soon the next renewal is: **Within 30 days**, **31–90 days**, **After 90 days**, or **No date on file**.
+
+### Renewal countdowns
+
+Group plans renew once a year on the same date. BridgePoint works out the **next renewal** as the next anniversary of the renewal date on file, so the countdown stays accurate even if nobody updated last year's date. The renewal badge is color-coded by how close it is:
+
+| Badge color | Next renewal |
+|---|---|
+| Red | Within 30 days |
+| Amber | 31–90 days away |
+| Gray | More than 90 days away |
+
+## Adding a group
+
+<Steps>
+  <Step title="Click New group">
+    On the Groups board, click **New group** in the page header. If the board is empty, you can also click **Add the first group**.
+  </Step>
+  <Step title="Fill in Group & contact">
+    Enter the **Group name** (required), plus the **Group contact**, **Contact phone** (10 digits), and **Email address**.
+  </Step>
+  <Step title="Fill in Coverage">
+    For each line the group carries, enter the carrier: **Health carrier** and **Health group #**, **Dental carrier** and **Dental group #**, **Vision carrier**, **Life**, and **STD / LTD**. Leave a line blank if the group doesn't carry it.
+  </Step>
+  <Step title="Fill in Plan & funding">
+    Enter the **# of EEs**, **Monthly commissions**, **ER contribution**, **ER dependent contribution**, **Beginning date**, and **Renewal date**.
+  </Step>
+  <Step title="Add notes and save">
+    Add any **Notes**, then click **Add group**. The new group's page opens.
+  </Step>
+</Steps>
+
+## The group page
+
+The group page is split into cards:
+
+<CardGroup cols={2}>
+  <Card title="Header" icon="building">
+    The group's logo, name, beginning date, renewal countdown, and contact name, phone, and email. Click the phone number to call or the email to start a message.
+  </Card>
+  <Card title="Coverage" icon="heart-pulse">
+    One tile for each line — Health, Dental, Vision, Life, and STD / LTD — marked **On file** or **None**, with the carrier and group number where recorded.
+  </Card>
+  <Card title="Plan & funding" icon="hand-holding-dollar">
+    # of EEs, employer and dependent contributions, monthly commissions (with the yearly amount), beginning date, and next renewal. If the renewal date on file is out of date, it is shown under the next renewal.
+  </Card>
+  <Card title="Notes" icon="note-sticky">
+    Free-text notes about the group, which you can edit right on the page.
+  </Card>
+  <Card title="Employees" icon="users">
+    The group's employee roster. Only shown to staff who can view group employees.
+  </Card>
+</CardGroup>
+
+### Editing a group
+
+Click the pencil (**Edit group**) button in the header to open the full group form with the details already on file. Make your changes and click **Save changes**.
+
+### Uploading a logo
+
+Click the camera button on the group's logo tile and choose a PNG, JPG, or WebP image. BridgePoint resizes the image before uploading it. If a group has no logo, its initials are shown instead. Click the camera button again any time to replace the logo.
+
+### Saving notes
+
+Type in the **Notes** card and click **Save notes**. Click **Discard** to undo changes you haven't saved yet. Notes save on their own, without changing any of the group's other details.
+
+## Managing the employee roster
+
+The **Employees** card lists everyone entered on the group's roster, showing the number of active employees, how many are on COBRA, and the group's **# of EEs** for comparison.
+
+<Note>
+  The **# of EEs** on the group is the number from your book of business. The roster is the employees who have actually been entered, so the two numbers can differ.
+</Note>
+
+Each employee row shows:
+
+- **Employee** — name, with age and hire month underneath
+- **Coverage tier** — Employee only, Employee + spouse, Employee + child(ren), or Family
+- **Dependents** — how many people are covered under the employee; hover to see who they are
+- **Health**, **Dental**, and **Vision** — whether the employee **Enrolled** or **Waived** each line
+- **Status** — **Active**, **COBRA**, or **Terminated**
+
+### Adding an employee
+
+<Steps>
+  <Step title="Click Add employee">
+    In the Employees card, click **Add employee**.
+  </Step>
+  <Step title="Enter the employee's details">
+    Enter the **First name** and **Last name** (required), and optionally the **Date of birth** and **Hire date**. Choose a **Status**: Active, COBRA, or Terminated. New employees start as Active.
+  </Step>
+  <Step title="Record their coverage">
+    Choose a **Coverage tier**, and mark **Health**, **Dental**, and **Vision** as **Enrolled** or **Waived**. If a choice hasn't been made yet, click it again to clear it.
+  </Step>
+  <Step title="Add dependents">
+    Click **Add dependent** for each person covered under the employee. Enter their **First name**, **Last name**, **Relationship** (Spouse, Domestic partner, or Child), and optionally their **Date of birth**.
+  </Step>
+  <Step title="Save">
+    Click **Add employee**. The employee and their dependents are added to the roster.
+  </Step>
+</Steps>
+
+A few rules apply when saving an employee:
+
+- A date of birth can't be in the future.
+- The hire date must be after the date of birth.
+- Each employee can have only one spouse or domestic partner.
+- Each employee can have up to 20 dependents.
+
+### Editing an employee
+
+Click an employee's row to open their details. Change any field, add dependents with **Add dependent**, or remove one with the trash icon next to it, then click **Save changes**. Adding or removing dependents doesn't take effect until you save.
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Roles & Permissions" icon="shield-halved" href="/roles-permissions">
+    Review how roles and permissions work in BridgePoint.
+  </Card>
+  <Card title="Settings" icon="gear" href="/settings/overview">
+    Adjust which roles can view and edit groups.
+  </Card>
+</CardGroup>
