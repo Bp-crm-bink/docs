@@ -105,6 +105,52 @@ If a lead is spam, a duplicate, unreachable, or otherwise not worth pursuing, re
   </Step>
 </Steps>
 
+## Lead kiosks
+
+Leads can also come from a **lead kiosk**: an iPad left unattended at a partner location where visitors fill in the lead form themselves. Kiosk devices are managed in **Settings → Admin → Lead Kiosks**.
+
+### Checking whether a kiosk is online
+
+Each active kiosk checks in with BridgePoint every few minutes while it is powered on and showing the kiosk page. In **Settings → Admin → Lead Kiosks**, every active kiosk shows a status badge next to its **Active** badge:
+
+<CardGroup cols={3}>
+  <Card title="Online" icon="circle-check">
+    The device checked in within the last 20 minutes.
+  </Card>
+  <Card title="Offline" icon="circle-xmark">
+    The device has not checked in for more than 20 minutes.
+  </Card>
+  <Card title="Not set up yet" icon="circle-minus">
+    The device has never opened the kiosk page.
+  </Card>
+</CardGroup>
+
+Hover over the badge to see the time of the last check-in.
+
+### Offline alerts
+
+When a kiosk goes offline, the staff member who created it gets a bell notification that reads **Lead kiosk "[kiosk name]" is offline — no check-in since [date and time]**. Click the notification to open the Settings page.
+
+- You get **one notification per outage**. When the kiosk checks in again, the next outage triggers a new alert.
+- Alerts are only sent between **8 AM and 6 PM Eastern**. A kiosk that goes offline overnight, when the partner site may be closed, is flagged at the first check after 8 AM.
+
+<Tip>
+  You set the kiosk up at the partner site, so when you get an offline alert, you know who to call there to check the iPad's power and Wi-Fi.
+</Tip>
+
+### What visitors see on the kiosk
+
+- **Help line**: when your office has a phone number on file, a **Need help? Call us** strip with that number stays at the bottom of the welcome and form screens.
+- **Offline screen**: if the kiosk can't reach BridgePoint, the welcome screen is replaced with a **This kiosk is temporarily unavailable** message and your office's contact details. The kiosk keeps retrying and the message clears by itself once the connection is back. A visitor who is already filling in the form keeps their answers.
+- **Terms and Privacy**: tapping these links shows a QR code and the web address, so visitors can read the page on their own phone without leaving the kiosk.
+- **No autofill**: the form never offers to autofill names, addresses, or phone numbers, so one visitor's details are never suggested to the next.
+
+<Note>
+  For extra protection, also turn off Safari AutoFill in the iPad's Settings app.
+</Note>
+
+To see how kiosk leads are performing, run the **Kiosk Pilot Results** report in [Reports](/reports/overview).
+
 ## Next steps
 
 <CardGroup cols={2}>
