@@ -102,13 +102,16 @@ The DCF status values that trigger an ACA pipeline prompt are:
 | Pregnancy Open | Referred to Marketplace |
 | Pregnancy Closed | Current Benefit Ending Soon |
 | Refugee Medical Assistance | Referred to Marketplace |
+| Transitional Medicaid | Referred to Marketplace |
+| Medicaid Waiver | Referred to Marketplace |
+| Medicare Savings Programs | Referred to Marketplace |
 
 <Steps>
   <Step title="Record a qualifying DCF status">
     On the Medicaid case detail page, set the DCF Status to one of the values above and click **Save Changes**. A confirmation prompt appears after the save completes.
   </Step>
   <Step title="Confirm the ACA pipeline referral">
-    Review the trigger reason shown in the prompt. Click **Confirm** to add the client to the ACA pipeline. Click **Dismiss** to skip the referral without removing it from the case.
+    Review the trigger reason shown in the prompt. Click **Yes, add to ACA pipeline** to add the client to the ACA pipeline. Click **No, skip for now** to keep the new DCF status without starting a pipeline entry.
   </Step>
   <Step title="Case status updates to ACA Pipeline">
     After you confirm, the case status changes to **ACA Pipeline** and a new enrollment cycle entry is added to the Status History. The client also appears in the Pipeline module for follow-up.
@@ -116,5 +119,9 @@ The DCF status values that trigger an ACA pipeline prompt are:
 </Steps>
 
 <Warning>
-  If you dismiss the ACA pipeline prompt, the case status remains **In Review** and the client is not added to the pipeline. You can return to the case and repeat the DCF status save at any time to re-trigger the prompt.
+  If you choose **No, skip for now**, the client is not added to the pipeline and the new DCF status is kept. You can return to the case and repeat the DCF status save at any time to re-trigger the prompt.
 </Warning>
+
+<Note>
+  Only **Yes** and **No, skip for now** count as a decision. If you close the prompt with the **X** button or the **Escape** key, BridgePoint CRM reverts the DCF status change and returns the case to its previous DCF status and case status. A "DCF status reverted" message confirms the undo. This applies to the prompt on both the case detail page and the client's Programs tab.
+</Note>
