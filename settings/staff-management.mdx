@@ -1,10 +1,10 @@
 ---
 title: "Staff Management, Offices & Audit Logs"
 sidebarTitle: "Staff Management"
-description: "Invite staff, assign roles and offices, reset passwords, archive accounts, manage office details, and review audit logs from the Admin tab in Settings."
+description: "Invite staff, assign roles and offices, reset passwords, archive accounts, manage office details, set lead kiosk offline alerts, and review audit logs from the Admin tab in Settings."
 ---
 
-The Admin tab in Settings gives Managers, Admins, and Owners full control over who has access to BridgePoint CRM and how your organization is structured. From here you can invite new staff, update roles and office assignments, reset passwords, deactivate accounts, manage offices, and review the audit log.
+The Admin tab in Settings gives Managers, Admins, and Owners full control over who has access to BridgePoint CRM and how your organization is structured. From here you can invite new staff, update roles and office assignments, reset passwords, deactivate accounts, manage offices, choose who is alerted when a lead kiosk goes offline, and review the audit log.
 
 <Warning>
   The Admin tab is only visible to users with the **Manager**, **Admin**, or **Owner** role. If you do not see this tab, your role does not include admin access.
@@ -137,6 +137,38 @@ Archiving a staff member disables their account so they cannot sign in. All thei
 ### Editing an existing office
 
 Click the **Edit** icon next to any office in the Offices list. Update the name, city, state, address, or phone number, then click **Save Changes**.
+
+---
+
+## Lead Kiosk Offline Alerts
+
+Each lead kiosk in the **Lead Kiosks** section of the Admin tab has its own list of staff who get a bell notification when that kiosk goes offline and stops checking in. The notification names the kiosk and gives the last time it checked in. Each person on the list gets one notification per outage.
+
+### Choosing recipients when adding a kiosk
+
+When you add a new lead kiosk, the form includes an **Alert if this kiosk goes offline** checklist of active staff. You are pre-selected. Check anyone else who should be told, or uncheck yourself. You must pick at least one person.
+
+### Changing recipients for an existing kiosk
+
+<Steps>
+  <Step title="Find the kiosk">
+    Go to **Settings → Admin** and scroll to the **Lead Kiosks** section. Each active kiosk shows its current recipients under its details, for example **Offline alerts: Jane Doe, John Smith**.
+  </Step>
+  <Step title="Click Alerts">
+    Click the **Alerts** button on the kiosk's row. The **Kiosk alerts** dialog opens.
+  </Step>
+  <Step title="Update the list and save">
+    Check or uncheck staff members, then click **Save**. At least one person must stay selected.
+  </Step>
+</Steps>
+
+<Warning>
+  If an active kiosk shows **Offline alerts: nobody — set someone** in red, no one will be told when it goes offline. Click **Alerts** and pick at least one person.
+</Warning>
+
+<Note>
+  Only active staff in your organization can be picked. If a recipient's account has since been deactivated, they show as **Former staff** on the kiosk's row.
+</Note>
 
 ---
 
