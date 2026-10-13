@@ -20,6 +20,7 @@ The profile is divided into tabs, each focused on a different aspect of the clie
     - US citizenship, country of birth, and immigration status
     - Disability flag and health insurance details
     - Packet status (Draft, In Progress, Complete, or Submitted to DCF)
+    - Medicare number and Part A / Part B coverage (see [Medicare details](#medicare-details))
 
     **Editing basic info:** Click the **Edit** button next to any field group to enter edit mode. Make your changes, then click **Save** to commit them. Changes are applied immediately and logged in the Activity tab.
   </Tab>
@@ -78,6 +79,21 @@ The SSN is stored encrypted and is never displayed in plain text by default. On 
 <Warning>
   Revealing the full SSN requires elevated permissions. If your role does not include SSN access, the reveal button will not appear. Contact your administrator if you need access.
 </Warning>
+
+## Medicare Details
+
+The **Medicare** card on the Overview shows what the client already has from Medicare — the same fields collected in the Medicare section of the [intake form](/clients/adding-clients):
+
+- **Medicare Number** — shown in full in the card's format (for example, `1EG4-TE5-MK73`), with a copy button
+- **Part A** and **Part B** — Yes, No, or Not sure, plus the start date when the answer is Yes
+
+If the client is 65 or older, the card header shows a **65+ · Possibly eligible for Medicare** flag as a reminder to ask about Medicare. It is not an eligibility determination.
+
+To update the details, click **Edit** on the Medicare card, change the fields, and click **Save**. The Medicare number must be the 11-character number from the client's Medicare card; dashes, spaces, and lower case are accepted. A start date is kept only when that part is set to **Yes**. Changes appear in the Activity tab.
+
+<Note>
+  Editing Medicare details requires permission to edit clients. If your role doesn't include it, the **Edit** button won't appear.
+</Note>
 
 ## Client Portal Account
 
