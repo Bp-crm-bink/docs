@@ -47,6 +47,25 @@ The profile is divided into tabs, each focused on a different aspect of the clie
     | Returned | Orange |
 
     You can update the DCF status, set renewal reminders, and add a new enrollment cycle directly from each case card. To open a detailed case view, click the case card.
+
+    **Medicare Savings Program (MSP):** Add MSP with **+ Add Program** like any other program. Its status dropdown offers **Pending**, **Applied** (submitted, waiting on DCF), **Enrolled**, and **Closed**. Choosing **Enrolled** — from the card's status dropdown or when adding the program — opens the **Mark Enrolled — Medicare Savings Program** dialog:
+
+    <Steps>
+      <Step title="Choose the MSP level">
+        Pick **QMB** (Qualified Medicare Beneficiary), **SLMB** (Specified Low-Income Medicare Beneficiary), or **QI-1** (Qualifying Individual).
+      </Step>
+      <Step title="Choose the Medicare parts">
+        Select which Medicare parts the program pays: Part A, Part B, or both.
+      </Step>
+      <Step title="Enter the enrolled date and renewal cycle">
+        Enter the **Enrolled Date**, then choose whether it renews **Every 6 months** or **Every 12 months**. The **Renewal Date** fills in automatically from those two fields — you can type over it if needed. The renewal date must be after the enrolled date.
+      </Step>
+      <Step title="Confirm">
+        Click **Confirm Enrollment**. The case is marked Enrolled and the details are saved together. If you cancel, the status is left unchanged.
+      </Step>
+    </Steps>
+
+    Once enrolled, the MSP card shows an **Enrollment Details** section with the MSP level, Medicare parts, enrolled date, and renewal cycle. Click **Edit** there to change the details without changing the status.
   </Tab>
   <Tab title="Household">
     The Household tab lists everyone added as a household member during intake or since. Each member shows their name, relationship, sex, date of birth, SSN, marital status, US citizen status, and whether they are applying for benefits. Use the **Edit** action on any row to update a member's details in place, then Save. If your role includes SSN access, the inline SSN control reads **Add SSN** when none is on file and **Edit SSN** once one exists. Add a new member from the form below the table — if you have permission to edit SSNs, you can also enter the member's SSN (NNN-NN-NNNN) right there when adding them.
@@ -187,6 +206,12 @@ You can book a follow-up appointment for a client directly from their profile.
     Click **Save**. The appointment appears in the Queue and in the client's queue history.
   </Step>
 </Steps>
+
+## Programs at a Glance
+
+The highlights strip under the client's name includes a **Programs** cell with one chip per active program, colored by its current status. Hover a chip to see the program name, its status, and its renewal date (when one is set). Closed and denied programs are grouped into a single **+N closed** chip — hover it to see them all. Click any chip, or **Open Programs tab** in the hover card, to jump to the Programs tab.
+
+The chips update live as program statuses change, whether you change them on the Programs tab or another staff member does.
 
 ## Release of Information Authorizations
 
