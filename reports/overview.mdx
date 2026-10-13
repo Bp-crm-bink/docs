@@ -34,6 +34,9 @@ Pre-built reports are ready to run immediately — no configuration required bey
   <Card title="Security" icon="shield">
     Staff activity from the audit log, grouped by staff member and action type. Visible to Owner and Admin only.
   </Card>
+  <Card title="Lead Kiosks" icon="tablet">
+    How partner-site kiosks are used and what visits led to: new clients, applications, and approvals.
+  </Card>
 </CardGroup>
 
 ### Available pre-built reports
@@ -60,11 +63,46 @@ Pre-built reports are ready to run immediately — no configuration required bey
   - **Staff Activity** — Audit log grouped by staff member and action type.
 </Accordion>
 
+<Accordion title="Lead Kiosks">
+  - **Kiosk Pilot Results**: Every kiosk visit and how far it got (client, application, approval), charted by outcome.
+  - **Kiosk Visits by Location**: Which partner sites the kiosk visits come from, including the busiest location.
+  - **Kiosk Visits Over Time**: Kiosk submissions per day, week, or month.
+  - **Kiosk Busiest Hours**: What time of day visitors use the kiosk, in Eastern time.
+  - **Kiosk Busiest Days**: Which days of the week visitors use the kiosk, in Eastern time.
+  - **Kiosk Language Mix**: Which language visitors chose on the kiosk: English, Spanish, or Kreyòl.
+  - **Kiosk Text Opt-In**: Share of kiosk visitors who agreed to be followed up by text.
+  - **Kiosk Follow-Up Speed**: Average calendar days from a kiosk visit to becoming a client and to a filed application, by location.
+</Accordion>
+
+### Lead Kiosk reports
+
+The Lead Kiosk reports are a scorecard for kiosks placed at partner sites. Each kiosk visit is one row, and you can filter by visit date, kiosk location, and language. They require permission to view leads.
+
+Each visit's **Outcome** is the furthest stage it reached:
+
+| Outcome | Meaning |
+|---|---|
+| **Awaiting follow-up** | The lead is still pending in Leads |
+| **Became client** | The lead was converted to a client, but no case has been opened yet |
+| **Application filed** | A case was opened and has no determination yet |
+| **Approved** | A case was enrolled |
+| **Referred to ACA** | A case moved to the ACA pipeline |
+| **Denied** | A case was denied or found ineligible |
+| **Closed** | The lead was rejected or marked as spam |
+
+<Note>
+  Only cases and appointments created after the kiosk visit count toward its outcome. If a returning client's lead is converted onto their existing record, applications they filed before the visit are not credited to the kiosk. In Follow-Up Speed, visits that haven't reached a stage yet are left out of that stage's average instead of counting as zero.
+</Note>
+
+<Tip>
+  These reports contain no names or contact details, so you can export them and share them with the partner hosting the kiosk.
+</Tip>
+
 ### Running a pre-built report
 
 <Steps>
   <Step title="Select a category">
-    On the Pre-Built Reports tab, choose a category from the list on the left — Clients, Programs, Pipeline, Operations, or Security.
+    On the Pre-Built Reports tab, choose a category from the list on the left — Clients, Programs, Pipeline, Operations, Security, or Lead Kiosks.
   </Step>
   <Step title="Select a report">
     Click the report name you want to run. A description and filter panel appear on the right.
