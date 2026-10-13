@@ -1,0 +1,170 @@
+---
+title: "Client Texting: Two-Way Texts and the Text Inbox"
+sidebarTitle: "Client Texting"
+description: "Text clients from your office phone number on the client profile's Messages tab, file pictures and PDFs they send into Documents, and triage texts from unknown numbers in the Text Inbox."
+---
+
+BridgePoint lets staff hold two-way text conversations with clients from their office's phone number. Texts a client sends to an office line show up on that client's profile in real time, and texts from numbers BridgePoint doesn't recognize land in the **Text Inbox** for staff to sort out.
+
+<Note>
+  Client texting is separate from [team Messages](/messages/overview), which is for staff-to-staff chat only.
+</Note>
+
+## Texting a client
+
+Open the client's profile and select the **Messages** tab. It shows the full conversation between your office and the client, oldest at the top and newest at the bottom, with a day label separating each day.
+
+<Steps>
+  <Step title="Open the Messages tab">
+    On the client profile, click **Messages**. A red badge on the tab shows how many texts from the client are unread. Opening the tab marks them as read.
+  </Step>
+  <Step title="Type your text">
+    Type in the message box at the bottom. Texts are limited to **500 characters**. A counter shows how many you've used.
+  </Step>
+  <Step title="Send">
+    Press **Enter** or click the send button. Use **Shift + Enter** to add a new line without sending.
+  </Step>
+</Steps>
+
+<Warning>
+  Don't put case details in a text. The message box reminds you: **No case details**.
+</Warning>
+
+### Reading the conversation
+
+- The client's texts appear on the left, your office's texts on the right.
+- Every run of staff texts is labeled with the name of the staff member who sent it, because the whole office shares the conversation. Texts sent directly from Zoom rather than BridgePoint are labeled **Sent from Zoom**.
+- Your office's latest text shows **Sent**. A text that didn't go through is shown in red with **Failed to send**.
+- New texts from the client appear automatically. You don't need to refresh.
+
+### When you can't send a text
+
+The message box is replaced with a notice when texting isn't allowed:
+
+| Notice | What it means |
+|---|---|
+| **No mobile number on file for this client.** | Add a mobile phone on the Overview tab. |
+| **This client replied STOP and is opted out of text messages.** | The client opted out. Only the client can opt back in (see below). |
+| **No SMS consent on file. Request consent before texting this client.** | Get the client's consent, then turn on **SMS consent on file** on the Overview tab. |
+
+If your office doesn't have a texting number set up yet, sending fails with "Texting isn't set up for your office yet."
+
+## SMS consent and opt-out
+
+The **SMS consent on file** setting is in the client's personal info on the **Overview** tab.
+
+If a client texts **STOP** (or a similar word like **UNSUBSCRIBE**, **CANCEL**, **END**, or **QUIT**) to an office number, they are opted out of texts right away. The consent setting is then locked and reads **SMS consent (locked: client texted STOP; they must text START)**. Staff can't turn it back on. The client has to text **START** to the office number before texting can resume.
+
+## Pictures and PDFs from clients
+
+When a client texts a picture or PDF, it appears in the conversation.
+
+- **Pictures:** click one to see it full size. From there you can click **Open original** to open it in a new tab.
+- **PDFs:** click the file name to open it.
+- Other file types, like video or audio, show the file name with **file type not supported** and can't be opened.
+
+### Saving a texted file to Documents
+
+JPEG, PNG, and WebP pictures and PDFs can be filed straight into the client's Documents tab.
+
+<Steps>
+  <Step title="Click Save to Documents">
+    Click **Save to Documents** under the file, or in the full-size picture view.
+  </Step>
+  <Step title="Choose a document type">
+    Pick the **Document type**. If you choose **Other**, add a **Title** too.
+  </Step>
+  <Step title="Save">
+    Click **Save**. The file is added to the client's [Documents](/clients/documents) like a manual upload, and the copy in the conversation stays where it is. The file then shows **In Documents** so nobody files it twice.
+  </Step>
+</Steps>
+
+<Note>
+  You can only save files from a client's conversation. Files in the Text Inbox or on a lead have to be linked to a client first.
+</Note>
+
+## Text notifications
+
+When a client texts an office number, a notification appears in your notification bell, like "New text from ..." or "New picture from ...". It shows the sender's name only, never what the text says. Selecting it opens the right place:
+
+- **Client texts** go to the client's assigned case manager and the staff member who last texted them. If the client has neither, they go to the staff at the office whose number was texted.
+- **Lead texts** and **unrecognized numbers** go to the staff at the office whose number was texted.
+
+If a client texts STOP, the notification says they opted out of texts.
+
+## Text Inbox: texts from unknown numbers
+
+When a text comes in to an office number, BridgePoint looks for who sent it, in this order:
+
+1. A client whose **mobile phone** or **secondary phone** matches
+2. A lead whose phone matches
+3. If nobody matches, the text goes to the **Text Inbox**
+
+Select **Text Inbox** in the left sidebar to open it. You need texting permission to see it. You see texts sent to your office's number. Owners and admins see every office.
+
+The inbox has two panes. On the left is one conversation per phone number and office line, newest first, showing the number, a preview, which office line was texted, and how many texts there are. On the right is the selected conversation and three actions:
+
+<CardGroup cols={3}>
+  <Card title="Link to client" icon="folder-open">
+    The sender is an existing client texting from a number that isn't on file.
+  </Card>
+  <Card title="Create lead" icon="user-plus">
+    The sender is a new prospect.
+  </Card>
+  <Card title="Dismiss" icon="trash">
+    The text is spam or a wrong number.
+  </Card>
+</CardGroup>
+
+<Tabs>
+  <Tab title="Link to client">
+    <Steps>
+      <Step title="Click Link to client">
+        In the conversation, click **Link to client**.
+      </Step>
+      <Step title="Find the client">
+        Search for and select the client.
+      </Step>
+      <Step title="Choose whether to save the number">
+        Leave **Save ... as their secondary phone** checked to save the number on the client's record so their future texts match on their own. It's only saved if the client's secondary phone is empty.
+      </Step>
+      <Step title="Link the texts">
+        Click **Link texts**. All texts from that number on that office line move into the client's Messages tab.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Create lead">
+    <Steps>
+      <Step title="Click Create lead">
+        In the conversation, click **Create lead**.
+      </Step>
+      <Step title="Enter the lead's details">
+        Enter a **First name** and **Last name**, and optionally check what they're **Interested in**: Medicaid, Food (SNAP), or Cash (TCA).
+      </Step>
+      <Step title="Create the lead">
+        Click **Create lead**. A new lead is created with the sender's phone number, and the texts move onto it. Click **Open** in the confirmation to go to the lead.
+      </Step>
+    </Steps>
+    <Note>
+      Replying in the conversation is fine, but texting someone first doesn't count as consent to marketing texts. The new lead starts with no text consent on file.
+    </Note>
+  </Tab>
+  <Tab title="Dismiss">
+    <Steps>
+      <Step title="Click Dismiss">
+        In the conversation, click **Dismiss**.
+      </Step>
+      <Step title="Confirm">
+        Click **Dismiss** in the confirmation. The texts leave the inbox but are kept on record. If the number texts again, it comes back to the inbox.
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+When nothing is waiting, the inbox reads "No unmatched texts. Every text is linked to a client or lead."
+
+## Lead text history
+
+A lead's detail panel in [Leads](/leads/overview) has a **Text history** section. It shows every text with that lead in one timeline: texts sent with the lead's **Send SMS** button, automated texts (labeled **Automated text**), and texts to and from an office number.
+
+If a lead has a phone number but no text consent on file, the **Send SMS** button still appears but is disabled. Hover over it to see why: "No text consent on file for this lead."

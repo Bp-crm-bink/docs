@@ -81,7 +81,8 @@
           {
             "group": "Messages",
             "pages": [
-              "messages/overview"
+              "messages/overview",
+              "messages/client-texting"
             ]
           },
           {
