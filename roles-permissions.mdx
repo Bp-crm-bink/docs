@@ -24,6 +24,10 @@ Every staff member in BridgePoint is assigned one of five roles. Roles control w
   Case Managers handle client-facing work. They can view and edit client profiles, manage program enrollments, access the queue, work through the ACA pipeline, view and mark documents, and manage their own tasks and invoices. They cannot access office settings, invite staff, or view security logs.
 </Accordion>
 
+<Accordion title="Medicare Agent">
+  Medicare Agents handle Medicare and 65+ outreach calls. This is the most locked-down role: a Medicare Agent sees a client only when they are that client's assigned **Case Manager**, across both offices. They can work Medicare and Medicare Savings Program cases for those clients, but cannot see documents, ID images, or payment info. See [Medicare Agent access](#medicare-agent-access) below.
+</Accordion>
+
 <Accordion title="Front Desk">
   Front Desk staff have the most limited access. They can view client records and access the walk-in queue to check clients in and out, but cannot edit client profiles, manage cases, access the pipeline, or perform any administrative functions. This role is designed for reception staff who handle check-in only.
 </Accordion>
@@ -49,9 +53,31 @@ The table below shows which features each role can access. A checkmark means the
 | Security Logs | ✅ | ✅ | — | — | — |
 | Invite Staff | ✅ | ✅ | ✅ | — | — |
 
+Medicare Agents are not shown in the matrix because their access is limited to their assigned clients — see [Medicare Agent access](#medicare-agent-access).
+
 <Note>
   This matrix reflects the permissions built into BridgePoint. Role assignments are per-staff-member and cannot be customized beyond the five defined roles.
 </Note>
+
+## Medicare Agent access
+
+The Medicare Agent role works on a record-by-record basis instead of by office. A Medicare Agent can see and act on a client only when they are set as that client's **Case Manager** on the client profile. Clients assigned to anyone else do not appear for them at all.
+
+<Tip>
+  To give a Medicare Agent a client to work, open the client's profile and set the agent as the client's Case Manager. Medicare Agents can be the Case Manager for clients in either office.
+</Tip>
+
+**What a Medicare Agent can use**
+
+- **Sidebar** — only **Clients**, **Medicare**, **Tasks**, **Leads**, and **Messages**. There is no Dashboard, Queue, Cases, Pipeline, Documents, Invoices, Reports, or Settings. Opening any other page sends them back to the Clients list.
+- **Client profile tabs** — only **Overview**, **Programs**, **Household**, **Messages**, **Activity**, and **Tasks**. The **Add to Queue** button, Portal Access, and Appointments are hidden.
+- **Programs** — they can open, update, and change the status of **Medicare** and **Medicare Savings Program** cases only. Other programs are visible but read-only, and only Medicare programs appear when they add a program.
+- **Clients** — they can create a new client and send the Client Intake Form (**Send CIF**), but cannot edit an existing client's details.
+- **Notes, tasks, and SMS** — they can add notes, create and complete tasks, and text their assigned clients.
+- **Leads** — they see only leads assigned to them, and can log calls, send texts, and change the lead's status.
+- **Internal chat** — available as usual.
+
+Global search and the Bink assistant are not shown to Medicare Agents — they find clients from the **Clients** list.
 
 ## Changing a staff member's role
 
@@ -72,7 +98,7 @@ Only Owners, Admins, and Managers can change staff roles. When you change a role
     Find the staff member in the table and click the **edit** (pencil) icon on their row. The Edit User panel opens.
   </Step>
   <Step title="Select the new role">
-    Use the **Role** dropdown to choose the new role. The dropdown lists all five roles: Owner, Admin, Manager, Case Manager, and Front Desk.
+    Use the **Role** dropdown to choose the new role. The dropdown lists every role, including Owner, Admin, Manager, Case Manager, Case Specialist, Medicare Agent, and Front Desk.
   </Step>
   <Step title="Save the change">
     Click **Save Role**. A confirmation toast appears and the Users table updates immediately to show the new role badge.
@@ -92,7 +118,7 @@ Owners, Admins, and Managers can invite new staff members directly from the Admi
     In the Admin tab, click the **+ Invite Staff** button above the Users table.
   </Step>
   <Step title="Fill in the invite form">
-    Enter the new staff member's first name, last name, and work email address. Select their role (Manager, Case Manager, or Front Desk — Owners and Admins must be promoted after initial setup) and assign them to an office.
+    Enter the new staff member's first name, last name, and work email address. Select their role (Manager, Case Manager, Case Specialist, Medicare Agent, or Front Desk — Owners and Admins must be promoted after initial setup) and assign them to an office.
   </Step>
   <Step title="Send the invite">
     Click **Send Invite**. BridgePoint sends the new staff member an email with a link to set their password and complete account setup. They appear in the Users table immediately with an Active status.
