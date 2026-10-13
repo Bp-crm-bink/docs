@@ -52,7 +52,7 @@ The profile is divided into tabs, each focused on a different aspect of the clie
     The Household tab lists everyone added as a household member during intake or since. Each member shows their name, relationship, sex, date of birth, SSN, marital status, US citizen status, and whether they are applying for benefits. Use the **Edit** action on any row to update a member's details in place, then Save. If your role includes SSN access, the inline SSN control reads **Add SSN** when none is on file and **Edit SSN** once one exists. Add a new member from the form below the table — if you have permission to edit SSNs, you can also enter the member's SSN (NNN-NN-NNNN) right there when adding them.
   </Tab>
   <Tab title="Financials">
-    The Financials tab contains income entries, asset information, and expense details. Income entries show the type (Employment, SSI, SSA, Other), source, and monthly amount. You can add, edit, or remove entries from this tab.
+    The Financials tab has three cards — **Income**, **Assets**, and **Expenses**. Each card lists the client's entries with their type, detail, and amount, plus a running total in the card header (per month for income and expenses, total value for assets). When the client has household members, income entries also show who the income belongs to. See [Managing financials](#managing-financials) below.
   </Tab>
   <Tab title="Documents">
     The Documents tab shows all files uploaded to the client's record, organized by category. See [Documents](/clients/documents) for full upload and management instructions.
@@ -70,6 +70,32 @@ The profile is divided into tabs, each focused on a different aspect of the clie
     The Invoices tab shows any invoices generated for this client, with their status (Draft, Pending, Paid, Overdue, or Cancelled) and outstanding balance.
   </Tab>
 </Tabs>
+
+## Managing Financials
+
+Income, assets, and expenses on the Financials tab are edited one row at a time — there is no separate Edit mode. You need permission to edit clients to make changes.
+
+<Steps>
+  <Step title="Add an entry">
+    Click **Add income**, **Add asset**, or **Add expense** under the relevant card.
+  </Step>
+  <Step title="Fill in the row">
+    Pick a **Type** from the list. For income, choose who it **Belongs to** (the client or a household member) if the client has household members. Add an optional detail — source or employer for income, bank, vehicle, or address for assets — and the amount. Income and expenses need a monthly amount; an asset's value can be left blank if it isn't known. Types marked **(specify)** ask you to describe what the entry is.
+  </Step>
+  <Step title="Save">
+    Click **Save**. The entry appears in the list and the card total updates.
+  </Step>
+</Steps>
+
+To change an entry, click its row (or choose **Edit** from the **⋯** menu), update it, and click **Save**. To delete one, choose **Remove** from the **⋯** menu and confirm. Removals are recorded in the client's activity log.
+
+### Income, asset, and expense types
+
+The type dropdowns on the Financials tab and the new-client intake form all read from one shared list per kind (income, asset, expense) for your organization.
+
+- **Adding a type** — any staff member can choose **+ Add a new type…** at the bottom of a type dropdown, enter a name, and click **Add to list**. The new type joins the list for everyone on the team and is selected on the row you were filling in. Types added this way appear under an **Added by staff** heading.
+- **Viewing the list** — click the list icon in a Financials card header (or the **Income Types**, **Asset Types**, or **Expense Types** button on the intake form) to see every type in that list. You can also click **Add a type** from there.
+- **Removing a type** — Managers, Admins, and Owners can click the **×** next to a type to take it off the pick-list, and click **Restore** under **Removed** to put it back. Clients who already have a removed type keep it.
 
 ## Social Security Number
 
