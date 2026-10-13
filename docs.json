@@ -44,7 +44,8 @@
             "group": "Leads",
             "pages": [
               "leads/overview",
-              "leads/triage-inbox"
+              "leads/triage-inbox",
+              "leads/working-leads"
             ]
           },
           {
