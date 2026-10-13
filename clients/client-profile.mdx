@@ -47,6 +47,8 @@ The profile is divided into tabs, each focused on a different aspect of the clie
     | Returned | Orange |
 
     You can update the DCF status, set renewal reminders, and add a new enrollment cycle directly from each case card. To open a detailed case view, click the case card.
+
+    Marking a Medicare case **Enrolled** opens a dialog that asks for the client's plan details. See [Recording a Medicare Enrollment](#recording-a-medicare-enrollment).
   </Tab>
   <Tab title="Household">
     The Household tab lists everyone added as a household member during intake or since. Each member shows their name, relationship, sex, date of birth, SSN, marital status, US citizen status, and whether they are applying for benefits. Use the **Edit** action on any row to update a member's details in place, then Save. If your role includes SSN access, the inline SSN control reads **Add SSN** when none is on file and **Edit SSN** once one exists. Add a new member from the form below the table — if you have permission to edit SSNs, you can also enter the member's SSN (NNN-NN-NNNN) right there when adding them.
@@ -136,6 +138,42 @@ Status badges appear on the Programs tab and in the client list. Each badge refl
     Additional information was requested and the case has been returned. Displayed in orange.
   </Accordion>
 </AccordionGroup>
+
+## Recording a Medicare Enrollment
+
+When you mark a Medicare case **Enrolled** on the Programs tab, BridgePoint CRM asks for the plan the client was enrolled into. The status and the plan details are saved together, so a Medicare case can't be marked Enrolled without them.
+
+<Steps>
+  <Step title="Set the Medicare case to Enrolled">
+    On the Medicare program card, choose **Enrolled** from the status dropdown. You can also choose **Enrolled** as the starting status when you add Medicare with **+ Add Program**. Either way, the **Mark Enrolled — Medicare** dialog opens.
+  </Step>
+  <Step title="Enter the enrollment details">
+    Fill in every field:
+
+    | Field | Options |
+    |---|---|
+    | **Medicare Parts** | Part A, Part B, or Both A and B |
+    | **Carrier** | Aetna, United HealthCare, Humana, Blue Cross, CarePlus, Simply Healthcare, Devoted, None, or Other |
+    | **Carrier Name** | Shown only when Carrier is **Other** — type the carrier's name |
+    | **Plan** | HMO, PPO, or HMO-POS |
+    | **Type** | D-SNP or C-SNP |
+    | **Enrollment Date** | The date coverage was enrolled |
+    | **Renewal Date** | Must be after the enrollment date |
+  </Step>
+  <Step title="Confirm the enrollment">
+    Click **Confirm Enrollment**. The case status changes to **Enrolled**, a new entry is added to the case's status history, and you see "Client enrolled in Medicare."
+  </Step>
+</Steps>
+
+<Note>
+  If you click **Cancel** or close the dialog without saving, the case status stays as it was.
+</Note>
+
+### Viewing and editing Medicare enrollment details
+
+Once a Medicare case is enrolled, its program card shows an **Enrollment Details** section with the Medicare Parts, Carrier, Plan, Type, and Enrollment Date. The renewal date appears with the card's other dates.
+
+To change the details, click **Edit** in the Enrollment Details section. The **Edit Medicare Enrollment** dialog opens with the saved values filled in. Make your changes and click **Save Changes**. Editing an enrolled case updates only the details — it doesn't add another status change to the history.
 
 ## Adding a Note
 
