@@ -27,7 +27,8 @@ The profile is divided into tabs, each focused on a different aspect of the clie
     The Programs tab lists every case record associated with the client — one per program enrollment. Each case shows:
 
     - Program name (Medicaid, SNAP, TCA, ACA, etc.)
-    - Case number and DCF case number
+    - **DCF Application #** and **DCF Case #** (Medicaid, SNAP, TCA, and Medicare Savings Program cards) — click the pencil next to either to edit it inline; saving a blank value clears it
+    - **Applying** — once the client has household members, Medicaid, SNAP, TCA, and ACA cards list everyone on that application (see [Household applications](#household-applications))
     - Enrollment status with a color-coded badge
     - DCF status (for Medicaid cases)
     - Renewal date and reminder date
@@ -49,7 +50,13 @@ The profile is divided into tabs, each focused on a different aspect of the clie
     You can update the DCF status, set renewal reminders, and add a new enrollment cycle directly from each case card. To open a detailed case view, click the case card.
   </Tab>
   <Tab title="Household">
-    The Household tab lists everyone added as a household member during intake or since. Each member shows their name, relationship, sex, date of birth, SSN, marital status, US citizen status, and whether they are applying for benefits. Use the **Edit** action on any row to update a member's details in place, then Save. If your role includes SSN access, the inline SSN control reads **Add SSN** when none is on file and **Edit SSN** once one exists. Add a new member from the form below the table — if you have permission to edit SSNs, you can also enter the member's SSN (NNN-NN-NNNN) right there when adding them.
+    The Household tab shows the household as cards — the **Main client** first, then one card per household member. Each card lists the programs that person is on, with each application's status (the same label the Programs tab shows). A member card also shows their relationship and age, sex, date of birth, US citizen status, marital status, SSN, and their own [marketplace portal login](#household-member-portal-logins). A **Missing** hint flags a blank relationship, date of birth, or SSN — it never blocks anything.
+
+    **Adding a member:** Click **Add member** (or the **Add household member** card). Only the full name is required — fill in relationship, date of birth, sex, marital status, US citizen, and **Applying for benefits** now or later. If your role can edit SSNs, you can also enter the member's SSN when adding them.
+
+    **Editing a member:** Click the pencil on the member's card, make your changes, and click **Save**. After a member is added, their SSN is revealed or changed from the SSN control on their card — it reads **Add SSN** when none is on file and **Edit SSN** once one exists.
+
+    Household members don't have a profile of their own — they live on this tab. You choose who's applying for a program when you add the program on the Programs tab.
   </Tab>
   <Tab title="Financials">
     The Financials tab contains income entries, asset information, and expense details. Income entries show the type (Employment, SSI, SSA, Other), source, and monthly amount. You can add, edit, or remove entries from this tab.
@@ -70,6 +77,63 @@ The profile is divided into tabs, each focused on a different aspect of the clie
     The Invoices tab shows any invoices generated for this client, with their status (Draft, Pending, Paid, Overdue, or Cancelled) and outstanding balance.
   </Tab>
 </Tabs>
+
+## Household Applications
+
+A Medicaid, SNAP, TCA, or ACA application can cover the client, any of their household members, or both. Medicare and the Medicare Savings Program always belong to the client alone.
+
+### Adding a program for the household
+
+<Steps>
+  <Step title="Open Add Program">
+    On the **Programs** tab, click **+ Add Program**.
+  </Step>
+  <Step title="Choose the program and starting status">
+    Pick the **Program** and its starting **Status**. For Medicaid, SNAP, TCA, and the Medicare Savings Program you can also enter the **DCF Application #** and **DCF Case #** if you already have them — both are optional.
+  </Step>
+  <Step title="Pick who's applying">
+    If the client has household members, a **Who's applying?** list shows the client and each member with a checkbox. The client and any member marked **Applying for benefits** start ticked. Tick everyone on this one application — at least one person is required. To file a child's own application, tick just the child.
+  </Step>
+  <Step title="Add the program">
+    Click **Add Program**. The new card shows an **Applying** line naming everyone on it.
+  </Step>
+</Steps>
+
+A household can open another application for a program it already has — for example, a child's own Medicaid alongside the parent's. In the **Who's applying?** list, anyone already on an active application for that program is marked **Already on one**.
+
+<Note>
+  ACA is one open application per person. Anyone already on an open ACA application shows **On another ACA** and can't be ticked. **Obamacare / ACA** stays available in Add Program as long as someone in the household isn't on one yet.
+</Note>
+
+### Changing who's on an application
+
+If an application was filed under the wrong person — for example, a child's Medicaid filed as the parent's — click **Edit** on the card's **Applying** line, untick or tick people, and click **Save**. The change is recorded in the client's activity log.
+
+### Household members in the ACA pipeline
+
+Each person on an application goes through the ACA pipeline on their own. When a Medicaid status prompts you to add the case to the ACA pipeline and more than one person is on it, the prompt lists everyone, and each person gets their own pipeline entry. See [Household member entries](/pipeline/managing-leads#household-member-entries).
+
+### Household member portal logins
+
+A household member on their own ACA application has their own healthcare.gov login, separate from the client's portal account. It appears on the member's Household card and on their pipeline entry — both show the same record, so an edit in either place shows in both.
+
+<Steps>
+  <Step title="Open the portal login dialog">
+    On the member's card, click **Add portal login** (or the pencil next to an existing login).
+  </Step>
+  <Step title="Enter the marketplace email and password">
+    Enter the **Marketplace email**. Leave **Marketplace password** blank to use the office starter password for a new login, or to keep the current password when editing.
+  </Step>
+  <Step title="Save">
+    Click **Save**. The card shows the email and a masked password, each with a copy button; click the eye icon to reveal the password.
+  </Step>
+</Steps>
+
+When you add an ACA program for a household member alone at **Pending Password Creation**, this dialog opens for that member instead of the client's Generate Portal Account dialog.
+
+<Note>
+  The member portal login is a record of the marketplace account only — it is not a login to BridgePoint CRM. Saving one is logged under **Portal Accounts** in the audit logs.
+</Note>
 
 ## Social Security Number
 
