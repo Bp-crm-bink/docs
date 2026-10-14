@@ -43,7 +43,7 @@ Each row in the table shows the following columns at a glance:
 
 | Column | What it shows |
 |---|---|
-| **Client** | Full name and BP-ID |
+| **Client** | Full name and BP-ID. A household member's entry shows the member's name with a **Household Member** tag and the main client it belongs to |
 | **Language** | Client's preferred language |
 | **Trigger** | Color-coded badge for the trigger reason |
 | **Status** | Current pipeline stage badge; enrolled leads also show the monthly premium |
@@ -75,6 +75,16 @@ BridgePoint highlights values that need your attention:
 ## Opening a Lead
 
 Click any row in the table to open the full lead detail page. The detail page shows a two-column layout: client information and program enrollments on the left, and the activity feed with editable fields on the right.
+
+### Household member entries
+
+Each person on an ACA application has their own pipeline entry, so a household can have several entries under one main client. A household member's entry:
+
+- Shows the member's name in the header with a **Household Member** tag and "of" the main client's name. Links on the page still open the main client's profile.
+- Lists **Household Member** and **Member DOB** alongside the **Main Client** and **Client DOB**. Contact details stay the main client's.
+- Uses the member's name and date of birth for HealthSherpa and plan quotes.
+- Shows a **Member Portal Access** card with the member's own healthcare.gov login instead of the client's portal account. See [Household member portal logins](/clients/client-profile#household-member-portal-logins).
+- Changes status, cancels, and returns to review only that member's own application. In the program list, only this entry's ACA application shows the pipeline status, and applications that aren't the client's alone name who's on them.
 
 ## Updating a Lead
 
