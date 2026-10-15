@@ -49,7 +49,9 @@ The profile is divided into tabs, each focused on a different aspect of the clie
     You can update the DCF status, set renewal reminders, and add a new enrollment cycle directly from each case card. To open a detailed case view, click the case card.
   </Tab>
   <Tab title="Household">
-    The Household tab lists everyone added as a household member during intake or since. Each member shows their name, relationship, sex, date of birth, SSN, marital status, US citizen status, and whether they are applying for benefits. Use the **Edit** action on any row to update a member's details in place, then Save. If your role includes SSN access, the inline SSN control reads **Add SSN** when none is on file and **Edit SSN** once one exists. Add a new member from the form below the table — if you have permission to edit SSNs, you can also enter the member's SSN (NNN-NN-NNNN) right there when adding them.
+    The Household tab lists everyone in the client's household, one row per person. The main client is always first, followed by each household member. Each member's row shows their relationship and details, their SSN, any missing information, their marketplace login, and every program they're on with **their own status** on each. If your role includes SSN access, the inline SSN control reads **Add SSN** when none is on file and **Edit SSN** once one exists.
+
+    Use the **Add member** button at the top of the tab to add someone, the pencil icon on a row to edit their details, and the trash icon to remove them. See [Household members](#household-members) below.
   </Tab>
   <Tab title="Financials">
     The Financials tab contains income entries, asset information, and expense details. Income entries show the type (Employment, SSI, SSA, Other), source, and monthly amount. You can add, edit, or remove entries from this tab.
@@ -70,6 +72,62 @@ The profile is divided into tabs, each focused on a different aspect of the clie
     The Invoices tab shows any invoices generated for this client, with their status (Draft, Pending, Paid, Overdue, or Cancelled) and outstanding balance.
   </Tab>
 </Tabs>
+
+## Household Members
+
+### Adding a household member
+
+<Steps>
+  <Step title="Open the Add member dialog">
+    On the **Household** tab, click **Add member**.
+  </Step>
+  <Step title="Enter their details">
+    Only the name is required. If you have permission to edit SSNs, you can also enter the member's SSN here.
+  </Step>
+  <Step title="Pick what they're applying for">
+    Under **Applying for**, tick each program the member is applying for — **Medicaid**, **SNAP**, **TCA**, or **ACA**. For each program you tick:
+
+    - If the household already has an open application for that program, choose whether to **Join** it (the dropdown names the people already on it) or start **Their own application**.
+    - If there's no open application for it, the member gets their own application.
+  </Step>
+  <Step title="Save">
+    The member is added to the household and put on the programs you picked. If they can't be added to a program, an error lists which ones (for example, "Not added to: …"), but the member is still saved.
+  </Step>
+</Steps>
+
+<Note>
+  Once the member is added, you manage which programs they're on from the **Programs** tab.
+</Note>
+
+### Removing a household member
+
+Click the trash icon on the member's row. The confirmation lists the open applications they'll come off. Income, assets, and expenses marked as theirs stay on the client. Removing a member can't be undone.
+
+<Warning>
+  You can't remove a member who is the only person on an open application. Close that application or add someone else to it first.
+</Warning>
+
+### One open application per person
+
+Each person (the client or a household member) can be on only one open application per program for Medicaid, SNAP, TCA, and ACA. People can still apply separately (for example, one person on their own Medicaid application and two others on a shared one), but nobody can be on two open applications for the same program. In the **Who's applying?** picker, anyone already on an open application for that program is greyed out and marked **On another open one**. A Medicaid, SNAP, or TCA application that has already gone to the ACA pipeline no longer counts as open.
+
+### Each person's status on a shared application
+
+DCF can decide differently for each person on the same application. For example, one person is approved and another is denied. On the **Programs** tab, a Medicaid, SNAP, or TCA card with more than one person on it shows an **Applicants** section. It lists each person with their own status badge, and **Edit who's applying** sits at the top of that section.
+
+<Steps>
+  <Step title="Open the person's status menu">
+    On the card's **Applicants** section, click **Change** next to the person.
+  </Step>
+  <Step title="Pick their determination">
+    Choose a status from the program's list. Choose **Same as application** to clear their own status so they show the application's status again.
+  </Step>
+  <Step title="Send just that person to ACA (Medicaid only)">
+    If the Medicaid outcome you picked qualifies the person for ACA, you're asked whether to add them to the ACA pipeline. Confirm to send only that person. The shared application, and everyone else on it, stays as it is.
+  </Step>
+</Steps>
+
+The status you set for each person also shows on their row in the **Household** tab.
 
 ## Social Security Number
 
