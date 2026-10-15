@@ -23,8 +23,8 @@ The profile is divided into tabs, each focused on a different aspect of the clie
 
     **Editing basic info:** Click the **Edit** button next to any field group to enter edit mode. Make your changes, then click **Save** to commit them. Changes are applied immediately and logged in the Activity tab.
   </Tab>
-  <Tab title="Programs">
-    The Programs tab lists every case record associated with the client — one per program enrollment. Each case shows:
+  <Tab title="Programs & Insurance">
+    The Programs & Insurance tab lists every case record associated with the client — one per program enrollment. Each case shows:
 
     - Program name (Medicaid, SNAP, TCA, ACA, etc.)
     - Case number and DCF case number
@@ -33,7 +33,7 @@ The profile is divided into tabs, each focused on a different aspect of the clie
     - Renewal date and reminder date
     - Assigned staff member
 
-    **Active and Closed programs:** Program cards are split across two sub-tabs at the top of the Programs tab. **Active** shows every program that is not closed, and **Closed** shows programs whose status is closed. Each sub-tab heading includes a live count — for example, **Active (3)** and **Closed (1)** — so you can see at a glance how many programs fall into each group. The **+ Add Program** button stays available on both sub-tabs. If a sub-tab has no programs, it shows "No active programs" or "No closed programs".
+    **Active and Closed programs:** Program cards are split across two sub-tabs at the top of the Programs & Insurance tab. **Active** shows every program that is not closed, and **Closed** shows programs whose status is closed. Each sub-tab heading includes a live count — for example, **Active (3)** and **Closed (1)** — so you can see at a glance how many programs fall into each group. The **+ Add Program** button stays available on both sub-tabs. If a sub-tab has no programs, it shows "No active programs" or "No closed programs".
 
     **Status badge colors:**
 
@@ -47,6 +47,8 @@ The profile is divided into tabs, each focused on a different aspect of the clie
     | Returned | Orange |
 
     You can update the DCF status, set renewal reminders, and add a new enrollment cycle directly from each case card. To open a detailed case view, click the case card.
+
+    **Insurance:** Below the programs, the **Insurance** section lists the client's auto, dental, and homeowners policies. Use **+ Add Insurance** (next to **+ Add Program**) to record a new one. See [Additional Insurance](/clients/additional-insurance).
   </Tab>
   <Tab title="Household">
     The Household tab lists everyone added as a household member during intake or since. Each member shows their name, relationship, sex, date of birth, SSN, marital status, US citizen status, and whether they are applying for benefits. Use the **Edit** action on any row to update a member's details in place, then Save. If your role includes SSN access, the inline SSN control reads **Add SSN** when none is on file and **Edit SSN** once one exists. Add a new member from the form below the table — if you have permission to edit SSNs, you can also enter the member's SSN (NNN-NN-NNNN) right there when adding them.
@@ -58,7 +60,7 @@ The profile is divided into tabs, each focused on a different aspect of the clie
     The Documents tab shows all files uploaded to the client's record, organized by category. See [Documents](/clients/documents) for full upload and management instructions.
   </Tab>
   <Tab title="Activity">
-    The Activity tab is a chronological audit log of every action taken on the client record — edits, status changes, document uploads, note additions, and form signings — with the acting staff member and timestamp for each entry.
+    The Activity tab is a chronological audit log of every action taken on the client record — edits, status changes, document uploads, note additions, and form signings — with the acting staff member and timestamp for each entry. The newest entries load first; click **Load older activity** at the bottom of the feed to see earlier history.
   </Tab>
   <Tab title="Tasks">
     The Tasks tab lists all open and completed tasks linked to this client. See [Adding tasks](#adding-a-task) below for how to create a new one.
@@ -114,7 +116,7 @@ After an account exists, two actions let you change the credentials:
 
 ## Program Enrollment Status Badges
 
-Status badges appear on the Programs tab and in the client list. Each badge reflects the current `status` of that case record:
+Status badges appear on the Programs & Insurance tab and in the client list. Each badge reflects the current `status` of that case record:
 
 <AccordionGroup>
   <Accordion title="Enrolled">
