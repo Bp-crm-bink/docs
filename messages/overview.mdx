@@ -1,10 +1,10 @@
 ---
 title: "Messages: Chat With Your Team"
 sidebarTitle: "Overview"
-description: "Message your colleagues directly or in channels from anywhere in BridgePoint. Send text, @mentions, images, and GIFs, tag client profiles, react with emoji, with read receipts, unread badges, and configurable notification sounds."
+description: "Message your colleagues directly or in channels from anywhere in BridgePoint. Send text, @mentions, images, files, and GIFs, tag client profiles, react with emoji, with read receipts, unread badges, and configurable notification sounds."
 ---
 
-Messages is BridgePoint's built-in team chat. Use it to reach a colleague one-on-one or hold a group conversation in a channel — without leaving the CRM. You can send text, tag teammates with **@mentions**, attach images, and drop in a GIF. Conversations stay live everywhere in the app: unread counts, new-message sounds, and message lists all update in real time.
+Messages is BridgePoint's built-in team chat. Use it to reach a colleague one-on-one or hold a group conversation in a channel — without leaving the CRM. You can send text, tag teammates with **@mentions**, attach images and documents, and drop in a GIF. Conversations stay live everywhere in the app: unread counts, new-message sounds, and message lists all update in real time.
 
 <Note>
   Messages is for internal staff communication only. It is not a way to contact clients.
@@ -14,7 +14,7 @@ Messages is BridgePoint's built-in team chat. Use it to reach a colleague one-on
 
 <CardGroup cols={2}>
   <Card title="Messages page" icon="message">
-    Select **Messages** in the main navigation for the full-size view — a conversation list on the left and the open conversation on the right.
+    Select **Messages** in the main navigation for the full-size view — a conversation list on the left and the open conversation on the right. A badge next to **Messages** in the sidebar shows your total unread count.
   </Card>
   <Card title="Floating widget" icon="comment-dots">
     A round chat button sits in the bottom-right corner of every other page. Click it to pop open a compact panel and keep chatting while you work. A badge on the button shows your total unread count.
@@ -106,9 +106,27 @@ Type in the message box at the bottom of a conversation and press **Enter** to s
   </Step>
 </Steps>
 
-### Attaching an image
+### Attaching a file
 
-Click the image button, then choose a **JPEG, PNG, WebP, or GIF** file (up to 10 MB). It uploads and shows as a preview above the message box. Remove a pending attachment with its **×** before sending, and add more than one if you like. You can send an attachment with or without text.
+Click the **attach** button (the paperclip), then choose a file up to **25 MB**. You can attach:
+
+| Type | Formats |
+|---|---|
+| Images | JPEG, PNG, WebP, GIF, HEIC |
+| Documents | PDF, Word (`.doc`, `.docx`), Excel (`.xls`, `.xlsx`), CSV, plain text (`.txt`) |
+
+The file uploads and shows as a preview above the message box. Remove a pending attachment with its **×** before sending, and add more than one if you like. You can send an attachment with or without text.
+
+In the thread, JPEG, PNG, WebP, and GIF images display inline. Everything else — including HEIC photos, which most browsers can't display — appears as a file chip with an icon for its type and the file name.
+
+### Downloading an attachment
+
+- **Files:** click the **Download** button on the right of the file chip to save it under its original name. Clicking the file name opens it in a new tab instead.
+- **Images:** hover over an uploaded image and click the **Download image** button in its top-right corner.
+
+<Note>
+  GIFs added from the GIF picker can't be downloaded — only files that were uploaded to the chat.
+</Note>
 
 ### Adding a GIF
 
@@ -199,7 +217,7 @@ Messages can play a short sound when activity comes in. Open the settings from t
 
 ## Notifications and unread counts
 
-- The chat button and each conversation show **unread badges** so you can see at a glance where messages are waiting.
+- The chat button, the **Messages** item in the sidebar, and each conversation show **unread badges** so you can see at a glance where messages are waiting.
 - When someone mentions you or messages you, a notification appears in your notification bell. Selecting it takes you straight to that conversation.
 - New messages, sounds, and unread counts update live across the app — you don't need to be on the Messages page to stay current.
 
