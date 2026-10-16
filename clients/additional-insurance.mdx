@@ -1,20 +1,51 @@
 ---
 title: "Additional Insurance"
 sidebarTitle: "Additional Insurance"
-description: "Record a client's auto, dental, and homeowners insurance policies alongside their benefit programs, from the Additional Insurance tab on the client profile."
+description: "Record a client's auto, dental, vision, and homeowners insurance policies alongside their benefit programs, from the Programs & Insurance tab on the client profile."
 ---
 
-Beyond the health-coverage programs tracked as [cases](/cases/overview), BridgePoint CRM lets you record a client's other insurance policies on their profile. The **Additional Insurance** tab keeps auto, dental, and homeowners coverage in one place so staff have a complete picture of what the client already carries.
+Beyond the health-coverage programs tracked as [cases](/cases/overview), BridgePoint CRM lets you record a client's other insurance policies on their profile. Auto, dental, vision, and homeowners coverage is listed on the **Programs & Insurance** tab, below the client's programs, so staff have a complete picture of what the client already carries.
 
-Open a client profile and select the **Additional Insurance** tab. A segmented control at the top switches between the three policy types:
-
-<CardGroup cols={3}>
+<CardGroup cols={4}>
   <Card title="Auto" icon="car" />
   <Card title="Dental" icon="tooth" />
+  <Card title="Vision" icon="eye" />
   <Card title="Homeowners" icon="house" />
 </CardGroup>
 
-Each type shows the client's saved policies as cards. Use the add button to record a new policy, or edit an existing one. **Carrier** is the only required field on every form — everything else is optional so you can capture as much or as little as the client provides.
+Each type shows the client's saved policies as cards. A type with no policies on file is hidden; if the client has none at all, the section reads "No auto, dental, vision or homeowners insurance on file". **Carrier** is the only required field on every form — everything else is optional so you can capture as much or as little as the client provides.
+
+## Adding a policy
+
+<Steps>
+  <Step title="Open the Programs & Insurance tab">
+    Open the client profile and select the **Programs & Insurance** tab.
+  </Step>
+  <Step title="Click + Add Insurance">
+    The **+ Add Insurance** button sits beside **+ Add Program**. It only appears if your role is allowed to add at least one insurance type.
+  </Step>
+  <Step title="Choose the insurance type">
+    Pick **Auto**, **Dental**, **Vision**, or **Homeowners** from the **Insurance Type** dropdown — the same way Add Program works. The dropdown only offers the types your role may add; if only one type is allowed, it is selected for you.
+  </Step>
+  <Step title="Fill in the form and save">
+    That type's fields appear below the dropdown. Enter the details and click **Save**.
+  </Step>
+</Steps>
+
+To change a saved policy, click **Edit** on its card — the form opens in a dialog. **Remove** deletes the policy after you confirm.
+
+## Who's insured
+
+Dental, vision, and homeowners forms include a **Who's insured?** field with one checkbox for the main client and one for each household member — the same way Add Program asks who's applying. Tick everyone the policy covers; at least one person must be selected.
+
+- A new policy starts with the main client checked.
+- If the client has no household members, the field is hidden and the main client is the insured.
+- Each policy card shows an **Insured** line listing everyone covered by name, main client first.
+- If a household member is removed from the client, they are taken off every policy they were on.
+
+<Note>
+Auto policies don't use this field — the policy's drivers section already records who is on it.
+</Note>
 
 ## Auto insurance
 
@@ -41,6 +72,26 @@ Records standalone dental coverage.
 | Member ID | Optional |
 | Group number | Optional |
 | Effective date | Optional |
+| Plan type | Optional — HMO or PPO |
+| Who's insured | At least one person |
+
+## Vision insurance
+
+Records standalone vision coverage. The form has the same fields as dental.
+
+| Field | Notes |
+| --- | --- |
+| Carrier | Required |
+| Plan type | Optional — HMO or PPO |
+| Policy number | Optional |
+| Member ID | Optional |
+| Group number | Optional |
+| Effective date | Optional |
+| Who's insured | At least one person |
+
+A vision policy shows a **Pending** or **Enrolled** badge. A pending policy with no carrier yet reads "Pending — no carrier yet", and its edit button reads **Complete Enrollment**.
+
+Vision policies move with the client when duplicate records are [merged](/clients/merging-duplicates). Adding and removing them is controlled by the **Edit Vision Insurance** and **Delete Vision Insurance** role permissions in Settings, which start out matching each role's dental insurance permissions.
 
 ## Homeowners insurance
 
@@ -55,6 +106,7 @@ Records the client's property coverage.
 | Cancellation date | Optional |
 | Premium | Optional |
 | Dwelling coverage | Optional |
+| Who's insured | At least one person |
 
 <Note>
 Additional Insurance is a record-keeping surface — these policies are separate from ACA and Medicaid **cases** and do not appear on the Cases board or in the ACA Pipeline. Editing a policy requires the same access as editing a client profile (Case Manager or above).
