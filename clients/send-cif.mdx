@@ -1,0 +1,106 @@
+---
+title: "Sending the Client Intake Form (CIF)"
+sidebarTitle: "Send CIF"
+description: "Text or email a client a one-time link to complete the full intake themselves, track where each link stands, review what the client changed, and resend."
+---
+
+The Client Intake Form (CIF) lets a client complete their full intake remotely. You pick what they're applying for, choose how the link opens, and text or email it to them. When they finish, BridgePoint adds a program card or insurance record for each pick and shows you exactly what the client changed.
+
+## Sending the CIF to an existing client
+
+From the Clients list, check the box next to exactly one client and click **Send CIF**.
+
+<Steps>
+  <Step title="Pick what they're applying for">
+    Under **Applying for — programs** and **Applying for — insurance**, select everything this packet covers. One packet handles all of it. You must pick at least one program or insurance.
+
+    Programs available: Medicaid, SNAP, TCA, ACA, Medicare, and Medicare Savings Program. Insurance options match the insurance lines on the Programs & Insurance tab.
+  </Step>
+  <Step title="Choose how the link opens">
+    Under **Link opens**, choose:
+
+    - **Prefilled with what's on file** — the client sees everything already on their record (the default).
+    - **Bare minimum (name, phone, email)** — the client sees only their name, phone, and email.
+  </Step>
+  <Step title="Choose delivery and expiry">
+    Select **Text (SMS)** or **Email**, then set **Link expires in** to 24 hours, 72 hours, or 7 days (the default).
+
+    - Text is selected by default when the client has a mobile phone on file and hasn't opted out of SMS.
+    - For email, pick the address to send to from the client's emails on file.
+  </Step>
+  <Step title="Send">
+    Click **Send**. You'll be notified when the client completes the form.
+  </Step>
+</Steps>
+
+<Note>
+  If the client has no email or mobile phone on file, or has opted out of SMS by replying STOP, the modal tells you to resolve it on the client's Overview tab first.
+</Note>
+
+## Sending the CIF to someone new
+
+If you're on a call with someone who isn't in BridgePoint yet, click **Send CIF** with no client checked. The **Send CIF to someone new** window creates their record and sends the link in one step.
+
+<Steps>
+  <Step title="Enter their details">
+    Enter **First name**, **Last name**, and **Mobile phone** (all required), plus **Email** if you have it.
+  </Step>
+  <Step title="Pick what they're applying for and how to send">
+    Select the programs and insurance they're applying for, choose **Text (SMS)** or **Email**, and set the expiry.
+  </Step>
+  <Step title="Create and send">
+    Click **Create and send**. BridgePoint first checks for possible existing clients with a matching name or phone.
+
+    - If matches are found, they're listed under **Possible existing client(s)**. Open a match in a new tab and send the CIF from that record instead, or click **New client — send anyway** if this is a different person.
+    - If there are no matches, the record is created and the link is sent right away.
+  </Step>
+</Steps>
+
+<Note>
+  New records are assigned to your office, and you become their case manager. A link sent to someone new always opens with only their name, phone, and email. If the record is created but the link fails to send, the record stays, and you can resend from the Clients list.
+</Note>
+
+## Tracking CIF links
+
+### The CIF column
+
+The **CIF** column on the Clients list shows where each client's latest link stands:
+
+| Status | Meaning |
+|---|---|
+| **CIF sent** | The link was sent but hasn't been opened yet |
+| **CIF opened** | The client opened the link or started filling it in |
+| **CIF completed** | The client submitted the form |
+| **CIF expired** | The link passed its expiry without being completed |
+
+A pencil icon next to the badge means the client changed some prefilled details. Clients who have never been sent a link show a dash.
+
+### Filtering by CIF status
+
+Open the **CIF** filter to show clients by the status of their latest link. Choose **Not completed** to see every client whose link is sent, opened, or expired in one view.
+
+### CIF history
+
+Click a client's CIF badge to open their history. Each link sent is listed, newest first, with:
+
+- Its status. A link replaced by a resend shows **Replaced by a newer link**.
+- When it was sent, by text or email, and who sent it.
+- What it applied for and how it opened (prefilled or bare minimum).
+- When it was opened and completed.
+- The name the client signed with, flagged if it **differs from the name on file**, and which household members they signed for.
+- For completed links, a **Field / Before / After** table of every prefilled value the client changed. SSNs in this table are always masked.
+
+## Resending a link
+
+Click **Resend CIF** in the history window, or send the CIF again from the Clients list. The form starts with the client's last packet's "Applying for" picks.
+
+<Warning>
+  If the client already has an open link, the window is titled **Resend Client Intake Form**. Sending a new link makes the earlier one stop working.
+</Warning>
+
+## What the client sees
+
+- **Your picks are locked in.** Under **Our office already added**, the client sees the programs and insurance you selected. They can't untick them, but they can add more. Because your picks are already covered, the client doesn't have to tick any other program.
+- **SSNs stay hidden.** If an SSN is already on file, the client only sees the last four digits as a hint. Leaving the field blank keeps the SSN on file, and typing a new one replaces it.
+- **One signature signs every form.** At the bottom of the form, under **Sign your forms**, the client types their full name and taps **Adopt signature and sign all forms**. This signs every form that still needs a signature, for themselves and the household members listed. If the income attestation or Marketplace (FFM) consent still need answers, the client answers those questions here too. The typed name doesn't have to match the record exactly. A mismatch is allowed, and it's flagged in the CIF history.
+- **Photo ID is optional.** The client can submit without a photo ID. You can upload it to the client profile later.

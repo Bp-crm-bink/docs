@@ -33,6 +33,7 @@
             "pages": [
               "clients/overview",
               "clients/adding-clients",
+              "clients/send-cif",
               "clients/client-profile",
               "clients/documents",
               "clients/document-center",
