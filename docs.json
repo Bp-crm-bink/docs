@@ -52,7 +52,8 @@
             "pages": [
               "cases/overview",
               "cases/managing-cases",
-              "cases/enrollments"
+              "cases/enrollments",
+              "cases/scope-of-appointment"
             ]
           },
           {

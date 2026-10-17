@@ -1,0 +1,116 @@
+---
+title: "Medicare Scope of Appointment: Send and Track SOAs"
+sidebarTitle: "Scope of Appointment"
+description: "Fill out a Medicare Scope of Appointment with the client on the call, send them a link to sign, and track every SOA from the Medicare program card."
+---
+
+CMS requires a signed Scope of Appointment (SOA) before a Medicare sales appointment. In BridgePoint, you fill out the SOA with the client while you're on the phone, then text or email them a link to review and sign it. When the client signs, BridgePoint files the signed PDF in their Documents and books the Medicare appointment with the agent.
+
+There are two ways to send an SOA:
+
+<CardGroup cols={2}>
+  <Card title="Send SOA" icon="file-signature">
+    From the **Scope of Appointment** panel on the client's Medicare program card. The client gets a link just for the SOA.
+  </Card>
+  <Card title="Inside a Client Intake Form" icon="pen-to-square">
+    When you send a Client Intake Form with **Medicare** picked under Applying For. The client reviews and signs the SOA on the intake link.
+  </Card>
+</CardGroup>
+
+## The Scope of Appointment panel
+
+Every Medicare program card on the client's **Programs** tab has a **Scope of Appointment** panel. It lists every SOA sent for the client and their household members, newest first. Each row shows who the SOA is for, the appointment date and time, when it was signed (if it has been), and a status badge:
+
+| Status | Meaning |
+|---|---|
+| **Waiting for client** | The link was sent and hasn't been signed yet |
+| **Signed** | The client signed the SOA |
+| **Expired** | The appointment time passed before the client signed |
+| **Cancelled** | The SOA was retired — for example, the Client Intake Form it was part of was resent |
+
+A **Name differs** badge appears next to a signed SOA when the name the client typed as their signature doesn't match the name on the SOA. The comparison ignores capitalization, accents, and extra spaces.
+
+If there are no SOAs yet, the panel reminds you that CMS requires one before the Medicare appointment.
+
+## Sending an SOA from the Medicare card
+
+<Steps>
+  <Step title="Open the client's Programs tab">
+    Open the client profile, go to the **Programs** tab, and find the Medicare program card.
+  </Step>
+  <Step title="Click Send SOA">
+    In the **Scope of Appointment** panel, click **Send SOA**. The **Send Scope of Appointment** dialog opens. Fill it in with the client on the call.
+  </Step>
+  <Step title="Choose whose SOA it is">
+    If the client has household members, choose the person in **Whose SOA is this?** — the client or one of the household members. Each household member applying for Medicare signs their own SOA.
+  </Step>
+  <Step title="Fill in the call details">
+    Fill in the fields described in [SOA fields](#soa-fields) below: the products to discuss, how the contact started, the appointment date and time, who the appointment is with, and the SOA language.
+  </Step>
+  <Step title="Choose how to send it">
+    Under **Send by**, choose **Text** or **Email**, then confirm the **Mobile number** (10 digits) or **Email**. The client's phone and email on file are filled in for you.
+  </Step>
+  <Step title="Send to client">
+    Click **Send to client**. A confirmation shows who the SOA was sent to, and the new SOA appears in the panel as **Waiting for client**.
+  </Step>
+</Steps>
+
+<Note>
+  Texting needs SMS consent on file. If the client has opted out of SMS or has no SMS consent recorded, the send is blocked — send by email instead, or resolve the opt-out on the client's **Overview** tab first.
+</Note>
+
+## SOA fields
+
+These fields appear both in the **Send SOA** dialog and in the **Medicare Scope of Appointment** section of a Client Intake Form.
+
+| Field | Details |
+|---|---|
+| **Products the client wants to discuss** | Pick at least one: Medicare Advantage plans (Part C), Stand-alone prescription drug plans (Part D), Medicare Supplement plans, Dental plans, Vision plans, Hospital Indemnity plans |
+| **Initial method of contact** | Inbound phone call (default), Outbound phone call, Walk-in, Text message, Email, or Referral |
+| **Appointment date** / **Appointment time (Eastern)** | Must be in the future. Times are Eastern. |
+| **Appointment with** | The staff member the appointment is with. Defaults to your organization's Medicare agent when one is set. |
+| **Less than 48 hours away — which CMS exception applies?** | Only appears — and is then required — when the appointment is less than 48 hours away. Choose one: Last four days of a valid election period, Walk-in meeting started by the beneficiary, or Inbound call started by the beneficiary. |
+| **SOA language** | English, Spanish, or Haitian Creole. The signing page, the text or email, and the PDF are in this language. Defaults to the client's language when they're on file. |
+
+<Tip>
+  If your organization has no Medicare agent set, the panel tells you so — just pick who the appointment is with in **Appointment with** each time you send.
+</Tip>
+
+## Sending an SOA inside a Client Intake Form
+
+A Client Intake Form with Medicare always carries a Scope of Appointment. When you pick **Medicare** under **Applying For** in the Send Client Intake Form dialog (or the quick-send version), a **Medicare Scope of Appointment** section appears with the same [SOA fields](#soa-fields). Fill it in with the client on the call, then send the intake form as usual.
+
+The client reviews and signs the SOA on the intake link, using the same signature they adopt for the rest of the packet. If the intake form is resent, the SOA that was part of the old link is cancelled.
+
+<Note>
+  If Medicare is the only thing being applied for — no other program and no insurance — the intake link asks only for General Information and the Scope of Appointment, with no consent forms. If the client adds another program on the link (for example, Medicaid), the regular consent forms are added back.
+</Note>
+
+## What the client sees
+
+The client opens the link and sees the SOA in the language you chose:
+
+- The products you picked, already ticked. The client can untick any product they don't want to discuss, but can't add new ones. At least one must stay ticked.
+- Their appointment date and time, and the agent it's with.
+- The CMS disclosure.
+- A field to type their full name as their signature, and a box to agree to sign electronically.
+
+A link sent from the Medicare card is good until the appointment time. After that, it shows as expired and can't be signed.
+
+## What happens when the client signs
+
+<Steps>
+  <Step title="The signed PDF is filed">
+    BridgePoint fills the official Scope of Appointment form, with the client's initials next to each product they kept, adds a certificate of completion, and saves it to the client's **Documents** tab as **Scope of Appointment (Medicare)** under Program Documents. A Spanish or Haitian Creole SOA is filed with an English copy.
+  </Step>
+  <Step title="The appointment is booked">
+    A **Medicare Appointment** is created for the appointment date and time, assigned to the staff member chosen in **Appointment with**.
+  </Step>
+  <Step title="The panel updates">
+    The SOA shows as **Signed** in the Scope of Appointment panel, with the time it was signed.
+  </Step>
+</Steps>
+
+<Warning>
+  If the appointment can't be booked automatically, the signed SOA is still filed. Check the client's appointments and add the Medicare appointment by hand if it's missing.
+</Warning>
