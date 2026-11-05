@@ -1,0 +1,80 @@
+---
+title: "Scanner / Auto Intake"
+sidebarTitle: "Scanner / Auto Intake"
+description: "Drop scanned client PDFs into the Scanner to automatically create the client record, open their program cases, and upload labeled documents."
+---
+
+The **Scanner** turns a scanned paper client file into a client record in BridgePoint. Drop in a PDF and the AI reads it, then creates the client, opens their program cases, adds household members, and files each section of the scan as a labeled document on the client's profile.
+
+<Note>
+  Only Owners, Admins, and Managers can use the Scanner. It creates real client records and cases in bulk. Other roles don't see **Scanner** in the sidebar. See [Roles & Permissions](/roles-permissions).
+</Note>
+
+## Scanning client files
+
+<Steps>
+  <Step title="Open the Scanner">
+    Select **Scanner** in the left sidebar. The page opens on the **Scanner** tab.
+  </Step>
+  <Step title="Add your PDFs">
+    Drag PDF files onto the drop zone, or click it to pick files. Use **one PDF per client**. Only PDF files are accepted.
+  </Step>
+  <Step title="Let the queue run">
+    Files are worked through one at a time. Each file shows its progress:
+
+    | Badge | Meaning |
+    |---|---|
+    | **Queued** | Waiting its turn |
+    | **Reading…** | The AI is reading the PDF |
+    | **Creating…** | The client record, cases, and documents are being created |
+    | **Done** | Finished |
+    | **Failed** | Nothing was created. The error is shown under the file name |
+
+    You can't drop in more files while a file is being read or created. Once the current batch finishes, the drop zone opens again.
+  </Step>
+  <Step title="Review the results">
+    For each finished file you'll see the client's name and BP ID, an **Open** link to their profile (opens in a new tab), the programs that were opened, and how many documents were uploaded. Click **Clear completed** to remove finished and failed files from the list.
+  </Step>
+</Steps>
+
+## What the Scanner creates
+
+<AccordionGroup>
+  <Accordion title="Client record">
+    The AI pulls the client's name, date of birth, SSN, mobile phone, email, mailing address, case number, and language preference from the scan. The SSN is encrypted when it's saved. The new client goes into your office, and you become their case manager.
+  </Accordion>
+  <Accordion title="Existing clients are linked, not duplicated">
+    Before creating anyone, the Scanner looks for that person anywhere in your organization, matching first on SSN last four plus date of birth, then on first name, last name, and date of birth. If it finds exactly one match, the file goes onto that client instead of creating a new one, and the result shows a **Linked to existing** badge.
+  </Accordion>
+  <Accordion title="Program cases">
+    A case is opened for each program found in the file: Medicaid, SNAP, TCA, ACA, Medicare, Pregnancy, Refugee Medical Assistance, or Medicare Savings Program. If the scan shows a status or renewal date, those are set too. ACA cases are opened without a status. ACA status still only moves through the [ACA Pipeline](/pipeline/overview).
+  </Accordion>
+  <Accordion title="Household members">
+    Household members listed in the file are added to the client's household with their relationship and date of birth. Members shown on Medicaid are added to the client's Medicaid application, along with their own status if the scan shows one.
+  </Accordion>
+  <Accordion title="Labeled documents">
+    The AI splits the PDF into its sections, such as consent forms, a photo ID, a DCF notice, or an intake worksheet. It saves each section as its own document on the client's profile, labeled with its document type. Sections it can't identify are saved as **Other**. Uploaded documents start out unreviewed.
+  </Accordion>
+</AccordionGroup>
+
+## Missing information
+
+If a new client's scan is missing their **date of birth**, **SSN**, **phone number**, or **email address**, the Scanner adds a note to the client listing what still needs to be collected. The file shows an amber warning icon and a line such as *Missing: SSN, Email address — note created on client*. No missing-fields note is added when the file was linked to an existing client.
+
+<Tip>
+  If something couldn't be created, such as a case, a document section, or a household member, the file still finishes and shows a **warnings** count. Click it to see each problem, then fix those items by hand on the client's profile.
+</Tip>
+
+## History and reporting
+
+<Tabs>
+  <Tab title="My History">
+    Lists every file you've scanned, with the client, the programs opened, the number of documents uploaded, and the date. Each row has a link to the client's profile and an icon showing whether the scan fully succeeded, partly succeeded, or failed.
+  </Tab>
+  <Tab title="All Files">
+    Shows every file scanned in your office and who scanned it. Search by client name, BP ID, file name, or staff member.
+  </Tab>
+  <Tab title="Reporting">
+    Summary cards for **Total scans**, scans **This month**, **Success rate**, and **Docs uploaded**, plus breakdowns of **Programs opened** and **Top staff** by number of scans.
+  </Tab>
+</Tabs>

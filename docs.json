@@ -33,6 +33,7 @@
             "pages": [
               "clients/overview",
               "clients/adding-clients",
+              "clients/scanner-auto-intake",
               "clients/client-profile",
               "clients/documents",
               "clients/document-center",
