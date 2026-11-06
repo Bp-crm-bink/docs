@@ -1,0 +1,119 @@
+---
+title: "Uploading Paperwork"
+sidebarTitle: "Paperwork"
+description: "Upload a new client's scanned file, a DCF notice, or a MyACCESS status page from the Paperwork page — and review notices and status pages before they change a client's record."
+---
+
+The **Paperwork** page (formerly **Scanner**) is where you upload paper for BridgePoint to read. Open it from **Paperwork** in the sidebar. It handles three kinds of paper:
+
+- A **new client file** — a scanned intake packet for someone who isn't in BridgePoint yet.
+- A **DCF notice** — a "Notice of Case Action" letter from DCF (an approval, denial or closure).
+- A **MyACCESS status page** — the MyACCESS "Medicaid Details" page showing each person's program, status and renewal due date.
+
+DCF notices and MyACCESS pages update clients who are **already in BridgePoint**. They never change anything until a person checks them on the **To review** tab and clicks **Apply**.
+
+<Note>
+Access to Paperwork depends on your role. See [Roles & Permissions](/roles-permissions) for how access is assigned.
+</Note>
+
+## The Paperwork tabs
+
+| Tab | What it's for |
+|---|---|
+| **Upload** | Pick what you're uploading and drop the file |
+| **To review** | DCF notices and MyACCESS pages waiting for someone to check and apply them. A count badge shows how many are waiting |
+| **My uploads** | Everything you uploaded in the last 30 days and what happened to it |
+| **Office** | Every upload in your office from the last 30 days, with a search box and a **Staff** column |
+| **Reports** | Paperwork reporting for the office |
+
+## What you can upload
+
+You can drop PDFs or pictures — JPG, PNG, WebP, GIF, or a phone photo (including iPhone HEIC photos in Safari). Pictures are turned into a one-page PDF before they're uploaded, so everything filed on the client is a PDF. If the browser can't open a picture, save it as JPG or PDF and try again.
+
+## Uploading paperwork
+
+<Steps>
+  <Step title="What are you uploading?">
+    On the **Upload** tab, pick one of the three cards: **New client file**, **DCF notice**, or **MyACCESS status**. Each card shows a small drawing of what the paper looks like and a **What happens** line saying what BridgePoint will do with it. A badge on the card tells you whether it runs **Automatic** (new client files) or **You review first** (notices and status pages).
+  </Step>
+  <Step title="Who is this for? (notices and status pages only)">
+    Choose one:
+    - **A client I pick** — search the client by name or BP ID. You'll be warned if the name on the paper isn't them or someone in their household.
+    - **Find them from the paper** — for a stack of papers for different people. BridgePoint finds the client from each paper, and you confirm each match.
+
+    The drop zone stays locked until you've picked a client or chosen **Find them from the paper**.
+  </Step>
+  <Step title="Drop the file">
+    Drag the files onto the drop zone, or click it to browse. You can drop several at once.
+  </Step>
+</Steps>
+
+### New client files
+
+For a **New client file**, drop one file per client — you can drop several clients at once. BridgePoint creates the client, their programs and household, and files each page on their Documents tab. It stops if the person might already exist.
+
+Keep the page open until every file is done. Results also appear in **My uploads**.
+
+### DCF notices and MyACCESS pages
+
+Each DCF notice or MyACCESS page you drop shows **Reading the paper…** and then **Waiting in To review**. If the same file was scanned before, you'll see a warning that the review card shows when. Click **Go to To review** to check them.
+
+<Info>
+The **To review** queue is shared and saved, so a paper uploaded today is still there tomorrow and anyone in the office can pick it up. The oldest papers are at the top.
+</Info>
+
+## Reviewing a notice or status page
+
+Each paper in **To review** has its own card. The header shows whether it's a **DCF notice** or **MyACCESS status** page, the file name, when it was uploaded and, if the paper has one, the date on it.
+
+<Steps>
+  <Step title="Check who it's for">
+    The card puts **On the paper** (the name, date of birth and DCF case number BridgePoint read) beside **Will update** (the client the changes will go to). Under the client's name it says how they were matched — by DCF case number, by SSN and date of birth, by name and date of birth, by name only, or picked by staff.
+
+    - If it's the wrong person, click **Wrong client? Change it** and search for the right one.
+    - If no client was found, search for them below.
+    - If several clients match (same name or same DCF case number), click **This one** on the right client. If they're really the same person, merge the duplicate records from the client profile afterwards — see [Merging Duplicates](/clients/merging-duplicates).
+  </Step>
+  <Step title="Read the warnings">
+    An amber **Check before applying** box lists anything a person must check first, for example:
+    - The match was made by name only.
+    - The name on the paper isn't this client or anyone in their household.
+    - Another client also has this DCF case number.
+    - This exact file was scanned before (already applied, or still waiting for review).
+    - The paper looks like the other kind (a notice dropped as a status page, or the other way round). Click **Read it as a DCF notice** or **Read it as a MyACCESS status page** to switch.
+  </Step>
+  <Step title="Pick the changes to apply">
+    **Changes to apply** lists everything the paper would change, all ticked to start. Untick anything the paper got wrong. Changes can include:
+    - A person's Medicaid status (for example, Pending → Enrolled)
+    - The status of a SNAP, TCA, Medicare or other single-person program
+    - The renewal date
+    - The DCF case number or DCF application number, when the card doesn't have one yet
+    - The date the application was sent to DCF (DCF notices only)
+  </Step>
+  <Step title="Apply">
+    If the card has warnings, tick **I checked the warnings above — this is the right client and the right paper**. Then click **Apply**. If the paper doesn't change anything on the record, the button reads **File it** instead.
+
+    BridgePoint applies the ticked changes and files the paper on the client's Documents tab as a DCF notice or MyACCESS status document.
+  </Step>
+</Steps>
+
+If a paper shouldn't be applied (wrong file, not a notice, or you already handled it by hand), click **Discard** on the card. Nothing on the client changes, and the stored file is deleted.
+
+### What BridgePoint leaves for you
+
+Paperwork never opens new program cards or adds people to a household. Anything it can't do on its own is listed in a grey **Left for you to do** box on the card and saved as a note on the client when you apply. For example:
+
+- Someone on the paper isn't in the household, or isn't on the Medicaid application — add them, then review again.
+- There's no open card for a program on the paper — add it from the Programs tab, then review again.
+- The paper mentions ACA — update it from the Pipeline.
+- A status needs a renewal date but the paper doesn't give one — set one, then review again.
+- People on a MyACCESS page have different renewal due dates — the Medicaid card uses the earliest.
+- When a Medicaid result could send someone to the ACA pipeline, you're reminded to review an ACA push from the Programs tab.
+
+<Warning>
+A DCF notice dated before the last status change on a program card isn't applied to that card. An older letter never undoes a newer status. The card tells you when this happens.
+</Warning>
+
+## Checking past uploads
+
+**My uploads** and **Office** list each upload with its **Paper** type, **Client**, **What happened**, and **When**. **What happened** reads, for example, **Waiting in To review**, **Applied 3 changes**, **Filed — nothing to change**, **Discarded — nothing changed**, or (for new client files) the programs that were opened. Click **Details** to see each change that was applied and anything that couldn't be saved.
