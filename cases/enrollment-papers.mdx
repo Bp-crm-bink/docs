@@ -1,0 +1,81 @@
+---
+title: "Upload Enrollment Papers: Marketplace Eligibility Notices"
+sidebarTitle: "Enrollment Papers"
+description: "Upload a client's HealthCare.gov Marketplace Eligibility Notice to record the Application ID, tax credit and household income, and create a task for each dated document request."
+---
+
+After an ACA enrollment, the Marketplace sends a **Marketplace Eligibility Notice** from HealthCare.gov. You can upload it to BridgePoint CRM. It reads the notice and suggests updates to the client's record. Nothing changes until you check the suggestions and click **Apply**.
+
+<Note>
+  Uploading enrollment papers is available to **Owner**, **Admin**, and **Manager** roles.
+</Note>
+
+## What the notice updates
+
+When you apply a reviewed notice, BridgePoint CRM can:
+
+- **Record the Application ID** on the ACA application of each person who applied for coverage.
+- **Record the premium tax credit** (dollars per month) that the Marketplace says the household can use, on each applicant's ACA application.
+- **Record household income.** The notice's estimated yearly income is turned into a monthly figure. It is saved on the client's financials as **Household income (Marketplace estimate)**.
+- **Create a task for each dated next step.** Each "By *date*, submit documents to confirm…" step becomes a task. The task is due on that date and has a reminder two weeks earlier. If two weeks before has already passed, the task has no reminder. Steps with no date don't create a task.
+- **File the notice** on the client's Documents tab as a Marketplace Eligibility Notice.
+
+The review only lists what would actually change. If a value already matches, it isn't listed. A task isn't created again if the client already has an open task with the same title and due date.
+
+## Uploading from the client's ACA card
+
+<Steps>
+  <Step title="Open the Programs tab">
+    Open the client's profile and go to the **Programs** tab.
+  </Step>
+  <Step title="Click Upload enrollment papers">
+    On the client's ACA card, click **Upload enrollment papers**.
+  </Step>
+  <Step title="Upload the notice">
+    Drop in the Marketplace Eligibility Notice. A scan or a phone photo both work.
+  </Step>
+  <Step title="Review the changes">
+    The review card lists each change the notice would make, along with any warnings. Check them before you apply.
+  </Step>
+  <Step title="Apply">
+    Apply the changes. The notice is filed on the client's **Documents** tab, and any new tasks appear on the **Tasks** tab.
+  </Step>
+</Steps>
+
+## Uploading on Paperwork
+
+You can also upload enrollment papers on the **Paperwork** page. Choose **Enrollment papers** and drop the notice. It waits in **To review** until you apply it.
+
+BridgePoint CRM tries to match the notice to a client in this order:
+
+1. The Application ID, if it's already on a client's ACA application
+2. The primary contact's name
+3. The name of each person who applied
+
+You confirm the client on the review card. If BridgePoint CRM isn't sure, it lists the possible clients so you can pick the right one.
+
+## Warnings on the review card
+
+The review card flags things to check before you apply:
+
+| Warning | What to do |
+|---|---|
+| Nobody named on the notice is in this client's household | Make sure you picked the right client. |
+| Another client already has this Application ID | Make sure you picked the right client. |
+| Someone who applied isn't in this household | Add them to the household, then review again. |
+| Someone who applied has no ACA application | Add an ACA application for them on the Programs tab, then review again. |
+| The Marketplace says to enroll by a date | Note the enrollment deadline. |
+| The file looks like a DCF notice or a MyACCESS page | Discard it and upload it again as the right kind of paper. |
+
+## Who gets the tasks
+
+Each kind of document request goes to the staff member chosen in **Settings → Task Assignments**:
+
+- Medicaid or CHIP coverage status
+- Medicare status
+- VA coverage
+- U.S. citizenship
+- Immigration status
+- Household income
+
+If nobody is chosen for a kind, its task goes to whoever applies the notice. A dated step that doesn't fit any of these kinds becomes a **Send documents to the Marketplace** task for whoever applies the notice. See [Settings](/settings/overview#task-assignments) to set this up.
