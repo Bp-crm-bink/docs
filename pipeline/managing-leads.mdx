@@ -127,30 +127,41 @@ Only users with Manager, Admin, or Owner access can edit the assigned agent fiel
 
 ### Record enrollment details
 
-When a client is ready to be marked as enrolled, use the **Enrolled** button in the action bar (or select **Enrolled** from the Update Status dropdown). A modal prompts you to fill in:
+When a client is ready to be marked as enrolled, use the **Enrolled** button in the action bar (or select **Enrolled** from the Update Status dropdown). The **Mark Enrolled** form opens. The same form is used when you mark an ACA application Enrolled from the client's **Programs** tab.
 
 <Steps>
+  <Step title="Choose the enrollment platform">
+    Pick where the enrollment was done: **HealthSherpa**, **Marketplace**, **Direct with Carrier**, or **Unknown**. This field is required.
+  </Step>
   <Step title="Select a plan type">
-    Choose from **Bronze**, **Silver**, **Gold**, **Platinum**, or **Catastrophic**.
+    Choose **Bronze**, **Silver**, or **Gold**. This field is required.
   </Step>
-  <Step title="Enter carrier name">
-    Type the insurance carrier (for example, *Florida Blue*).
+  <Step title="Enter the Application ID # (optional)">
+    Type the Marketplace Application ID. Letters, numbers, and dashes only.
   </Step>
-  <Step title="Set the effective date">
-    Enter the date the coverage begins.
+  <Step title="Select the carrier">
+    Choose **Florida Blue**, **OSCAR**, or **AmBetter**. If the carrier isn't listed, choose **Other** and type the carrier name.
   </Step>
-  <Step title="Enter the monthly premium">
-    Type the dollar amount of the client's monthly premium. This value feeds the **Monthly Premium** stat on the admin dashboard.
+  <Step title="Enter the Member ID and monthly premium (optional)">
+    Both fields are optional. Enter the premium as an amount like *125.50*. When entered, the premium feeds the **Monthly Premium** stat on the admin dashboard.
   </Step>
-  <Step title="Set a renewal date (optional)">
-    Enter the program renewal date if known.
+  <Step title="Set the effective date and renewal date">
+    Enter the date coverage begins and, if known, the program renewal date.
   </Step>
   <Step title="Confirm enrollment">
     Click **Confirm Enrollment**. The lead moves to **Enrolled** status and the enrolled date is set to today.
   </Step>
 </Steps>
 
-Once enrolled, the lead detail page shows a green **Enrollment Details** card with the plan type, carrier, effective date, premium, the staff member who enrolled the client, and the enrollment date.
+Once enrolled, the lead detail page shows a green **Enrollment Details** card with the plan type, carrier, effective date, premium, the staff member who enrolled the client, the enrollment date, **Enrolled Through** (the platform), and the **Application ID #**.
+
+### Edit enrollment details
+
+To change an enrollment, click **Edit** on the **Enrollment Details** card. The **Enrollment details** form opens with the same fields, except that the renewal date is replaced by an optional **Cancel Date** (which must be after the effective date). Click **Save**.
+
+<Note>
+The client's **Programs** tab and the Pipeline lead page edit the same enrollment record. A change saved in either place shows up in both, so they always show the same plan.
+</Note>
 
 ## Removing a Lead from the Pipeline
 
