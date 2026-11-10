@@ -12,13 +12,13 @@ BridgePoint organizes documents into six categories. When you upload a file, you
 
 <CardGroup cols={2}>
   <Card title="Intake Forms" icon="pen-to-square">
-    Forms required or collected at intake, including the Release Authorization Form, Medicaid Intake Form, Income Attestation, ACA Pre-Qualification Form, FFM Consent, and scanned paper copies of digital acknowledgements.
+    Forms required or collected at intake, including the Release Authorization Form, Medicaid Intake Form, Income Attestation, ACA Pre-Qualification Form, FFM Consent, Marketplace Attestation, Health Insurance Prequalification, and scanned paper copies of digital acknowledgements.
   </Card>
   <Card title="Identity & Residency" icon="id-card">
     Documents that establish who the client is and where they live: Photo ID (driver's license or passport), Social Security card, birth certificate, proof of address, and immigration paperwork.
   </Card>
   <Card title="Program Documents" icon="file-certificate">
-    Program-specific records such as MyACCESS Status Update Notices, Medicaid cards, SNAP and TCA approval letters, ACA insurance cards, and denial letters.
+    Program-specific records such as MyACCESS Program Status pages, MyACCESS Applications, Notices of Action (DCF approvals and denials), Medicaid cards, Medicare cards, and ACA insurance cards.
   </Card>
   <Card title="Income & Financials" icon="money-bill">
     Financial verification documents including pay stubs, Social Security award letters, bank statements, and tax returns.
@@ -64,12 +64,32 @@ The maximum file size is **20 MB**. If your file exceeds this limit, compress it
     Click **Choose File** or drag and drop the file onto the upload area. The file must be a PDF, JPEG, PNG, or WebP and no larger than 20 MB.
   </Step>
   <Step title="Confirm the upload">
-    Click **Upload**. BridgePoint validates the file type and size, stores the file securely, and creates a document record. The file appears in the Documents tab immediately with a generated name that includes the document type and upload date.
+    Click **Upload**. BridgePoint validates the file type and size, stores the file securely, and creates a document record. The file appears in the Documents tab immediately named after the document type and the client (unless you typed your own name).
   </Step>
 </Steps>
 
 <Note>
-  Uploaded documents are named automatically using the format `[Document Type] — [Month Day, Year]`. For **Other** documents, the custom title you provide is used instead. MyACCESS Status Update Notices are numbered sequentially across all uploads for that client (e.g., `MyACCESS Status Update Notice #3 — May 17, 2026`).
+  Uploaded documents are named automatically as **DOCUMENT - CLIENT NAME** in capitals, with the document first so it stays visible when a long name is cut off — for example `AUTO ACA - MARIA LOPEZ` or `FLORIDA DRIVER'S LICENSE - JOSE LOPEZ`. The upload panel shows the suggested name as a placeholder, and you can still type your own name instead.
+</Note>
+
+### How documents are named
+
+| Document | Example name |
+|---|---|
+| Most document types | `SOCIAL SECURITY CARD - JOHN DOE` |
+| Photo ID (named by the kind of ID) | `FLORIDA DRIVER'S LICENSE - JOHN DOE`, `PASSPORT - JOHN DOE` |
+| Marketplace, HealthSherpa, and Direct Enrollment | `2026 BCBS 01/01 - JOHN DOE` — plan year, carrier, and start date. When you upload one, the plan comes from the ACA application on file. |
+| Marketplace Attestation | `2027 ATTESTATION - JOHN DOE` |
+| Health Insurance Prequalification | `2026 PREQUALIFICATION - JOHN DOE` |
+| Tax Return | `2025 TAX RETURN - JOHN DOE` |
+| Medicare Enrollment | `MEDICARE ENROLLMENT - JOHN DOE` |
+
+<Tip>
+  A scanned paper for a household member carries that member's own name, not the main client's. Florida Blue enrollments are named **BCBS**.
+</Tip>
+
+<Note>
+  **Marketplace Auto Enrollment** is the same paper as the **Continuous Coverage Form**, so new scans are filed as Continuous Coverage Form (named `AUTO ACA`). **Medicare Enrollment** is a new document type under Enrollments.
 </Note>
 
 ## Viewing and Downloading a Document
