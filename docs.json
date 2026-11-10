@@ -89,6 +89,7 @@
             "pages": [
               "reports/overview",
               "settings/overview",
+              "settings/notifications",
               "settings/staff-management",
               "settings/internal-forms"
             ]
