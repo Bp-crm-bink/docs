@@ -36,6 +36,7 @@
               "clients/client-profile",
               "clients/documents",
               "clients/document-center",
+              "clients/paperwork-review",
               "clients/additional-insurance",
               "clients/merging-duplicates"
             ]
