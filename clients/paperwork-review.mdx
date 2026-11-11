@@ -1,0 +1,77 @@
+---
+title: "Paperwork: Reviewing Scanned Papers"
+sidebarTitle: "Paperwork Review"
+description: "Check each scanned paper on the Paperwork To review tab against the client, fix the client's record from the card, and apply the changes."
+---
+
+When a scanned DCF notice, MyACCESS status page, or set of enrollment papers needs a person to check it, it waits as a card on **Paperwork → To review**. Each card shows what the paper says, which client it will change, and the changes BridgePoint worked out from it.
+
+<Note>
+  Nothing changes on the client until you click **Apply**. Check each paper against the client, untick anything that's wrong, then apply.
+</Note>
+
+## Checking the client match
+
+The top of the card shows who the paper is for and how BridgePoint matched them, for example **Matched by DCF case number**, **Matched by Marketplace Application ID**, **Matched by Medicare number**, or **Matched by name only**. When the match came from a number on the paper, that number is shown. The client's date of birth is shown too.
+
+Client matching finds name variations, such as a second last name or a hyphen.
+
+If BridgePoint isn't sure which client the paper belongs to, the card lists the possible clients with the reason each one matched (same DCF case number, same Application ID, same name, or similar name) and their date of birth. A date of birth that matches the paper is highlighted with **same as the paper**. Pick the right client from the list.
+
+<Warning>
+  When a paper matched on the name alone, the card shows **Matched by name only — these clients could also be this person**. Check the other clients listed before you apply.
+</Warning>
+
+## Fixing the client's record from the card
+
+If the paper names someone who isn't in the household, or a program the client has no card for, you can fix it without leaving Paperwork. Under the client's name, the card shows **Missing something on (client)?** with these buttons:
+
+<CardGroup cols={3}>
+  <Card title="Add household member" icon="user-plus">
+    Opens the same household member form as the client profile.
+  </Card>
+  <Card title="Add program" icon="folder-plus">
+    Opens Add Program. For enrollment papers it opens on ACA, and for Medicare papers on Medicare.
+  </Card>
+  <Card title="Add <program>" icon="folder-plus">
+    Appears for each program the DCF notice or MyACCESS page names that the client has no open card for, such as **Add Medicaid**.
+  </Card>
+</CardGroup>
+
+<Steps>
+  <Step title="Click the button you need">
+    Choose **Add household member**, **Add program**, or an **Add (program)** button.
+  </Step>
+  <Step title="Fill in the form and save">
+    The forms work the same as on the client profile.
+  </Step>
+  <Step title="Check the updated changes">
+    The card works out its changes again with the new person or program. Review them before you click **Apply**.
+  </Step>
+</Steps>
+
+## Enrollment papers
+
+### New ACA cards
+
+If someone on the enrollment papers has no ACA application, Apply handles it for you:
+
+- **The household already has one ACA application:** the person is added to it.
+- **Nobody on the papers has an ACA application:** a new ACA card is added, the same way as with Add Program, so it joins the Pipeline. If the papers include a plan, the card is then marked **Enrolled** with that plan. If there's no plan, the Application ID and tax credit are saved on the card.
+- **The household has several ACA applications:** BridgePoint doesn't guess. Add the person to the right one from the Programs tab, then review again.
+
+### Plan box
+
+Enrollment papers show a **Plan** box with the plan read from the papers and what Apply will do with it. If no plan can be saved, the box says why. For example, it shows **No plan in this scan** when the plan page wasn't in the scan, or it says the plan page didn't list the carrier, premium, metal level, or start date.
+
+### Next steps on the notice
+
+The card lists every next step printed on the Marketplace notice, with its due date and what happens to it. Check this list against the paper's "Next steps" table so nothing the carrier needs gets skipped.
+
+- Each document request becomes **one task per person**.
+- Scanning the same notice again never adds a second copy of a task.
+- If you untick a task, it isn't created. It's written into the client note instead, so it isn't lost.
+
+## My uploads and Office
+
+The **My uploads** and **Office** tabs list past uploads. When they include more than one kind of upload (for example, new client files, enrollment papers, and DCF notices), a row of type buttons with a count for each lets you show one type at a time. Choose **All** to see everything again.
